@@ -4,38 +4,14 @@
 
 var ctx = document.getElementById("virusChart");
 //Type, data, options
-var chartGraph = new Chart (ctx, {
-    type: 'bar',
-    data: {
-        datasets: [{
-            borderWidth: 6,
-            borderColor: 'rgba(146, 242, 42, 0.85)',
-            fill: false
-        }, {
-            borderWidth: 6,
-            borderColor: 'rgba(207, 0, 15, 0.85)',
-            fill: false
-        }
-    ]},
-    plugins: [ChartDataSource],
-    options: {
-        title: {
-            display: true,
-            fontSize: 20,
-            text: 'ENCARTUCHAMENTO 05'
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    max: 100,
-                    min: 0,
-                }
-            }]
-        },
-        plugins: {
-            datasource: {
-                url: '../../../../data/corona_infected_person.xlsx'
-            }
-        }
+var chart = new Chart(ctx, {
+  type: 'bar',
+  plugins: [ChartDataSource],
+  options: {
+    datasource: {
+      url: '../../../../data/corona_infected_person.xlsx'
     }
+
+  }
+
 });

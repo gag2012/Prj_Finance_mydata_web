@@ -217,7 +217,7 @@ function btn_wave3_click(){
     });
 }
 
-function btn_wave3_click(){
+function btn_wave4_click(){
   alert('준비중입니다.');
 }
 

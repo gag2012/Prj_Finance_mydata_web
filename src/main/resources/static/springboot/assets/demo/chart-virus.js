@@ -42,7 +42,7 @@ var chartGraph = new Chart (ctx, {
         },
         plugins: {
             datasource: {
-                url: '../../../data/corona_infected_person.xlsx'
+                url: '../../../../data/corona_infected_person.xlsx'
             }
         }
     }

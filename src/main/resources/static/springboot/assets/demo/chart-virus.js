@@ -74,40 +74,39 @@ const wave3 = {
     }]
 };
 
-// Bar Chart Example
-//var ctx = document.getElementById("virusChart");
-//var myLineChart = new Chart(ctx, {
-//  type: 'line',
-//  data: wave,
-//  options: {
-//    scales: {
-//      xAxes: [{
-//        time: {
-//          unit: 'day'
-//        },
-//        gridLines: {
-//          display: false
-//        },
-//        ticks: {
-//          maxTicksLimit: 6
-//        }
-//      }],
-//      yAxes: [{
-//        ticks: {
-//          min: 0,
-//          max: 10000,
-//          maxTicksLimit: 5
-//        },
-//        gridLines: {
-//          display: true
-//        }
-//      }],
-//    },
-//    legend: {
-//      display: false
-//    }
-//  }
-//});
+var ctx = document.getElementById("virusChart");
+var myLineChart = new Chart(ctx, {
+  type: 'line',
+  data: wave,
+  options: {
+    scales: {
+      xAxes: [{
+        time: {
+          unit: 'day'
+        },
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          maxTicksLimit: 6
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 10000,
+          maxTicksLimit: 5
+        },
+        gridLines: {
+          display: true
+        }
+      }],
+    },
+    legend: {
+      display: false
+    }
+  }
+});
 
 
 function btn_wave1_click(){
@@ -219,5 +218,11 @@ function btn_wave3_click(){
 }
 
 function btn_wave3_click(){
-    alert('준비중입니다.');
+  alert('준비중입니다.');
+}
+
+function gclear(){
+  myLineChart.update();
+  myLineChart.destroy();
+  document.getElementById('virusChart').disabled=false;
 }

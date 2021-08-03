@@ -88,7 +88,8 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             선택하신 바이러스 '코로나-19(COVID-19)' 은 감염 기간이 12일 입니다.  (감염자는 12일 동안 감염 상태) <br>
-                            즉, 아래 그래프의 누적 감염자 수는 이전 12일 확진자을 누적한 값을 의미합니다.
+                            즉, 아래 그래프의 누적 감염자 수는 이전 12일 확진자을 누적한 값을 의미합니다.<br>
+                            회색 그래프는 <div style="color:#BDBDBD;">'실제 그래프' </div>입니다. 파란 그래프는 <div style="color:#5858FA;">'예측 그래프'</div>입니다.
                         </div>
                     </div>
                 </div>
@@ -117,7 +118,7 @@
                                     <input type="radio" name="chk_wave" value="wave_3"> 3차 유행 (11-2, 2020-2021) <br>
                                     <input type="radio" name="chk_wave" value="wave_4"> 4차 유행 (진행중)
                                 </div> <hr>
-                                <div>설정값 변경</div>
+                                <div>예측 모델 변경</div>
                                 <div class="slidecontainer">
                                     <input type="range" min="1" max="100" value="80.2" class="slider" id="recov_rate">
                                     <p>   회복율: <span id="recov_demo"></span></p>

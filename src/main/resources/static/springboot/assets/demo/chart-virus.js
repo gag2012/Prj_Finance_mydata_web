@@ -222,6 +222,6 @@ function btn_wave4_click(){
 }
 
 function gclear(){
-  //myLineChart.update();
+  myLineChart.update();
   myLineChart.destroy();
 }

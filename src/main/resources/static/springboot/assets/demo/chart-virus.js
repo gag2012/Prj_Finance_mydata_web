@@ -124,7 +124,7 @@ function btn_wave1_click(){
     alert('버튼이 클릭되었습니다1');
 }
 
-function btn_wave1_click(){
+function btn_wave2_click(){
     var ctx = document.getElementById("virusChart");
     var myLineChart = new Chart(ctx, {
       type: 'line',

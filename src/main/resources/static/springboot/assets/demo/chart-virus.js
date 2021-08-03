@@ -2,11 +2,10 @@
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.14.3/dist/xlsx.full.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource@0.1.0"></script>
 
-<script>
 var ctx = document.getElementById("virusChart");
 //Type, data, options
 var chartGraph = new Chart (ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         datasets: [{
             borderWidth: 6,
@@ -40,4 +39,3 @@ var chartGraph = new Chart (ctx, {
         }
     }
 });
-</script>

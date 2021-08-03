@@ -1,16 +1,15 @@
-var recov_slider = document.getElementById("recov_rate");
-var recov_output = document.getElementById("recov_demo");
-recov_output.innerHTML = recov_slider.value;
+var slider = document.getElementById("recov_rate");
+var output = document.getElementById("recov_demo");
+output.innerHTML = slider.value;
 
-
-recov_slider.oninput = function() {
-  recov_output.innerHTML = this.value;
+slider.oninput = function() {
+  output.innerHTML = this.value;
 }
 
-var death_slider = document.getElementById("death_rate");
-var death_output = document.getElementById("death_demo");
-death_output.innerHTML = death_slider.value;
+var slider2 = document.getElementById("death_rate");
+var output2 = document.getElementById("death_demo");
+output2.innerHTML = slider2.value;
 
-death_slider.oninput = function() {
-  death_output.innerHTML = this.value;
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
 }

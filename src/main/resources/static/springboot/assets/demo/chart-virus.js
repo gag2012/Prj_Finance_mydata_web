@@ -144,8 +144,6 @@ function btn_wave1_click(){
         }
       }
     });
-
-    alert('버튼이 클릭되었습니다1');
 }
 
 function btn_wave2_click(){
@@ -182,8 +180,6 @@ function btn_wave2_click(){
         }
       }
     });
-
-    alert('버튼이 클릭되었습니다2');
 }
 
 function btn_wave3_click(){
@@ -220,6 +216,8 @@ function btn_wave3_click(){
         }
       }
     });
+}
 
-    alert('버튼이 클릭되었습니다2');
+function btn_wave3_click(){
+    alert('준비중입니다.');
 }

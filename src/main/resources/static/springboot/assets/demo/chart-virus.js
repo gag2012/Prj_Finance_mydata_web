@@ -23,7 +23,7 @@ var myLineChart = new Chart(ctx, {
     scales: {
       xAxes: [{
         time: {
-          unit: 'month'
+          unit: 'day'
         },
         gridLines: {
           display: false

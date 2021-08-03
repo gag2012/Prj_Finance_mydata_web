@@ -224,5 +224,4 @@ function btn_wave3_click(){
 function gclear(){
   myLineChart.update();
   myLineChart.destroy();
-  document.getElementById('virusChart').disabled=false;
 }

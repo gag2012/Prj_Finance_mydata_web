@@ -111,7 +111,7 @@ var myLineChart = new Chart(ctx, {
 
 function btn_wave1_click(){
     var ctx = document.getElementById("virusChart");
-    var myLineChart = new Chart(ctx, {
+    var myLineChart1 = new Chart(ctx, {
       type: 'line',
       data: wave,
       options: {
@@ -147,7 +147,7 @@ function btn_wave1_click(){
 
 function btn_wave2_click(){
     var ctx = document.getElementById("virusChart");
-    var myLineChart = new Chart(ctx, {
+    var myLineChart2 = new Chart(ctx, {
       type: 'line',
       data: wave2,
       options: {
@@ -183,7 +183,7 @@ function btn_wave2_click(){
 
 function btn_wave3_click(){
     var ctx = document.getElementById("virusChart");
-    var myLineChart = new Chart(ctx, {
+    var myLineChart3 = new Chart(ctx, {
       type: 'line',
       data: wave3,
       options: {

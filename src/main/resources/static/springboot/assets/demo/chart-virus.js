@@ -110,7 +110,6 @@ var myLineChart = new Chart(ctx, {
 
 
 function btn_wave1_click(){
-    myLineChart.update();
     myLineChart.destroy();
     var ctx = document.getElementById("virusChart");
     myLineChart = new Chart(ctx, {
@@ -145,10 +144,10 @@ function btn_wave1_click(){
         }
       }
     });
+    myLineChart.update();
 }
 
 function btn_wave2_click(){
-    myLineChart.update();
     myLineChart.destroy();
     var ctx = document.getElementById("virusChart");
     myLineChart = new Chart(ctx, {
@@ -183,10 +182,10 @@ function btn_wave2_click(){
         }
       }
     });
+    myLineChart.update();
 }
 
 function btn_wave3_click(){
-    myLineChart.update();
     myLineChart.destroy();
     var ctx = document.getElementById("virusChart");
     myLineChart3 = new Chart(ctx, {
@@ -221,6 +220,7 @@ function btn_wave3_click(){
         }
       }
     });
+    myLineChart.update();
 }
 
 function btn_wave4_click(){

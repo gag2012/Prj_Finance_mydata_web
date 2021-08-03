@@ -78,132 +78,158 @@ const wave3 = {
     }]
 };
 
+var ctx = document.getElementById("virusChart");
+//var myLineChart = new Chart(ctx, {
+//  type: 'line',
+//  data: wave,
+//  options: {
+//    scales: {
+//      xAxes: [{
+//        time: {
+//          unit: 'day'
+//        },
+//        gridLines: {
+//          display: false
+//        },
+//        ticks: {
+//          maxTicksLimit: 8
+//        }
+//      }],
+//      yAxes: [{
+//        ticks: {
+//          min: 0,
+//          max: 10000,
+//          maxTicksLimit: 10
+//        },
+//        gridLines: {
+//          display: true
+//        }
+//      }],
+//    },
+//    legend: {
+//      display: false
+//    }
+//  }
+//});
 
 
 function btn_wave1_click(){
+    myLineChart.update();
+    myLineChart.destroy();
     var ctx = document.getElementById("virusChart");
-
-    myLineChart2.destroy();
-    myLineChart3.destroy();
-
-    var myLineChart1 = new Chart(ctx, {
-          type: 'line',
-          data: wave,
-          options: {
-            scales: {
-              xAxes: [{
-                time: {
-                  unit: 'day'
-                },
-                gridLines: {
-                  display: false
-                },
-                ticks: {
-                  maxTicksLimit: 8
-                }
-              }],
-              yAxes: [{
-                ticks: {
-                  min: 0,
-                  max: 10000,
-                  maxTicksLimit: 10
-                },
-                gridLines: {
-                  display: true
-                }
-              }],
+    var myLineChart = new Chart(ctx, {
+      type: 'line',
+      data: wave,
+      options: {
+        scales: {
+          xAxes: [{
+            time: {
+              unit: 'day'
             },
-            legend: {
+            gridLines: {
               display: false
+            },
+            ticks: {
+              maxTicksLimit: 8
             }
-          }
-     });
-
-    myLineChart1.update();
+          }],
+          yAxes: [{
+            ticks: {
+              min: 0,
+              max: 10000,
+              maxTicksLimit: 10
+            },
+            gridLines: {
+              display: true
+            }
+          }],
+        },
+        legend: {
+          display: false
+        }
+      }
+    });
+    myLineChart.update();
     var duration = '91';
     document.getElementById('wave_duration').innerHTML=duration;
 }
 
 function btn_wave2_click(){
+    myLineChart.update();
+    myLineChart.destroy();
     var ctx = document.getElementById("virusChart");
-
-    myLineChart1.destroy();
-    myLineChart3.destroy();
-
-    var myLineChart2 = new Chart(ctx, {
-          type: 'line',
-          data: wave2,
-          options: {
-            scales: {
-              xAxes: [{
-                time: {
-                  unit: 'day'
-                },
-                gridLines: {
-                  display: false
-                },
-                ticks: {
-                  maxTicksLimit: 8
-                }
-              }],
-              yAxes: [{
-                ticks: {
-                  min: 0,
-                  max: 10000,
-                  maxTicksLimit: 10
-                },
-                gridLines: {
-                  display: true
-                }
-              }],
+    var myLineChart = new Chart(ctx, {
+      type: 'line',
+      data: wave2,
+      options: {
+        scales: {
+          xAxes: [{
+            time: {
+              unit: 'day'
             },
-            legend: {
+            gridLines: {
               display: false
+            },
+            ticks: {
+              maxTicksLimit: 8
             }
-          }
-     });
-
-    myLineChart2.update();
+          }],
+          yAxes: [{
+            ticks: {
+              min: 0,
+              max: 10000,
+              maxTicksLimit: 10
+            },
+            gridLines: {
+              display: true
+            }
+          }],
+        },
+        legend: {
+          display: false
+        }
+      }
+    });
+    myLineChart.update();
 }
 
 function btn_wave3_click(){
-    myLineChart1.destroy();
-    myLineChart2.destroy();
-
-    var myLineChart3 = new Chart(ctx, {
-          type: 'line',
-          data: wave3,
-          options: {
-            scales: {
-              xAxes: [{
-                time: {
-                  unit: 'day'
-                },
-                gridLines: {
-                  display: false
-                },
-                ticks: {
-                  maxTicksLimit: 6
-                }
-              }],
-              yAxes: [{
-                ticks: {
-                  min: 0,
-                  max: 15000,
-                  maxTicksLimit: 5
-                },
-                gridLines: {
-                  display: true
-                }
-              }],
+    myLineChart.update();
+    myLineChart.destroy();
+    var ctx = document.getElementById("virusChart");
+    var myLineChart = new Chart(ctx, {
+      type: 'line',
+      data: wave3,
+      options: {
+        scales: {
+          xAxes: [{
+            time: {
+              unit: 'day'
             },
-            legend: {
+            gridLines: {
               display: false
+            },
+            ticks: {
+              maxTicksLimit: 6
             }
-          }
-        });
-
-    myLineChart3.update();
+          }],
+          yAxes: [{
+            ticks: {
+              min: 0,
+              max: 15000,
+              maxTicksLimit: 5
+            },
+            gridLines: {
+              display: true
+            }
+          }],
+        },
+        legend: {
+          display: false
+        }
+      }
+    });
+    myLineChart.update();
 }
 
 function btn_wave4_click(){

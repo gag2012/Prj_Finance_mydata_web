@@ -110,7 +110,8 @@ var myLineChart = new Chart(ctx, {
 
 
 function btn_wave1_click(){
-    myLineChart.destroy();
+    myLineChart.update();
+    //myLineChart.destroy();
     var ctx = document.getElementById("virusChart");
     myLineChart = new Chart(ctx, {
       type: 'line',
@@ -147,7 +148,8 @@ function btn_wave1_click(){
 }
 
 function btn_wave2_click(){
-    myLineChart.destroy();
+    myLineChart.update();
+    //myLineChart.destroy();
     var ctx = document.getElementById("virusChart");
     myLineChart = new Chart(ctx, {
       type: 'line',
@@ -184,7 +186,8 @@ function btn_wave2_click(){
 }
 
 function btn_wave3_click(){
-    myLineChart.destroy();
+    myLineChart.update();
+    //myLineChart.destroy();
     var ctx = document.getElementById("virusChart");
     myLineChart3 = new Chart(ctx, {
       type: 'line',
@@ -222,9 +225,4 @@ function btn_wave3_click(){
 
 function btn_wave4_click(){
   alert('준비중입니다.');
-}
-
-function gclear(){
-  myLineChart.update();
-  myLineChart.destroy();
 }

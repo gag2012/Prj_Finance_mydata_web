@@ -9,6 +9,7 @@
     <title>Charts - SB Admin</title>
     <link href="../static/springboot/css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="sb-nav-fixed">
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -116,8 +117,9 @@
                                     <input type="radio" name="chk_wave" value="wave_3">3차 유행 (11-2, 2020-2021) <br>
                                     <input type="radio" name="chk_wave" value="wave_4">4차 유행 (진행중)
                                 </div> <hr>
-                                <div>
-                                    이렇게하는건가요?
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                    <p>Value: <span id="demo"></span></p>
                                 </div>
                             </div>
                         </div>
@@ -146,5 +148,14 @@
 <script src="../static/springboot/assets/demo/chart-area-demo.js"></script>
 <script src="../static/springboot/assets/demo/chart-bar-demo.js"></script>
 <script src="../static/springboot/assets/demo/chart-pie-demo.js"></script>
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
 </body>
 </html>

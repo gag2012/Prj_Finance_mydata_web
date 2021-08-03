@@ -78,15 +78,15 @@ const wave3 = {
     }]
 };
 
+var myLineChart = null;
 
 
 function btn_wave1_click(){
     var ctx = document.getElementById("virusChart");
 
-    myLineChart2.destroy();
-    myLineChart3.destroy();
+    myLineChart.destroy();
 
-    var myLineChart1 = new Chart(ctx, {
+    var myLineChart = new Chart(ctx, {
           type: 'line',
           data: wave,
           options: {
@@ -119,7 +119,7 @@ function btn_wave1_click(){
           }
      });
 
-    myLineChart1.update();
+    myLineChart.update();
     var duration = '91';
     document.getElementById('wave_duration').innerHTML=duration;
 }
@@ -127,10 +127,9 @@ function btn_wave1_click(){
 function btn_wave2_click(){
     var ctx = document.getElementById("virusChart");
 
-    myLineChart1.destroy();
-    myLineChart3.destroy();
+    myLineChart.destroy();
 
-    var myLineChart2 = new Chart(ctx, {
+    var myLineChart = new Chart(ctx, {
           type: 'line',
           data: wave2,
           options: {
@@ -163,14 +162,13 @@ function btn_wave2_click(){
           }
      });
 
-    myLineChart2.update();
+    myLineChart.update();
 }
 
 function btn_wave3_click(){
-    myLineChart1.destroy();
-    myLineChart2.destroy();
+    myLineChart.destroy();
 
-    var myLineChart3 = new Chart(ctx, {
+    var myLineChart = new Chart(ctx, {
           type: 'line',
           data: wave3,
           options: {
@@ -203,7 +201,7 @@ function btn_wave3_click(){
           }
         });
 
-    myLineChart3.update();
+    myLineChart.update();
 }
 
 function btn_wave4_click(){

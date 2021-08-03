@@ -1,46 +1,43 @@
-// Set new default font family and font color to mimic Bootstrap's default styling
-Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#292b2c';
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.14.3/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource@0.1.0"></script>
 
-// Bar Chart Example
+<script>
 var ctx = document.getElementById("virusChart");
-var myLineChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
-    datasets: [{
-      label: "Revenue",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
-      data: [4215, 5312, 6251, 7841, 9821, 14984],
-    }],
-  },
-  options: {
-    scales: {
-      xAxes: [{
-        time: {
-          unit: 'month'
-        },
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          maxTicksLimit: 6
+//Type, data, options
+var chartGraph = new Chart (ctx, {
+    type: 'line',
+    data: {
+        datasets: [{
+            borderWidth: 6,
+            borderColor: 'rgba(146, 242, 42, 0.85)',
+            fill: false
+        }, {
+            borderWidth: 6,
+            borderColor: 'rgba(207, 0, 15, 0.85)',
+            fill: false
         }
-      }],
-      yAxes: [{
-        ticks: {
-          min: 0,
-          max: 15000,
-          maxTicksLimit: 5
+    ]},
+    plugins: [ChartDataSource],
+    options: {
+        title: {
+            display: true,
+            fontSize: 20,
+            text: 'ENCARTUCHAMENTO 05'
         },
-        gridLines: {
-          display: true
+        scales: {
+            yAxes: [{
+                ticks: {
+                    max: 100,
+                    min: 0,
+                }
+            }]
+        },
+        plugins: {
+            datasource: {
+                url: '../../../../data/corona_infected_person.xlsx'
+            }
         }
-      }],
-    },
-    legend: {
-      display: false
     }
-  }
 });
+</script>

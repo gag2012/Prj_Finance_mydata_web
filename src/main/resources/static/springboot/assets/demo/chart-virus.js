@@ -78,129 +78,157 @@ const wave3 = {
     }]
 };
 
-var myLineChart = null;
+var ctx = document.getElementById("virusChart");
+var myLineChart = new Chart(ctx, {
+  type: 'line',
+  data: wave,
+  options: {
+    scales: {
+      xAxes: [{
+        time: {
+          unit: 'day'
+        },
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          maxTicksLimit: 8
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 10000,
+          maxTicksLimit: 10
+        },
+        gridLines: {
+          display: true
+        }
+      }],
+    },
+    legend: {
+      display: false
+    }
+  }
+});
 
 
 function btn_wave1_click(){
-    var ctx = document.getElementById("virusChart");
-
+    myLineChart.update();
     myLineChart.destroy();
-
+    var ctx = document.getElementById("virusChart");
     var myLineChart = new Chart(ctx, {
-          type: 'line',
-          data: wave,
-          options: {
-            scales: {
-              xAxes: [{
-                time: {
-                  unit: 'day'
-                },
-                gridLines: {
-                  display: false
-                },
-                ticks: {
-                  maxTicksLimit: 8
-                }
-              }],
-              yAxes: [{
-                ticks: {
-                  min: 0,
-                  max: 10000,
-                  maxTicksLimit: 10
-                },
-                gridLines: {
-                  display: true
-                }
-              }],
+      type: 'line',
+      data: wave,
+      options: {
+        scales: {
+          xAxes: [{
+            time: {
+              unit: 'day'
             },
-            legend: {
+            gridLines: {
               display: false
+            },
+            ticks: {
+              maxTicksLimit: 8
             }
-          }
-     });
-
+          }],
+          yAxes: [{
+            ticks: {
+              min: 0,
+              max: 10000,
+              maxTicksLimit: 10
+            },
+            gridLines: {
+              display: true
+            }
+          }],
+        },
+        legend: {
+          display: false
+        }
+      }
+    });
     myLineChart.update();
     var duration = '91';
     document.getElementById('wave_duration').innerHTML=duration;
 }
 
 function btn_wave2_click(){
-    var ctx = document.getElementById("virusChart");
-
+    myLineChart.update();
     myLineChart.destroy();
-
+    var ctx = document.getElementById("virusChart");
     var myLineChart = new Chart(ctx, {
-          type: 'line',
-          data: wave2,
-          options: {
-            scales: {
-              xAxes: [{
-                time: {
-                  unit: 'day'
-                },
-                gridLines: {
-                  display: false
-                },
-                ticks: {
-                  maxTicksLimit: 8
-                }
-              }],
-              yAxes: [{
-                ticks: {
-                  min: 0,
-                  max: 10000,
-                  maxTicksLimit: 10
-                },
-                gridLines: {
-                  display: true
-                }
-              }],
+      type: 'line',
+      data: wave2,
+      options: {
+        scales: {
+          xAxes: [{
+            time: {
+              unit: 'day'
             },
-            legend: {
+            gridLines: {
               display: false
+            },
+            ticks: {
+              maxTicksLimit: 8
             }
-          }
-     });
-
+          }],
+          yAxes: [{
+            ticks: {
+              min: 0,
+              max: 10000,
+              maxTicksLimit: 10
+            },
+            gridLines: {
+              display: true
+            }
+          }],
+        },
+        legend: {
+          display: false
+        }
+      }
+    });
     myLineChart.update();
 }
 
 function btn_wave3_click(){
+    myLineChart.update();
     myLineChart.destroy();
-
+    var ctx = document.getElementById("virusChart");
     var myLineChart = new Chart(ctx, {
-          type: 'line',
-          data: wave3,
-          options: {
-            scales: {
-              xAxes: [{
-                time: {
-                  unit: 'day'
-                },
-                gridLines: {
-                  display: false
-                },
-                ticks: {
-                  maxTicksLimit: 6
-                }
-              }],
-              yAxes: [{
-                ticks: {
-                  min: 0,
-                  max: 15000,
-                  maxTicksLimit: 5
-                },
-                gridLines: {
-                  display: true
-                }
-              }],
+      type: 'line',
+      data: wave3,
+      options: {
+        scales: {
+          xAxes: [{
+            time: {
+              unit: 'day'
             },
-            legend: {
+            gridLines: {
               display: false
+            },
+            ticks: {
+              maxTicksLimit: 6
             }
-          }
-        });
-
+          }],
+          yAxes: [{
+            ticks: {
+              min: 0,
+              max: 15000,
+              maxTicksLimit: 5
+            },
+            gridLines: {
+              display: true
+            }
+          }],
+        },
+        legend: {
+          display: false
+        }
+      }
+    });
     myLineChart.update();
 }
 

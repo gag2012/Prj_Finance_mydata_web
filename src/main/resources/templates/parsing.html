@@ -6,13 +6,13 @@
         <title>Title</title>
     </head>
     <body>
-        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-        </script>
+        </script> -->
         <script>
             var xhr = new XMLHttpRequest();
             var url = 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson'; /*URL*/
-            var queryParams = '?' + encodeURIComponent('ServiceKey') + '='+'S2NIjtDSM5uZLf8tguznRUdoEfCvq3FyzJWM9nJHBQEQr%2B0hD6nqX9bpwG4BP2VmzObrSmsHOBgUAwgEN6SKOQ%3D%3D'; /*Service Key*/
+            var queryParams = '?' + encodeURIComponent('ServiceKey') + '='+'S2NIjtDSM5uZLf8tguznRUdoEfCvq3FyzJWM9nJHBQEQr+0hD6nqX9bpwG4BP2VmzObrSmsHOBgUAwgEN6SKOQ=='; /*Service Key*/
             queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
             queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
             queryParams += '&' + encodeURIComponent('startCreateDt') + '=' + encodeURIComponent('20200310'); /**/

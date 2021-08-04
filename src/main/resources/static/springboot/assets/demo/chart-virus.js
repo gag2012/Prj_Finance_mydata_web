@@ -42,7 +42,7 @@ const wave2 = {
     pointHitRadius: 50,
     pointBorderWidth: 2,
     lineTension: 0.3,
-    data: [4.43, 51.26, 193.29, 460.42, 852.68, 1346.74, 1905.75, 2488.42, 3055.68, 3574.79, 4021.35, 4379.62, 4641.92, 4807.37, 4880.37, 4869.16, 4784.39, 4637.97, 4442.15, 4208.82, 3949.0, 3672.57, 3388.05, 3102.59, 2821.99, 2550.79, 2292.38, 2049.15, 1822.63, 1613.65, 1422.44, 1248.82, 1092.21, 951.83, 826.7, 715.73, 617.8, 531.75, 456.45, 390.81, 333.79, 284.43, 241.84, 205.19, 173.74, 146.83, 123.86, 104.3, 87.68, 73.59, 61.66, 51.6, 43.11, 35.97, 29.97, 24.94, 20.73, 17.21, 14.27, 11.82, 9.78, 8.08, 6.67, 5.5, 4.53, 3.73, 3.07, 2.52, 2.07, 1.7, 1.39, 1.14, 0.93, 0.76, 0.62, 0.51, 0.42, 0.34, 0.28, 0.23, 0.18, 0.15, 0.12, 0.1, 0.08, 0.07, 0.05, 0.04, 0.03, 0.03, 0.02],
+    data: [4.38, 50.14, 187.02, 440.62, 807.11, 1260.83, 1764.68, 2279.05, 2768.0, 3202.86, 3563.59, 3838.67, 4024.12, 4122.01, 4138.89, 4084.26, 3969.3, 3805.79, 3605.28, 3378.58, 3135.38, 2884.04, 2631.54, 2383.49, 2144.24, 1916.99, 1703.97, 1506.53, 1325.35, 1160.56, 1011.87, 878.65, 760.07, 655.14, 562.8, 481.93, 411.44, 350.26, 297.38, 251.83, 212.74, 179.3, 150.78, 126.54, 105.97, 88.58, 73.91, 61.55, 51.18, 42.49, 35.21, 29.14, 24.08, 19.87, 16.38, 13.48, 11.08, 9.1, 7.46, 6.11, 5.0, 4.09, 3.34, 2.72, 2.22, 1.81, 1.47, 1.2, 0.97, 0.79, 0.64, 0.52, 0.42, 0.34, 0.27, 0.22, 0.18, 0.14, 0.12, 0.09, 0.08, 0.06, 0.05, 0.04, 0.03, 0.03, 0.02, 0.02, 0.01, 0.01, 0.01],
   }, {
     label: "누적확진자(실제)",
     data: [54, 117, 180, 241, 287, 331, 394, 443, 488, 523, 567, 629, 608, 584, 582, 581, 574, 564, 527, 523, 541, 565, 562, 613, 638, 624, 591, 579, 558, 560, 565, 550, 510, 485, 477, 407, 369, 387, 395, 375, 391, 409, 434, 507, 650, 895, 1059, 1262, 1539, 1784, 2072, 2376, 2739, 2951, 3175, 3392, 3667, 3759, 3885, 3938, 3889, 3836, 3779, 3642, 3443, 3345, 3232, 3031, 2726, 2511, 2343, 2220, 2108, 1994, 1836, 1747, 1662, 1647, 1606, 1597, 1543, 1457, 1363, 1297, 1286, 1279, 1231, 1220, 1157, 1042],
@@ -66,7 +66,7 @@ const wave3 = {
     pointHitRadius: 50,
     pointBorderWidth: 2,
     lineTension: 0.3,
-    data: [4.7, 57.77, 231.25, 584.79, 1149.74, 1927.79, 2896.03, 4014.43, 5233.23, 6499.44, 7761.74, 8974.0, 10097.41, 11101.51, 11964.38, 12672.26, 13218.69, 13603.55, 13831.85, 13912.65, 13857.97, 13681.84, 13399.43, 13026.37, 12578.16, 12069.77, 11515.25, 10927.54, 10318.35, 9698.01, 9075.53, 8458.59, 7853.6, 7265.81, 6699.36, 6157.43, 5642.32, 5155.6, 4698.15, 4270.32, 3872.0, 3502.69, 3161.61, 2847.73, 2559.84, 2296.64, 2056.69, 1838.57, 1640.8, 1461.93, 1300.52, 1155.21, 1024.65, 907.58, 802.82, 709.23, 625.77, 551.48, 485.44, 426.83, 374.89, 328.92, 288.3, 252.45, 220.84, 193.02, 168.54, 147.05, 128.18, 111.65, 97.17, 84.5, 73.43, 63.77, 55.33, 47.98, 41.58, 36.0, 31.16, 26.95, 23.29, 20.12, 17.37, 14.99, 12.93, 11.14, 9.6, 8.26, 7.11, 6.12, 5.26, 4.52],
+    data: [4.63, 56.01, 220.76, 549.68, 1064.11, 1756.8, 2598.63, 3546.85, 4552.67, 5567.36, 6546.51, 7452.71, 8256.88, 8938.51, 9485.29, 9892.17, 10160.23, 10295.43, 10307.42, 10208.38, 10012.08, 9732.99, 9385.68, 8984.21, 8541.84, 8070.68, 7581.62, 7084.16, 6586.48, 6095.41, 5616.55, 5154.34, 4712.18, 4292.54, 3897.09, 3526.83, 3182.15, 2862.98, 2568.88, 2299.08, 2052.61, 1828.32, 1624.93, 1441.13, 1275.54, 1126.81, 993.59, 874.57, 768.51, 674.21, 590.56, 516.51, 451.1, 393.43, 342.67, 298.07, 258.96, 224.7, 194.76, 168.61, 145.82, 125.98, 108.72, 93.74, 80.74, 69.49, 59.74, 51.32, 44.05, 37.78, 32.38, 27.72, 23.72, 20.28, 17.33, 14.8, 12.62, 10.76, 9.17, 7.81, 6.65, 5.65, 4.81, 4.08, 3.47, 2.94, 2.5, 2.12, 1.79, 1.52, 1.29],
   }, {
     label: "누적확진자(실제)",
     data: [97, 172, 290, 415, 560, 649, 792, 918, 1018, 1164, 1307, 1498, 1606, 1739, 1844, 1948, 2116, 2370, 2590, 2850, 3080, 3205, 3411, 3602, 3980, 4341, 4606, 4826, 4890, 4998, 5146, 5300, 5599, 5911, 6193, 6426, 6437, 6545, 6723, 6962, 7535, 8114, 8321, 8661, 9110, 9538, 9969, 10409, 10910, 11159, 11362, 11764, 11797, 12004, 12418, 12508, 12238, 12272, 12258, 12170, 12104, 12002, 11784, 11714, 11446, 11048, 10784, 10486, 10319, 9939, 9341, 8911, 8443, 8135, 7997, 7556, 7361, 6911, 6429, 6160, 5919, 5598, 5578, 5433, 5309, 5147, 5188, 5106, 5055, 5121, 5090],
@@ -76,17 +76,17 @@ const wave3 = {
 
 //차트 그래프 분석 초기값 셋팅
 document.getElementById("v_Duration").innerHTML = 91;
-document.getElementById("v_Population").innerHTML = 91;
-document.getElementById("v_avgDuration").innerHTML = 91;
-document.getElementById("v_Recovery").innerHTML = 91;
-document.getElementById("v_Death").innerHTML = 91;
-document.getElementById("v_Gamma").innerHTML = 91;
-document.getElementById("v_Beta").innerHTML = 91;
-document.getElementById("v_ObsMaxInspected").innerHTML = 91;
-document.getElementById("v_ObsSumMaxInspected").innerHTML = 91;
-document.getElementById("v_MaxInspected").innerHTML = 91;
-document.getElementById("v_SumMaxInspected").innerHTML = 91;
-document.getElementById("v_Rate").innerHTML = 91;
+document.getElementById("v_Population").innerHTML = 51,821,669;
+document.getElementById("v_avgDuration").innerHTML = 12;
+document.getElementById("v_Recovery").innerHTML = 84.24;
+document.getElementById("v_Death").innerHTML = 2.32;
+document.getElementById("v_Gamma").innerHTML = 3.9;
+document.getElementById("v_Beta").innerHTML = 6.0;
+document.getElementById("v_ObsMaxInspected").innerHTML = 6,337;
+document.getElementById("v_ObsSumMaxInspected").innerHTML = 128,524;
+document.getElementById("v_MaxInspected").innerHTML = 6,375;
+document.getElementById("v_SumMaxInspected").innerHTML = 136,152;
+document.getElementById("v_Rate").innerHTML = 0.3;
 
 
 var ctx = document.getElementById("virusChart");
@@ -132,10 +132,10 @@ function btn_wave1_click() {
   document.getElementById("v_Recovery").innerHTML = 84.24;
   document.getElementById("v_Death").innerHTML = 2.32;
   document.getElementById("v_Gamma").innerHTML = 3.9;
-  document.getElementById("v_Beta").innerHTML = 6.0;
+  document.getElementById("v_Beta").innerHTML = 6;
   document.getElementById("v_ObsMaxInspected").innerHTML = 6,337;
   document.getElementById("v_ObsSumMaxInspected").innerHTML = 128,524;
-  document.getElementById("v_MaxInspected").innerHTML = 6, 375;
+  document.getElementById("v_MaxInspected").innerHTML = 6,375;
   document.getElementById("v_SumMaxInspected").innerHTML = 136,152;
   document.getElementById("v_Rate").innerHTML = 0.3;
 }
@@ -146,15 +146,15 @@ function btn_wave2_click() {
   document.getElementById("v_Duration").innerHTML = 91;
   document.getElementById("v_Population").innerHTML = 51,821,669;
   document.getElementById("v_avgDuration").innerHTML = 12;
-  document.getElementById("v_Recovery").innerHTML = 84.24;
-  document.getElementById("v_Death").innerHTML = 2.32;
+  document.getElementById("v_Recovery").innerHTML = 95.42;
+  document.getElementById("v_Death").innerHTML = 1.30;
   document.getElementById("v_Gamma").innerHTML = 3.9;
-  document.getElementById("v_Beta").innerHTML = 6.0;
-  document.getElementById("v_ObsMaxInspected").innerHTML = 6,337;
-  document.getElementById("v_ObsSumMaxInspected").innerHTML = 128,524;
-  document.getElementById("v_MaxInspected").innerHTML = 6, 375;
-  document.getElementById("v_SumMaxInspected").innerHTML = 136,152;
-  document.getElementById("v_Rate").innerHTML = 0.3;
+  document.getElementById("v_Beta").innerHTML = 6;
+  document.getElementById("v_ObsMaxInspected").innerHTML = 3,938;
+  document.getElementById("v_ObsSumMaxInspected").innerHTML = 125,101;
+  document.getElementById("v_MaxInspected").innerHTML = 4,138;
+  document.getElementById("v_SumMaxInspected").innerHTML = 79,040;
+  document.getElementById("v_Rate").innerHTML = 0.2;
 }
 
 function btn_wave3_click() {
@@ -163,15 +163,15 @@ function btn_wave3_click() {
   document.getElementById("v_Duration").innerHTML = 91;
   document.getElementById("v_Population").innerHTML = 51,821,669;
   document.getElementById("v_avgDuration").innerHTML = 12;
-  document.getElementById("v_Recovery").innerHTML = 84.24;
-  document.getElementById("v_Death").innerHTML = 2.32;
+  document.getElementById("v_Recovery").innerHTML = 74.93;
+  document.getElementById("v_Death").innerHTML = 1.61;
   document.getElementById("v_Gamma").innerHTML = 3.9;
-  document.getElementById("v_Beta").innerHTML = 6.0;
-  document.getElementById("v_ObsMaxInspected").innerHTML = 6,337;
-  document.getElementById("v_ObsSumMaxInspected").innerHTML = 128,524;
-  document.getElementById("v_MaxInspected").innerHTML = 6,375;
-  document.getElementById("v_SumMaxInspected").innerHTML = 136,152;
-  document.getElementById("v_Rate").innerHTML = 0.3;
+  document.getElementById("v_Beta").innerHTML = 6;
+  document.getElementById("v_ObsMaxInspected").innerHTML = 12,508;
+  document.getElementById("v_ObsSumMaxInspected").innerHTML = 584,965;
+  document.getElementById("v_MaxInspected").innerHTML = 10,307;
+  document.getElementById("v_SumMaxInspected").innerHTML = 248,779;
+  document.getElementById("v_Rate").innerHTML = 0.5;
 }
 
 function btn_wave4_click() {

@@ -15,10 +15,7 @@
         $.ajax({
             method: "GET",
             url: 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=S2NIjtDSM5uZLf8tguznRUdoEfCvq3FyzJWM9nJHBQEQr%2B0hD6nqX9bpwG4BP2VmzObrSmsHOBgUAwgEN6SKOQ%3D%3D&pageNo=1&numOfRows=10&startCreateDt=20200310&endCreateDt=20200315',
-            dataType: "xml",
-            error: function (xhr, status, msg){
-                console.log('상태값 : ' + status + ' Http에러메시지 : ' + msg);
-            }
+            dataType: "xml"
         })
             .done(function (msg) {
                 alert("Data Saved: " + msg);

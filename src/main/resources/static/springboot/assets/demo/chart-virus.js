@@ -1,7 +1,3 @@
-
-
-
-
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#292b2c';
@@ -114,113 +110,17 @@ var myLineChart = new Chart(ctx, {
 
 
 function btn_wave1_click(){
-    //myLineChart.destroy();
-    myLineChart = new Chart(ctx, {
-      type: 'line',
-      data: wave,
-      options: {
-        scales: {
-          xAxes: [{
-            time: {
-              unit: 'day'
-            },
-            gridLines: {
-              display: false
-            },
-            ticks: {
-              maxTicksLimit: 8
-            }
-          }],
-          yAxes: [{
-            ticks: {
-              min: 0,
-              max: 10000,
-              maxTicksLimit: 10
-            },
-            gridLines: {
-              display: true
-            }
-          }],
-        },
-        legend: {
-          display: false
-        }
-      }
-    });
+    myLineChart.data.datasets[0].data = wave;
     myLineChart.update();
 }
 
 function btn_wave2_click(){
-    //myLineChart.destroy();
-    myLineChart = new Chart(ctx, {
-      type: 'line',
-      data: wave2,
-      options: {
-        scales: {
-          xAxes: [{
-            time: {
-              unit: 'day'
-            },
-            gridLines: {
-              display: false
-            },
-            ticks: {
-              maxTicksLimit: 8
-            }
-          }],
-          yAxes: [{
-            ticks: {
-              min: 0,
-              max: 10000,
-              maxTicksLimit: 10
-            },
-            gridLines: {
-              display: true
-            }
-          }],
-        },
-        legend: {
-          display: false
-        }
-      }
-    });
+    myLineChart.data.datasets[0].data = wave2;
     myLineChart.update();
 }
 
 function btn_wave3_click(){
-    //myLineChart.destroy();
-    myLineChart = new Chart(ctx, {
-      type: 'line',
-      data: wave3,
-      options: {
-        scales: {
-          xAxes: [{
-            time: {
-              unit: 'day'
-            },
-            gridLines: {
-              display: false
-            },
-            ticks: {
-              maxTicksLimit: 6
-            }
-          }],
-          yAxes: [{
-            ticks: {
-              min: 0,
-              max: 15000,
-              maxTicksLimit: 5
-            },
-            gridLines: {
-              display: true
-            }
-          }],
-        },
-        legend: {
-          display: false
-        }
-      }
-    });
+    myLineChart.data.datasets[0].data = wave3;
     myLineChart.update();
 }
 

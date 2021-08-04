@@ -75,45 +75,43 @@ const wave3 = {
 };
 
 var ctx = document.getElementById("virusChart");
-//var myLineChart = new Chart(ctx, {
-//  type: 'line',
-//  data: wave,
-//  options: {
-//    scales: {
-//      xAxes: [{
-//        time: {
-//          unit: 'day'
-//        },
-//        gridLines: {
-//          display: false
-//        },
-//        ticks: {
-//          maxTicksLimit: 8
-//        }
-//      }],
-//      yAxes: [{
-//        ticks: {
-//          min: 0,
-//          max: 10000,
-//          maxTicksLimit: 10
-//        },
-//        gridLines: {
-//          display: true
-//        }
-//      }],
-//    },
-//    legend: {
-//      display: false
-//    }
-//  }
-//});
+var myLineChart = new Chart(ctx, {
+  type: 'line',
+  data: wave,
+  options: {
+    scales: {
+      xAxes: [{
+        time: {
+          unit: 'day'
+        },
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          maxTicksLimit: 8
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 10000,
+          maxTicksLimit: 10
+        },
+        gridLines: {
+          display: true
+        }
+      }],
+    },
+    legend: {
+      display: false
+    }
+  }
+});
 
 
 function btn_wave1_click(){
-    myLineChart.update();
-    myLineChart.destroy();
-    var ctx = document.getElementById("virusChart");
-    var myLineChart = new Chart(ctx, {
+    //myLineChart.destroy();
+    myLineChart = new Chart(ctx, {
       type: 'line',
       data: wave,
       options: {
@@ -146,15 +144,11 @@ function btn_wave1_click(){
       }
     });
     myLineChart.update();
-    var duration = '91';
-    document.getElementById('wave_duration').innerHTML=duration;
 }
 
 function btn_wave2_click(){
-    myLineChart.update();
-    myLineChart.destroy();
-    var ctx = document.getElementById("virusChart");
-    var myLineChart = new Chart(ctx, {
+    //myLineChart.destroy();
+    myLineChart = new Chart(ctx, {
       type: 'line',
       data: wave2,
       options: {
@@ -190,10 +184,8 @@ function btn_wave2_click(){
 }
 
 function btn_wave3_click(){
-    myLineChart.update();
-    myLineChart.destroy();
-    var ctx = document.getElementById("virusChart");
-    var myLineChart = new Chart(ctx, {
+    //myLineChart.destroy();
+    myLineChart = new Chart(ctx, {
       type: 'line',
       data: wave3,
       options: {

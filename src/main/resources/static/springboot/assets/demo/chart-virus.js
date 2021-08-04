@@ -111,19 +111,19 @@ var myLineChart = new Chart(ctx, {
 function btn_wave1_click(){
     myLineChart.data = wave;
     myLineChart.update();
-    document.getElementById("v_duration").value =91;
+    document.getElementById("v_duration").value=91;
 }
 
 function btn_wave2_click(){
     myLineChart.data = wave2;
     myLineChart.update();
-    document.getElementById("v_duration").value =92;
+    document.getElementById("v_duration").value=92;
 }
 
 function btn_wave3_click(){
     myLineChart.data = wave3;
     myLineChart.update();
-    document.getElementById("v_duration").value =92;
+    document.getElementById("v_duration").value=92;
 }
 
 function btn_wave4_click(){

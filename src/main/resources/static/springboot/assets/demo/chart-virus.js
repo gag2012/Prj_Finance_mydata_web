@@ -76,16 +76,16 @@ const wave3 = {
 
 //차트 그래프 분석 초기값 셋팅
 document.getElementById("v_Duration").innerHTML = 91;
-document.getElementById("v_Population").innerHTML = 51,821,669;
+document.getElementById("v_Population").innerHTML = 51821669;
 document.getElementById("v_avgDuration").innerHTML = 12;
 document.getElementById("v_Recovery").innerHTML = 84.24;
 document.getElementById("v_Death").innerHTML = 2.32;
 document.getElementById("v_Gamma").innerHTML = 3.9;
 document.getElementById("v_Beta").innerHTML = 6.0;
-document.getElementById("v_ObsMaxInspected").innerHTML = 6,337;
-document.getElementById("v_ObsSumMaxInspected").innerHTML = 128,524;
-document.getElementById("v_MaxInspected").innerHTML = 6,375;
-document.getElementById("v_SumMaxInspected").innerHTML = 136,152;
+document.getElementById("v_ObsMaxInspected").innerHTML = 6337;
+document.getElementById("v_ObsSumMaxInspected").innerHTML = 128524;
+document.getElementById("v_MaxInspected").innerHTML = 6375;
+document.getElementById("v_SumMaxInspected").innerHTML = 136152;
 document.getElementById("v_Rate").innerHTML = 0.3;
 
 
@@ -110,7 +110,7 @@ var myLineChart = new Chart(ctx, {
         ticks: {
           min: 0,
           max: 16000,
-          maxTicksLimit: 8
+          maxTicksLimit: 4
         },
         gridLines: {
           display: true
@@ -127,16 +127,16 @@ function btn_wave1_click() {
   myLineChart.data = wave;
   myLineChart.update();
   document.getElementById("v_Duration").innerHTML = 91;
-  document.getElementById("v_Population").innerHTML = 51,821,669;
+  document.getElementById("v_Population").innerHTML = 51821669;
   document.getElementById("v_avgDuration").innerHTML = 12;
   document.getElementById("v_Recovery").innerHTML = 84.24;
   document.getElementById("v_Death").innerHTML = 2.32;
   document.getElementById("v_Gamma").innerHTML = 3.9;
   document.getElementById("v_Beta").innerHTML = 6;
-  document.getElementById("v_ObsMaxInspected").innerHTML = 6,337;
-  document.getElementById("v_ObsSumMaxInspected").innerHTML = 128,524;
-  document.getElementById("v_MaxInspected").innerHTML = 6,375;
-  document.getElementById("v_SumMaxInspected").innerHTML = 136,152;
+  document.getElementById("v_ObsMaxInspected").innerHTML = 6337;
+  document.getElementById("v_ObsSumMaxInspected").innerHTML = 128524;
+  document.getElementById("v_MaxInspected").innerHTML = 6375;
+  document.getElementById("v_SumMaxInspected").innerHTML = 136152;
   document.getElementById("v_Rate").innerHTML = 0.3;
 }
 
@@ -144,16 +144,16 @@ function btn_wave2_click() {
   myLineChart.data = wave2;
   myLineChart.update();
   document.getElementById("v_Duration").innerHTML = 91;
-  document.getElementById("v_Population").innerHTML = 51,821,669;
+  document.getElementById("v_Population").innerHTML = 51821669;
   document.getElementById("v_avgDuration").innerHTML = 12;
   document.getElementById("v_Recovery").innerHTML = 95.42;
   document.getElementById("v_Death").innerHTML = 1.30;
   document.getElementById("v_Gamma").innerHTML = 3.9;
   document.getElementById("v_Beta").innerHTML = 6;
-  document.getElementById("v_ObsMaxInspected").innerHTML = 3,938;
-  document.getElementById("v_ObsSumMaxInspected").innerHTML = 125,101;
-  document.getElementById("v_MaxInspected").innerHTML = 4,138;
-  document.getElementById("v_SumMaxInspected").innerHTML = 79,040;
+  document.getElementById("v_ObsMaxInspected").innerHTML = 3938;
+  document.getElementById("v_ObsSumMaxInspected").innerHTML = 125101;
+  document.getElementById("v_MaxInspected").innerHTML = 4138;
+  document.getElementById("v_SumMaxInspected").innerHTML = 79040;
   document.getElementById("v_Rate").innerHTML = 0.2;
 }
 
@@ -161,16 +161,16 @@ function btn_wave3_click() {
   myLineChart.data = wave3;
   myLineChart.update();
   document.getElementById("v_Duration").innerHTML = 91;
-  document.getElementById("v_Population").innerHTML = 51,821,669;
+  document.getElementById("v_Population").innerHTML = 51821669;
   document.getElementById("v_avgDuration").innerHTML = 12;
   document.getElementById("v_Recovery").innerHTML = 74.93;
   document.getElementById("v_Death").innerHTML = 1.61;
   document.getElementById("v_Gamma").innerHTML = 3.9;
   document.getElementById("v_Beta").innerHTML = 6;
-  document.getElementById("v_ObsMaxInspected").innerHTML = 12,508;
-  document.getElementById("v_ObsSumMaxInspected").innerHTML = 584,965;
-  document.getElementById("v_MaxInspected").innerHTML = 10,307;
-  document.getElementById("v_SumMaxInspected").innerHTML = 248,779;
+  document.getElementById("v_ObsMaxInspected").innerHTML = 12508;
+  document.getElementById("v_ObsSumMaxInspected").innerHTML = 584965;
+  document.getElementById("v_MaxInspected").innerHTML = 10307;
+  document.getElementById("v_SumMaxInspected").innerHTML = 248779;
   document.getElementById("v_Rate").innerHTML = 0.5;
 }
 

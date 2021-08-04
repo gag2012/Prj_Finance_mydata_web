@@ -94,7 +94,7 @@ var myLineChart = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 15000,
+          max: 10000,
           maxTicksLimit: 10
         },
         gridLines: {
@@ -122,7 +122,7 @@ function btn_wave2_click(){
 
 function btn_wave3_click(){
     myLineChart.data = wave3;
-    myLineChart.options.scales.yAxes.ticks.max=99999;
+    myLineChart.options.scales.yAxes.ticks.max=15000;
     myLineChart.update();
     document.getElementById("v_duration").value =92;
 }

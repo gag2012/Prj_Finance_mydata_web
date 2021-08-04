@@ -114,7 +114,7 @@ var myLineChart = new Chart(ctx, {
 
 
 function btn_wave1_click(){
-    myLineChart.destroy();
+    //myLineChart.destroy();
     myLineChart = new Chart(ctx, {
       type: 'line',
       data: wave,
@@ -151,7 +151,7 @@ function btn_wave1_click(){
 }
 
 function btn_wave2_click(){
-    myLineChart.destroy();
+    //myLineChart.destroy();
     myLineChart = new Chart(ctx, {
       type: 'line',
       data: wave2,
@@ -188,7 +188,7 @@ function btn_wave2_click(){
 }
 
 function btn_wave3_click(){
-    myLineChart.destroy();
+    //myLineChart.destroy();
     myLineChart = new Chart(ctx, {
       type: 'line',
       data: wave3,

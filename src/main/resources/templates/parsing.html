@@ -20,14 +20,19 @@
             queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
             queryParams += '&' + encodeURIComponent('startCreateDt') + '=' + encodeURIComponent('20200310'); /**/
             queryParams += '&' + encodeURIComponent('endCreateDt') + '=' + encodeURIComponent('20200315'); /**/
+            console.log('1');
             xhr.open('GET', url + queryParams);
+            console.log('2');
             xhr.onreadystatechange = function () {
+                console.log('3');
                 if (this.readyState == 4) {
                     alert('Status: ' + this.status + 'nHeaders: ' + JSON.stringify(this.getAllResponseHeaders()) + 'nBody: ' + this.responseText);
+                    console.log('4');
                 }
             };
-
+            console.log('5');
             xhr.send('');
+            console.log('6');
         }
     </script>
 </body>

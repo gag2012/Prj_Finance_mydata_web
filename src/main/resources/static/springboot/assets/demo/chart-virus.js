@@ -75,7 +75,18 @@ const wave3 = {
 };
 
 //차트 그래프 분석 초기값 셋팅
-document.getElementById("v_duration").innerHTML=91;
+document.getElementById("v_Duration").innerHTML=91;
+document.getElementById("v_Population").innerHTML=91;
+document.getElementById("v_avgDuration").innerHTML=91;
+document.getElementById("v_Recovery").innerHTML=91;
+document.getElementById("v_Death").innerHTML=91;
+document.getElementById("v_Gamma").innerHTML=91;
+document.getElementById("v_Beta").innerHTML=91;
+document.getElementById("v_ObsMaxInspected").innerHTML=91;
+document.getElementById("v_ObsSumMaxInspected").innerHTML=91;
+document.getElementById("v_MaxInspected").innerHTML=91;
+document.getElementById("v_SumMaxInspected").innerHTML=91;
+document.getElementById("v_Rate").innerHTML=91;
 
 
 var ctx = document.getElementById("virusChart");
@@ -115,7 +126,18 @@ var myLineChart = new Chart(ctx, {
 function btn_wave1_click(){
     myLineChart.data = wave;
     myLineChart.update();
-    document.getElementById("v_duration").innerHTML=91;
+    document.getElementById("v_Duration").innerHTML=91;
+    document.getElementById("v_Population").innerHTML=51,821,669;
+    document.getElementById("v_avgDuration").innerHTML=12;
+    document.getElementById("v_Recovery").innerHTML=84.24;
+    document.getElementById("v_Death").innerHTML=2.32;
+    document.getElementById("v_Gamma").innerHTML=3.9;
+    document.getElementById("v_Beta").innerHTML=6.0;
+    document.getElementById("v_ObsMaxInspected").innerHTML=6,337;
+    document.getElementById("v_ObsSumMaxInspected").innerHTML=128,524;
+    document.getElementById("v_MaxInspected").innerHTML=6,375;
+    document.getElementById("v_SumMaxInspected").innerHTML=136,152;
+    document.getElementById("v_Rate").innerHTML=0.3;
 }
 
 function btn_wave2_click(){

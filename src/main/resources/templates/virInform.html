@@ -98,7 +98,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-chart-area me-1"></i>
-                                누적 감염자 수 (고 위 험)
+                                누적 감염자 수 <b style="color:##db5b5b;">(고위험)</b>
                             </div>
                             <div class="card-body"><canvas id="virusChart" width="100vw" height="30vh"></canvas></div>
                             <div class="card-footer small text-muted">
@@ -130,7 +130,7 @@
                                 <br>
                                 ✓ 예상 최대 감염자 수 : 6,375명<br>
                                 ✓ 예상 누적 최대 감염자 수 : 136,152명<br>
-                                ✓ 예상 (누적 최대 감염자 수 / 인구수) : 0.3%
+                                ✓ 인구수 대비 예상 누적 감염자 비율 : 0.3%
                             </div>
                         </div>
                     </div>
@@ -159,11 +159,63 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-clipboard me-1"></i>
-                                위험표 등급
+                                위험 평가 등급
                             </div>
                             <div class="card-body">
-                                테스트 <br>
-                                테스트<br><br><br>테스트
+                                <table class="tg">
+                                    <thead>
+                                    <tr>
+                                        <th class="tg-f0bi" colspan="3">위험 평가 등급</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="tg-jv2m">등급</td>
+                                        <td class="tg-jv2m">인구수 대비 예상 누적 감염자 비율</td>
+                                        <td class="tg-jv2m">위험 등급</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-3oby">1</td>
+                                        <td class="tg-k6n4">50% ~ 100%</td>
+                                        <td class="tg-k6n4">초고위험</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-wdy9">2</td>
+                                        <td class="tg-ypzn">1% ~ 10%</td>
+                                        <td class="tg-ypzn">고위험</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-3oby">3</td>
+                                        <td class="tg-k6n4">0.1% ~ 1%</td>
+                                        <td class="tg-k6n4">고위험(경계)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-wdy9">4</td>
+                                        <td class="tg-ypzn">0.05% ~ 0.1%</td>
+                                        <td class="tg-ypzn">중위험</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-3oby">5</td>
+                                        <td class="tg-k6n4">0.01% ~ 0.05%</td>
+                                        <td class="tg-k6n4">중위험(경계)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-wdy9">6</td>
+                                        <td class="tg-ypzn">0.005 ~ 0.01%</td>
+                                        <td class="tg-ypzn">저위험</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-3oby">7</td>
+                                        <td class="tg-k6n4">0.001 ~ 0.005%</td>
+                                        <td class="tg-k6n4">저위험(경계)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-wdy9">8</td>
+                                        <td class="tg-ypzn">0 ~ 0.001%</td>
+                                        <td class="tg-ypzn">초저위험</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

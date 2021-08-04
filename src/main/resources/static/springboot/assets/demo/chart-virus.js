@@ -108,19 +108,18 @@ var myLineChart = new Chart(ctx, {
   }
 });
 
-
 function btn_wave1_click(){
-    myLineChart.data.datasets[0].data = wave;
+    myLineChart.data = wave;
     myLineChart.update();
 }
 
 function btn_wave2_click(){
-    myLineChart.data.datasets[0].data = wave2;
+    myLineChart.data = wave2;
     myLineChart.update();
 }
 
 function btn_wave3_click(){
-    myLineChart.data.datasets[0].data = wave3;
+    myLineChart.data = wave3;
     myLineChart.update();
 }
 

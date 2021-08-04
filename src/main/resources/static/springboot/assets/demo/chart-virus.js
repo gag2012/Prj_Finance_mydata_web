@@ -74,6 +74,10 @@ const wave3 = {
     }]
 };
 
+//차트 그래프 분석 초기값 셋팅
+document.getElementById("v_duration").innerHTML=91;
+
+
 var ctx = document.getElementById("virusChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
@@ -111,19 +115,19 @@ var myLineChart = new Chart(ctx, {
 function btn_wave1_click(){
     myLineChart.data = wave;
     myLineChart.update();
-    document.getElementById("v_duration").value=91;
+    document.getElementById("v_duration").innerHTML=91;
 }
 
 function btn_wave2_click(){
     myLineChart.data = wave2;
     myLineChart.update();
-    document.getElementById("v_duration").value=92;
+    document.getElementById("v_duration").innerHTML=92;
 }
 
 function btn_wave3_click(){
     myLineChart.data = wave3;
     myLineChart.update();
-    document.getElementById("v_duration").value=92;
+    document.getElementById("v_duration").innerHTML=92;
 }
 
 function btn_wave4_click(){

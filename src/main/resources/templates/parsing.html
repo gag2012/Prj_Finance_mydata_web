@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>xmlHttpRequest 사용법 정리</title>
 </head>
 
 <body>
-    <h1>하이</h1>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script>
-        $.ajax({
-            method: "GET",
-            url: 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=S2NIjtDSM5uZLf8tguznRUdoEfCvq3FyzJWM9nJHBQEQr%2B0hD6nqX9bpwG4BP2VmzObrSmsHOBgUAwgEN6SKOQ%3D%3D&pageNo=1&numOfRows=10&startCreateDt=20200310&endCreateDt=20200315',
-            dataType: "xml"
-        })
-            .done(function (msg) {
-                alert("Data Saved: " + msg);
-            });
+    <button type="button" id="button">Button</button>
+    <script type="text/javascript">
+        const button = document.getElementById('button');
+        button.addEventListener('click', getData);
+
+        function getData() {
+            var xhr = new XMLHttpRequest();
+            var url = 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson'; /*URL*/
+            var queryParams = '?' + encodeURIComponent('ServiceKey') + '=' + 'S2NIjtDSM5uZLf8tguznRUdoEfCvq3FyzJWM9nJHBQEQr%2B0hD6nqX9bpwG4BP2VmzObrSmsHOBgUAwgEN6SKOQ%3D%3D'; /*Service Key*/
+            queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
+            queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
+            queryParams += '&' + encodeURIComponent('startCreateDt') + '=' + encodeURIComponent('20200310'); /**/
+            queryParams += '&' + encodeURIComponent('endCreateDt') + '=' + encodeURIComponent('20200315'); /**/
+            xhr.open('GET', url + queryParams);
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    alert('Status: ' + this.status + 'nHeaders: ' + JSON.stringify(this.getAllResponseHeaders()) + 'nBody: ' + this.responseText);
+                }
+            };
+
+            xhr.send('');
+        }
     </script>
 </body>
-
-</html>

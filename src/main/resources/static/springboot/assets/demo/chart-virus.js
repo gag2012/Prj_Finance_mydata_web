@@ -111,17 +111,20 @@ var myLineChart = new Chart(ctx, {
 function btn_wave1_click(){
     myLineChart.data = wave;
     myLineChart.update();
+    document.getElementById("v_duration").innerHTML=91;
 }
 
 function btn_wave2_click(){
     myLineChart.data = wave2;
     myLineChart.update();
+    document.getElementById("v_duration").innerHTML=92;
 }
 
 function btn_wave3_click(){
     myLineChart.data = wave3;
     myLineChart.options.scales.yAxes.ticks.max = 15000;
     myLineChart.update();
+    document.getElementById("v_duration").innerHTML=92;
 }
 
 function btn_wave4_click(){

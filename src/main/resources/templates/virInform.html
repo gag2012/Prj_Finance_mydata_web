@@ -98,7 +98,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-chart-area me-1"></i>
-                                누적 감염자 수
+                                누적 감염자 수 (고 위 험)
                             </div>
                             <div class="card-body"><canvas id="virusChart" width="100vw" height="30vh"></canvas></div>
                             <div class="card-footer small text-muted">
@@ -123,31 +123,21 @@
                                 ✓ 회복율 : 84.24%<br>
                                 ✓ 치사율 : 2.32%<br>
                                 ✓ 기초감염재생산 : 3.9<br>
-                                ✓ 베타값 : 6.0<br><hr>
+                                ✓ 베타값 : 6.0<br>
+                                <hr>
+                                ✓ 실제 최대 감염자 수 : 6,337명<br>
+                                ✓ 실제 누적 최대 감염자 수 : 128,524명<br>
                                 <br>
-                                ✓ 실제 최대 감염자 수 : 6,337명
                                 ✓ 예상 최대 감염자 수 : 6,375명<br>
                                 ✓ 예상 누적 최대 감염자 수 : 136,152명<br>
                                 ✓ 예상 (누적 최대 감염자 수 / 인구수) : 0.3%
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-clipboard me-1"></i>
-                                위험표 등급
-                            </div>
-                            <div class="card-body">
-                                테스트 <br>
-                                테스트<br><br><br>테스트
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card mb-2">
+                    <div class="col-lg-8">
+                        <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-edit me-1"></i>
                                 설정
@@ -162,6 +152,18 @@
                                     <input type="range" min="1" max="100" value="2.2" class="slider" id="death_rate">
                                     <p>   치사율: <span id="death_demo"></span></p>
                                 </div> <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-clipboard me-1"></i>
+                                위험표 등급
+                            </div>
+                            <div class="card-body">
+                                테스트 <br>
+                                테스트<br><br><br>테스트
                             </div>
                         </div>
                     </div>

@@ -235,6 +235,7 @@ function btn_cfg_click(){
   var sum_obsinsfected = 0;
   var max_infected = 0;
   var max_obsinsfected = 0;
+  var infected_rate = 0;
 
   //초기화
   wave_cfg.datasets[0].data.splice(0, total_day);
@@ -265,9 +266,7 @@ function btn_cfg_click(){
   arrObsInspected.sort(function(a, b){return a-b;});
   max_infected = Math.floor(arrInspected[arrInspected.length-1]*1)/1;
   max_obsinsfected = arrObsInspected[arrObsInspected.length-1];
-  for(var i=0; i<arrObsInspected.length; i++){
-    sum_obsinsfected = sum_obsinsfected + 1*arrObsInspected[i];
-  }
+  infected_rate = Math.floor(sum_infected/population*10)/10;
 
   document.getElementById("v_Duration").innerHTML = 91;
   document.getElementById("v_Population").innerHTML = population;
@@ -279,7 +278,7 @@ function btn_cfg_click(){
   document.getElementById("v_ObsMaxInspected").innerHTML = max_obsinsfected;
   document.getElementById("v_MaxInspected").innerHTML = max_infected;
   document.getElementById("v_SumMaxInspected").innerHTML = sum_infected;
-  document.getElementById("v_Rate").innerHTML = 0.5;
+  document.getElementById("v_Rate").innerHTML = infected_rate;
 
   myLineChart.data = wave_cfg;
   myLineChart.update();

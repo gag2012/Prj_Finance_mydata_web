@@ -74,8 +74,26 @@ const wave3 = {
   }]
 };
 
-const wave_cfg = {
-
+var wave_cfg = {
+  labels: [],
+  datasets: [{
+    label: "누적확진자(예측)",
+    backgroundColor: "rgba(2,117,216,0.2)",
+    borderColor: "rgba(2,117,216,1)",
+    pointRadius: 2,
+    pointBackgroundColor: "rgba(2,117,216,1)",
+    pointBorderColor: "rgba(255,255,255,0.8)",
+    pointHoverRadius: 5,
+    pointHoverBackgroundColor: "rgba(2,117,216,1)",
+    pointHitRadius: 50,
+    pointBorderWidth: 2,
+    lineTension: 0.3,
+    data: [],
+  }, {
+    label: "누적확진자(실제)",
+    data: [97, 172, 290, 415, 560, 649, 792, 918, 1018, 1164, 1307, 1498, 1606, 1739, 1844, 1948, 2116, 2370, 2590, 2850, 3080, 3205, 3411, 3602, 3980, 4341, 4606, 4826, 4890, 4998, 5146, 5300, 5599, 5911, 6193, 6426, 6437, 6545, 6723, 6962, 7535, 8114, 8321, 8661, 9110, 9538, 9969, 10409, 10910, 11159, 11362, 11764, 11797, 12004, 12418, 12508, 12238, 12272, 12258, 12170, 12104, 12002, 11784, 11714, 11446, 11048, 10784, 10486, 10319, 9939, 9341, 8911, 8443, 8135, 7997, 7556, 7361, 6911, 6429, 6160, 5919, 5598, 5578, 5433, 5309, 5147, 5188, 5106, 5055, 5121, 5090],
+    type: 'line',
+  }]
 };
 
 //차트 그래프 분석 초기값 셋팅
@@ -197,8 +215,9 @@ function btn_wave4_click() {
 function btn_cfg_click() {
   const recov_rate = document.getElementById("recov_rate").value;
   const death_rate = document.getElementById("death_rate").value;
-
-  document.getElementById("v_Duration").innerHTML = recov_rate;
+  wave_cfg.datasets[0].data.push(1);
+  myLineChart.data = wave_cfg;
+  myLineChart.update();
 }
 
 

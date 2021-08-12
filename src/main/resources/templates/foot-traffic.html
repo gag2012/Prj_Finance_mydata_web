@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript"  src="https://online.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
-    <title>Title</title>
-</head>
-<body>
     <script type="text/javascript">
         function initViz() {
             var containerDiv = document.getElementById("vizContainer"),
@@ -20,6 +17,12 @@
             viz = new tableau.Viz(containerDiv, url, options);
         }
     </script>
+    <title>Title</title>
+</head>
+
+<body onload="initViz();" style="margin: 0px;">
+    <div id="vizContainer"></div>
 </body>
+
 </html>
 

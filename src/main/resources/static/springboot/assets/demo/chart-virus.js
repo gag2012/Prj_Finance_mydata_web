@@ -263,10 +263,10 @@ function btn_cfg_click(){
   arrInspected.sort(function(a, b){return a-b;});
   arrObsInspected = wave_cfg.datasets[1].data.slice();
   arrObsInspected.sort(function(a, b){return a-b;});
-  max_infected = arrInspected[arrInspected.length-1];
+  max_infected = Math.floor(arrInspected[arrInspected.length-1]*1)/1;
   max_obsinsfected = arrObsInspected[arrObsInspected.length-1];
   for(var i=0; i<arrObsInspected.length; i++){
-    sum_obsinsfected = sum_obsinsfected + arrObsInspected[i];
+    sum_obsinsfected = sum_obsinsfected + 1*arrObsInspected[i];
   }
 
   document.getElementById("v_Duration").innerHTML = 91;
@@ -277,7 +277,6 @@ function btn_cfg_click(){
   document.getElementById("v_Gamma").innerHTML = ratio_gamma;
   document.getElementById("v_Beta").innerHTML = ratio_beta;
   document.getElementById("v_ObsMaxInspected").innerHTML = max_obsinsfected;
-  document.getElementById("v_ObsSumMaxInspected").innerHTML = 584965;
   document.getElementById("v_MaxInspected").innerHTML = max_infected;
   document.getElementById("v_SumMaxInspected").innerHTML = sum_infected;
   document.getElementById("v_Rate").innerHTML = 0.5;

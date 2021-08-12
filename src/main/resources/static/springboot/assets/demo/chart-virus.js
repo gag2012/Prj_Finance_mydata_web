@@ -91,8 +91,6 @@ var wave_cfg = {
     pointBorderWidth: 2,
     lineTension: 0.3,
     data: [],
-    data2: [],
-    data3: [],
   }, {
     label: "누적확진자(실제)",
     data: [],
@@ -239,18 +237,10 @@ function btn_cfg_click(){
     incfunction = Math.pow((ratio_beta*(i/365)), ratio_gamma);
     temp = -1 * (1*ratio_alpha+1*ratio_mu) * i / 365;
     desfunction = Math.exp(temp);
-    console.log("temp : " + temp);
-    wave_cfg.datasets[0].data.push(incfunction);
-    wave_cfg.datasets[0].data2.push(desfunction);
-    wave_cfg.datasets[0].data3.push(incfunction * desfunction);
-
     iresult = incfunction * desfunction * population;
-    wave_cfg.datasets[1].data.push(iresult);
+    wave_cfg.datasets[0].data.push(iresult);
   }
-  console.log(wave_cfg.datasets[0].data);
-  console.log(wave_cfg.datasets[0].data2);
-  console.log(wave_cfg.datasets[0].data3);
-  console.log(wave_cfg.datasets[1].data);
+  wave_cfg.datasets[1].data.slice(wave.datasets[1].data);
 
   myLineChart.data = wave_cfg;
   myLineChart.update();

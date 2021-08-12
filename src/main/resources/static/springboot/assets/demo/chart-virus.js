@@ -236,6 +236,8 @@ function btn_cfg_click() {
     incfunction = Math.pow((ratio_beta*(i/365)),ratio_gamma);
     iresult = population * desfunction * incfunction;
     wave_cfg.datasets[0].data.push(iresult);
+    wave_cfg.datasets[1].data.push(incfunction);
+    wave_cfg.datasets[1].data.push(population*incfunction);
   }
   wave_cfg.datasets[1].data.slice(wave.datasets[1].data);
   console.log(wave_cfg.datasets[0].data);

@@ -161,6 +161,7 @@ function btn_wave1_click() {
   document.getElementById("v_MaxInspected").innerHTML = 6375;
   document.getElementById("v_SumMaxInspected").innerHTML = 136152;
   document.getElementById("v_Rate").innerHTML = 0.3;
+  document.getElementById("danger_grade").innerHTML = "고위험(경계)";
   wave_flag = 1;
 }
 
@@ -179,6 +180,7 @@ function btn_wave2_click() {
   document.getElementById("v_MaxInspected").innerHTML = 4138;
   document.getElementById("v_SumMaxInspected").innerHTML = 79040;
   document.getElementById("v_Rate").innerHTML = 0.2;
+  document.getElementById("danger_grade").innerHTML = "고위험(경계)";
   wave_flag = 2;
 }
 
@@ -197,6 +199,7 @@ function btn_wave3_click() {
   document.getElementById("v_MaxInspected").innerHTML = 10307;
   document.getElementById("v_SumMaxInspected").innerHTML = 248779;
   document.getElementById("v_Rate").innerHTML = 0.5;
+  document.getElementById("danger_grade").innerHTML = "고위험(경계)";
   wave_flag = 3;
 }
 
@@ -214,6 +217,7 @@ function btn_wave4_click() {
   document.getElementById("v_MaxInspected").innerHTML = 0;
   document.getElementById("v_SumMaxInspected").innerHTML = 0;
   document.getElementById("v_Rate").innerHTML = 0;
+  document.getElementById("danger_grade").innerHTML = "";
   wave_flag = 4;
 }
 
@@ -280,6 +284,32 @@ function btn_cfg_click(){
   document.getElementById("v_MaxInspected").innerHTML = max_infected;
   document.getElementById("v_SumMaxInspected").innerHTML = sum_infected;
   document.getElementById("v_Rate").innerHTML = infected_rate;
+
+  v_rate = document.getElementById("v_Rate").value;
+  if(v_rate>10 && v_rate<=100){
+      document.getElementById("danger_grade").innerHTML = "초고위험";
+  }
+  else if(v_rate>1 && v_rate<=10){
+      document.getElementById("danger_grade").innerHTML = "고위험";
+  }
+  else if(v_rate>0.1 && v_rate<=1){
+      document.getElementById("danger_grade").innerHTML = "고위험(경계)";
+  }
+  else if(v_rate>0.05 && v_rate<=0.1){
+      document.getElementById("danger_grade").innerHTML = "중위험";
+  }
+  else if(v_rate>0.01 && v_rate<=0.05){
+      document.getElementById("danger_grade").innerHTML = "중위험(경계)";
+  }
+  else if(v_rate>0.005 && v_rate<=0.01){
+      document.getElementById("danger_grade").innerHTML = "저위험";
+  }
+  else if(v_rate>0.0001 && v_rate<=0.005){
+      document.getElementById("danger_grade").innerHTML = "저위험(경계)";
+  }
+  else if(v_rate>=0 && v_rate<=0.0001){
+      document.getElementById("danger_grade").innerHTML = "초저위험";
+  }
 
   myLineChart.data = wave_cfg;
   myLineChart.update();

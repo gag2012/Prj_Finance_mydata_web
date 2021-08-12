@@ -237,7 +237,7 @@ function btn_cfg_click(){
     incfunction = Math.pow((ratio_beta*(i/365)), ratio_gamma);
     temp = -1 * (ratio_alpha+ratio_mu) * i / 365;
     desfunction = Math.exp(temp);
-
+    console.log("temp : " + temp);
     wave_cfg.datasets[0].data.push(incfunction);
     wave_cfg.datasets[0].data2.push(desfunction);
     wave_cfg.datasets[0].data3.push(incfunction * desfunction);

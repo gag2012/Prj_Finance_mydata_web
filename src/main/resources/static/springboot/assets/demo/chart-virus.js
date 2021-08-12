@@ -224,7 +224,7 @@ function btn_cfg_click() {
   var incfunction = 0;
   var iresult = 0;
 
-  for(var i=0; i<total_day; i++){
+  for(var i=1; i<total_day; i++){
     wave_cfg.datasets[0].data.push(i);
     wave_cfg.datasets[1].data.push(i*100);
     //desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));

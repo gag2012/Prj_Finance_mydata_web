@@ -225,8 +225,6 @@ function btn_cfg_click(){
   var desfunction = 0;
   var incfunction = 0;
   var iresult = 0;
-  console.log("alpha : " + ratio_alpha);
-  console.log("mu : " + ratio_mu);
 
   //초기화
   wave_cfg.datasets[0].data.splice(0, total_day);

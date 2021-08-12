@@ -226,13 +226,15 @@ function btn_cfg_click() {
   var incfunction = 0;
   var iresult = 0;
 
+  wave_cfg.datasets[0].data.splice(0, total_day);
+
   var i = 1;
   for(i; i<total_day+1; i++){
     desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));
     incfunction = Math.pow((ratio_beta*(i/365)),ratio_gamma);
     iresult = population * desfunction * incfunction;
-    wave_cfg.datasets[0].data.push(iresult);
-    wave_cfg.datasets[1].data.push(1000);
+    wave_cfg.datasets[0].data.push(desfunction);
+    wave_cfg.datasets[1].data.push(incfunction);
   }
   console.log(wave_cfg.datasets[0].data);
 

@@ -236,8 +236,8 @@ function btn_cfg_click(){
     desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));
     incfunction = Math.pow((ratio_beta*(i/365)), ratio_gamma);
     wave_cfg.datasets[0].data.push(incfunction);
-    wave_cfg.datasets[0].data1.push(desfunction);
-    wave_cfg.datasets[0].data2.push(incfunction * desfunction);
+    wave_cfg.datasets[0].data2.push(desfunction);
+    wave_cfg.datasets[0].data3.push(incfunction * desfunction);
 
     iresult = incfunction * desfunction * population;
     wave_cfg.datasets[1].data.push(iresult);

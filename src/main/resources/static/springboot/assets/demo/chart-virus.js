@@ -240,7 +240,7 @@ function btn_cfg_click(){
     iresult = incfunction * desfunction * population;
     wave_cfg.datasets[0].data.push(iresult);
   }
-  wave_cfg.datasets[1].data.slice(wave.datasets[1].data);
+  wave_cfg.datasets[1].data = wave.datasets[1].data.slice();
 
   myLineChart.data = wave_cfg;
   myLineChart.update();

@@ -98,6 +98,8 @@ var wave_cfg = {
   }]
 };
 
+var wave_flag = 1;
+
 //차트 그래프 분석 초기값 셋팅
 document.getElementById("v_Duration").innerHTML = 91;
 document.getElementById("v_Population").innerHTML = 51821669;
@@ -127,13 +129,13 @@ var myLineChart = new Chart(ctx, {
           display: false
         },
         ticks: {
-          maxTicksLimit: 8
+          maxTicksLimit: 15
         }
       }],
       yAxes: [{
         ticks: {
           min: 0,
-          max: 15000,
+          max: 20000,
           maxTicksLimit: 3
         },
         gridLines: {
@@ -141,9 +143,6 @@ var myLineChart = new Chart(ctx, {
         }
       }],
     },
-    legend: {
-      display: false
-    }
   }
 });
 
@@ -162,6 +161,7 @@ function btn_wave1_click() {
   document.getElementById("v_MaxInspected").innerHTML = 6375;
   document.getElementById("v_SumMaxInspected").innerHTML = 136152;
   document.getElementById("v_Rate").innerHTML = 0.3;
+  wave_flag = 1;
 }
 
 function btn_wave2_click() {
@@ -179,6 +179,7 @@ function btn_wave2_click() {
   document.getElementById("v_MaxInspected").innerHTML = 4138;
   document.getElementById("v_SumMaxInspected").innerHTML = 79040;
   document.getElementById("v_Rate").innerHTML = 0.2;
+  wave_flag = 2;
 }
 
 function btn_wave3_click() {
@@ -196,6 +197,7 @@ function btn_wave3_click() {
   document.getElementById("v_MaxInspected").innerHTML = 10307;
   document.getElementById("v_SumMaxInspected").innerHTML = 248779;
   document.getElementById("v_Rate").innerHTML = 0.5;
+  wave_flag = 3;
 }
 
 function btn_wave4_click() {
@@ -212,6 +214,7 @@ function btn_wave4_click() {
   document.getElementById("v_MaxInspected").innerHTML = 0;
   document.getElementById("v_SumMaxInspected").innerHTML = 0;
   document.getElementById("v_Rate").innerHTML = 0;
+  wave_flag = 4;
 }
 
 function btn_cfg_click(){
@@ -238,7 +241,29 @@ function btn_cfg_click(){
     iresult = incfunction * desfunction * population;
     wave_cfg.datasets[0].data.push(iresult);
   }
-  wave_cfg.datasets[1].data = wave.datasets[1].data.slice();
+
+  if(wave_flag==1){
+    wave_cfg.datasets[1].data = wave.datasets[1].data.slice();
+  }
+  else if(wave_flag==2){
+    wave_cfg.datasets[1].data = wave2.datasets[1].data.slice();
+  }
+  else if(wave_flag==3){
+    wave_cfg.datasets[1].data = wave3.datasets[1].data.slice();
+  }
+
+  document.getElementById("v_Duration").innerHTML = 91;
+  document.getElementById("v_Population").innerHTML = population;
+  document.getElementById("v_avgDuration").innerHTML = 12;
+  document.getElementById("v_Recovery").innerHTML = ratio_alpha;
+  document.getElementById("v_Death").innerHTML = ratio_mu;
+  document.getElementById("v_Gamma").innerHTML = ratio_gamma;
+  document.getElementById("v_Beta").innerHTML = ratio_beta;
+  document.getElementById("v_ObsMaxInspected").innerHTML = 12508;
+  document.getElementById("v_ObsSumMaxInspected").innerHTML = 584965;
+  document.getElementById("v_MaxInspected").innerHTML = 10307;
+  document.getElementById("v_SumMaxInspected").innerHTML = 248779;
+  document.getElementById("v_Rate").innerHTML = 0.5;
 
   myLineChart.data = wave_cfg;
   myLineChart.update();

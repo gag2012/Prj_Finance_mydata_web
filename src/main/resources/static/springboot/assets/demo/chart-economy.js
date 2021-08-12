@@ -7,7 +7,6 @@ var ctx = document.getElementById("ecoDamageChart");
 var myLineChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    axis: 'y',
     labels: ["1월", "2월", "3월", "4월", "5월", "6월", "7월"],
     datasets: [{
       label: "Revenue",
@@ -18,7 +17,6 @@ var myLineChart = new Chart(ctx, {
   },
   options: {
     scales: {
-      indexAxis: 'y',
       xAxes: [{
         time: {
           unit: 'month'

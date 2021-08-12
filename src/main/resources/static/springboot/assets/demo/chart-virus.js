@@ -232,8 +232,7 @@ function btn_cfg_click() {
     wave_cfg.datasets[0].data.push(iresult);
     wave_cfg.datasets[1].data.push(1000);
   }
-
-
+  wave_cfg.datasets.label = "누적확진자(예측)_설정";
   myLineChart.data = wave_cfg;
   myLineChart.update();
 }

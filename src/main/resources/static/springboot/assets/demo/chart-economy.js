@@ -7,15 +7,21 @@ var ctx = document.getElementById("ecoDamageChart");
 var myLineChart = new Chart(ctx, {
   type: 'horizontalBar',
   data: {
-    labels: ["1월", "2월", "3월", "4월", "5월", "6월", "7월"],
+    labels: ["숙박 및 음식점업", "예술, 스포츠 및 여가관련 서비스업", "보건업 및 사회복지 서비스업", "보건업 및 사회복지 서비스업", "교육 서비스업", "전기, 가스, 증기 및 공기조절 공급업", "운수 및 창고업"
+    ,"농업, 임업 및 어업"],
     datasets: [{
       label: "Revenue",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [17471, 11467, 13415, 18919, 18339, 16623, 41380],
+      data: [-1193.645529, -612.6794598, -421.0335419, -133.3894592, 18339, -64.33639316, -61.21155584
+      ,406.533829],
     }],
   },
   options: {
+    title: {
+      display: true,
+      text: '영업이익 손해율(2018-2020)'
+         },
     scales: {
       xAxes: [{
         time: {

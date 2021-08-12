@@ -76,17 +76,15 @@
   <div id="layoutSidenav_content">
     <main>
       <div class="container-fluid px-4">
-        <h2 class="mt-4">전염병(바이러스) 감염자 수 예측 모델</h2>
+        <h2 class="mt-4">경제 피해</h2>
         <ol class="breadcrumb mb-4">
-          <li class="breadcrumb-item active">대한민국 코로나-19(Covid-19) 예상 추이</li>
+          <li class="breadcrumb-item active">중소기업 업종별 영업이익 비교</li>
         </ol>
         <div class="row">
           <div class="card mb-4">
             <div class="card-body">
-              선택하신 바이러스 '코로나-19(COVID-19)' 은 감염 기간이 12일 입니다. (감염자는 12일 동안 감염 상태) <br>
-              즉, 아래 그래프의 누적 감염자 수는 이전 12일 확진자을 누적한 값을 의미합니다.<br>
-              회색 그래프는 <b style="color:#848484;">'실제 그래프' </b>입니다. 파란 그래프는 <b
-                    style="color:#5858FA;">'예측 그래프'</b>입니다.
+              설명설명<br>
+              섫명
             </div>
           </div>
         </div>
@@ -95,141 +93,9 @@
             <div class="card mb-4">
               <div class="card-header">
                 <i class="fas fa-chart-area me-1"></i>
-                누적 감염자 수      <b style="color:#db5b5b;">(위험 등급 : 고위험-경계)</b>
+                전 구간 대비 손해율
               </div>
               <div class="card-body"><canvas id="ecoDamageChart" width="100vw" height="30vh"></canvas>
-              </div>
-              <div class="card-footer small text-muted">
-                <button class="button button2" id="btn_wave1" onclick="btn_wave1_click();">1차
-                  유행</button>
-                <button class="button button2" id="btn_wave2" onclick="btn_wave2_click();">2차
-                  유행</button>
-                <button class="button button2" id="btn_wave3" onclick="btn_wave3_click();">3차
-                  유행</button>
-                <button class="button button2" id="btn_wave4" onclick="btn_wave4_click();">4차
-                  유행</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card mb-4">
-              <div class="card-header">
-                <i class="fas fa-clipboard me-1"></i>
-                그래프 분석
-              </div>
-              <div class="card-body">
-                ✓ 기간 : <span id="v_Duration"></span>일 <br>
-                ✓ 인구 수 : <span id="v_Population"></span>명 <br>
-                ✓ 평균 감염 지속 기간 : <span id="v_avgDuration"></span>일 <i title="평균 감염에서 회복까지 걸리는 기간" class="far fa-question-circle fa-xs"></i> <br>
-                <br>
-                ✓ 회복율 : <span id="v_Recovery"></span>% <i title="감염자 대비 완치자" class="far fa-question-circle fa-xs"></i> <br>
-                ✓ 치사율 : <span id="v_Death"></span>% <i title="감염자 대비 사망자" class="far fa-question-circle fa-xs"></i> <br>
-                ✓ 기초감염재생산 : <span id="v_Gamma"></span> <i title="한 명이 전염병을 퍼트릴 수 있는 정도" class="far fa-question-circle fa-xs"></i> <br>
-                ✓ 베타값 : <span id="v_Beta"></span> <i title="위험 예측을 위한 고유값" class="far fa-question-circle fa-xs"></i> <br>
-                <hr>
-                ✓ 실제 최대 감염자 수 : <span id="v_ObsMaxInspected"></span>명 <br>
-                ✓ 실제 누적 최대 감염자 수 : <span id="v_ObsSumMaxInspected"></span>명 <i title="기간 내 실제 데이터로 측정했을 시, 최대 감염자 수의 누적 값이며 그래프의 넓이를 뜻함" class="far fa-question-circle fa-xs"></i> <br>
-                <br>
-                ✓ 예상 최대 감염자 수 : <span id="v_MaxInspected"></span>명<br>
-                ✓ 예상 누적 최대 감염자 수 : <span id="v_SumMaxInspected"></span>명 <i title="기간 내 예측 데이터로 측정했을 시, 최대 감염자 수의 누적 값이며 그래프의 넓이를 뜻함" class="far fa-question-circle fa-xs"></i><br>
-                <b style="color:#CC66CC;">✓ 인구수 대비 예상 누적 감염자 비율 : <span id="v_Rate"></span>% <i title="인구수 대비 예상 누적 감염자 수의 값, 아래의 위험 평가 등급의 기준이 됨" class="far fa-question-circle fa-xs"></i> </b>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="card mb-4">
-              <div class="card-header">
-                <i class="fas fa-edit me-1"></i>
-                설정
-              </div>
-              <div class="card-body">
-                <div><b>예측 모델 변경</b></div>
-                <div class="slidecontainer">
-                  <input type="range" min="1" max="100" value="80.2" class="slider"
-                         id="recov_rate">
-                  <p> 회복율: <span id="recov_demo"></span></p>
-                </div>
-                <div class="slidecontainer">
-                  <input type="range" min="1" max="100" value="2.2" class="slider"
-                         id="death_rate">
-                  <p> 치사율: <span id="death_demo"></span></p>
-                </div>
-                <hr>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card mb-4">
-              <div class="card-header">
-                <i class="fas fa-clipboard me-1"></i>
-                위험 평가 등급
-              </div>
-              <div class="card-body">
-                <table id="datatablesSimple">
-                  <thead>
-                  <tr>
-                    <th class="tg-f0bi" colspan="3">위험 평가 등급</th>
-                  </tr>
-                  </thead>
-                  <thead>
-                  <tr>
-                    <th>등급</th>
-                    <th>인구수 대비 예상 누적 감염자 비율</th>
-                    <th>위험 등급</th>
-                  </tr>
-                  </thead>
-                  <tfoot>
-                  <tr>
-                    <th>등급</th>
-                    <th>인구수 대비 예상 누적 감염자 비율</th>
-                    <th>위험 등급</th>
-                  </tr>
-                  </tfoot>
-                  <tbody>
-                  <tr>
-                    <td class="tg-3oby">1</td>
-                    <td class="tg-k6n4">50% ~ 100%</td>
-                    <td class="tg-k6n4">초고위험</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-wdy9">2</td>
-                    <td class="tg-ypzn">1% ~ 10%</td>
-                    <td class="tg-ypzn">고위험</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-3oby">3</td>
-                    <td class="tg-k6n4">0.1% ~ 1%</td>
-                    <td class="tg-k6n4">고위험(경계)</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-wdy9">4</td>
-                    <td class="tg-ypzn">0.05% ~ 0.1%</td>
-                    <td class="tg-ypzn">중위험</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-3oby">5</td>
-                    <td class="tg-k6n4">0.01% ~ 0.05%</td>
-                    <td class="tg-k6n4">중위험(경계)</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-wdy9">6</td>
-                    <td class="tg-ypzn">0.005 ~ 0.01%</td>
-                    <td class="tg-ypzn">저위험</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-3oby">7</td>
-                    <td class="tg-k6n4">0.001 ~ 0.005%</td>
-                    <td class="tg-k6n4">저위험(경계)</td>
-                  </tr>
-                  <tr>
-                    <td class="tg-wdy9">8</td>
-                    <td class="tg-ypzn">0 ~ 0.001%</td>
-                    <td class="tg-ypzn">초저위험</td>
-                  </tr>
-                  </tbody>
-                </table>
               </div>
             </div>
           </div>

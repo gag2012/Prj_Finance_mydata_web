@@ -56,7 +56,7 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-file-invoice"></i></div>
                         경제피해
                     </a>
-                    <a class="nav-link" href="test.html">
+                    <a class="nav-link" href="foot-traffic.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-running"></i></div>
                         유동인구
                     </a>
@@ -82,12 +82,12 @@
             <div class="container-fluid px-4">
                 <h2 class="mt-4">유동 인구</h2>
                 <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item active">서울특별시 유동 인구 표준 편차</li>
+                    <li class="breadcrumb-item active">서울특별시 행정동별 유동 인구 표준 편차</li>
                 </ol>
                 <div class="row">
                     <div class="card mb-4">
                         <div class="card-body">
-                            코로나 전후로 중소기업 업종별로 구분한 영업이익 데이터입니다.<br>
+                            서울특별시 기준 2019년부터 2021년 유동인구 데이터입니다.<br>
                         </div>
                     </div>
                 </div>
@@ -95,8 +95,8 @@
                     <div class="col-lg-6">
                         <div class="card mb-4">
                             <div class="card-header">
-                                <i class="fas fa-clipboard me-1"></i>
-                                그래프 분석
+                                <i class="fas fa-map-marked-alt"></i>
+                                유동인구 표준편차
                             </div>
                             <div class="card-body">
                                 <div id="vizContainer"></div>
@@ -107,18 +107,19 @@
                     <div class="col-lg-6">
                         <div class="card mb-4">
                             <div class="card-header">
-                                <i class="fas fa-clipboard me-1"></i>
-                                그래프 분석
+                                <i class="fas fa-street-view"></i>
+                                유동인구
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                     <tr>
-                                        <th class="tg-f0bi" colspan="3">위험 평가 등급</th>
+                                        <th class="tg-f0bi" colspan="3">총 생활 인구수</th>
                                     </tr>
                                     </thead>
                                     <thead>
                                     <tr>
+                                        <th>행정코드</th>
                                         <th>행정구</th>
                                         <th>행정동</th>
                                         <th>총 생활 인구수</th>
@@ -126,6 +127,7 @@
                                     </thead>
                                     <tfoot>
                                     <tr>
+                                        <th>행정코드</th>
                                         <th>행정구</th>
                                         <th>행정동</th>
                                         <th>총 생활 인구수</th>
@@ -133,81 +135,97 @@
                                     </tfoot>
                                     <tbody>
                                     <tr>
+                                        <td class="tg-3oby">11620625</td>
                                         <td class="tg-3oby">관악구</td>
                                         <td class="tg-k6n4">인헌동</td>
                                         <td class="tg-k6n4">24188</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-wdy9">11140605</td>
                                         <td class="tg-wdy9">중구</td>
                                         <td class="tg-ypzn">을지로동</td>
                                         <td class="tg-ypzn">6716</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-3oby">11470640</td>
                                         <td class="tg-3oby">양천구</td>
                                         <td class="tg-k6n4">신정3동</td>
                                         <td class="tg-k6n4">46603</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-wdy9">11290780</td>
                                         <td class="tg-wdy9">성북구</td>
                                         <td class="tg-ypzn">장위3동</td>
                                         <td class="tg-ypzn">9589</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-3oby">11320512</td>
                                         <td class="tg-3oby">도봉구</td>
                                         <td class="tg-k6n4">창2동</td>
                                         <td class="tg-k6n4">29984</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-wdy9">11650580</td>
                                         <td class="tg-wdy9">서초구</td>
                                         <td class="tg-ypzn">반포3동</td>
                                         <td class="tg-ypzn">16925</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-3oby">11710650</td>
                                         <td class="tg-3oby">송파구</td>
                                         <td class="tg-k6n4">인헌동</td>
                                         <td class="tg-k6n4">24188</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-wdy9">11110515</td>
                                         <td class="tg-wdy9">중구</td>
                                         <td class="tg-ypzn">잠실본동</td>
                                         <td class="tg-ypzn">42538</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-3oby">11230650</td>
                                         <td class="tg-3oby">종로구</td>
                                         <td class="tg-k6n4">청운효자동</td>
                                         <td class="tg-k6n4">14474</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-wdy9">11350612</td>
                                         <td class="tg-wdy9">중구</td>
                                         <td class="tg-ypzn">을지로동</td>
                                         <td class="tg-ypzn">6716</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-3oby">11590605</td>
                                         <td class="tg-3oby">동대문구</td>
                                         <td class="tg-k6n4">장안1동</td>
                                         <td class="tg-k6n4">40611</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-wdy9">11350612</td>
                                         <td class="tg-wdy9">노원구</td>
                                         <td class="tg-ypzn">하계2동</td>
                                         <td class="tg-ypzn">16370</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-3oby">11590605</td>
                                         <td class="tg-3oby">동작구</td>
                                         <td class="tg-k6n4">흑석동</td>
                                         <td class="tg-k6n4">33231</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-wdy9">11230610</td>
                                         <td class="tg-wdy9">동대문구</td>
                                         <td class="tg-ypzn">답십리2동</td>
                                         <td class="tg-ypzn">27961</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-3oby">11305630</td>
                                         <td class="tg-3oby">강북구</td>
                                         <td class="tg-k6n4">수유3동</td>
                                         <td class="tg-k6n4">35198</td>
                                     </tr>
                                     <tr>
+                                        <td class="tg-wdy9">11260550</td>
                                         <td class="tg-wdy9">중랑구</td>
                                         <td class="tg-ypzn">면목5동</td>
                                         <td class="tg-ypzn">10289</td>

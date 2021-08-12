@@ -235,7 +235,7 @@ function btn_cfg_click(){
   var temp = 0;
   for(var i=1; i<total_day+1; i++){
     incfunction = Math.pow((ratio_beta*(i/365)), ratio_gamma);
-    temp = -1 * (ratio_alpha+ratio_mu) * i / 365;
+    temp = -1 * (ratio_alpha+ratio_mu) * i;
     desfunction = Math.exp(temp);
     console.log("temp : " + temp);
     wave_cfg.datasets[0].data.push(incfunction);

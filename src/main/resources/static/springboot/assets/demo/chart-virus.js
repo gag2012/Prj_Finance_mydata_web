@@ -231,7 +231,7 @@ function btn_cfg_click() {
     //incfunction = Math.pow((ratio_beta*(i/365)),ratio_gamma);
     //iresult = population * desfunction * incfunction;
   }
-
+  wave_cfg.datasets[0].data[0] = 5000;
   myLineChart.data = wave_cfg;
   myLineChart.update();
 }

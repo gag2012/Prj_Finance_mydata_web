@@ -291,7 +291,7 @@ function btn_cfg_click(){
   document.getElementById("v_SumMaxInspected").innerHTML = sum_infected;
   document.getElementById("v_Rate").innerHTML = infected_rate;
 
-  if(infected_rate>10 && infected_rate<=100){
+  if(infected_rate>10){
       document.getElementById("danger_grade").innerHTML = "초고위험";
   }
   else if(infected_rate>1 && infected_rate<=10){
@@ -312,7 +312,7 @@ function btn_cfg_click(){
   else if(infected_rate>0.0001 && infected_rate<=0.005){
       document.getElementById("danger_grade").innerHTML = "저위험(경계)";
   }
-  else if(infected_rate>=0 && infected_rate<=0.0001){
+  else{
       document.getElementById("danger_grade").innerHTML = "초저위험";
   }
 }

@@ -224,15 +224,13 @@ function btn_cfg_click() {
   var incfunction = 0;
   var iresult = 0;
 
-  //for(var i=1; i<total_day; i++){
-    //wave_cfg.datasets[0].data.push(i);
+  for(var i=1; i<total_day; i++){
+    wave_cfg.datasets[0].data[i-1]=i*100;
     //wave_cfg.datasets[1].data.push(i*100);
     //desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));
     //incfunction = Math.pow((ratio_beta*(i/365)),ratio_gamma);
     //iresult = population * desfunction * incfunction;
-  //}
-  wave_cfg.datasets[0].data.push(5000);
-  wave_cfg.datasets[0].data.push(3000);
+  }
   myLineChart.data = wave_cfg;
   myLineChart.update();
 }

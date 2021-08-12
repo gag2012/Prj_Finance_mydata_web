@@ -74,6 +74,10 @@ const wave3 = {
   }]
 };
 
+const wave_cfg = {
+
+};
+
 //차트 그래프 분석 초기값 셋팅
 document.getElementById("v_Duration").innerHTML = 91;
 document.getElementById("v_Population").innerHTML = 51821669;
@@ -189,5 +193,13 @@ function btn_wave4_click() {
   document.getElementById("v_SumMaxInspected").innerHTML = 0;
   document.getElementById("v_Rate").innerHTML = 0;
 }
+
+function btn_cfg_click() {
+  const recov_rate = document.getElementById("recov_rate").value;
+  const death_rate = document.getElementById("death_rate").value;
+
+  document.getElementById("v_Duration").innerHTML = recov_rate;
+}
+
 
 

@@ -229,6 +229,13 @@ function btn_cfg_click(){
   var incfunction = 0;
   var iresult = 0;
 
+  var arrInspected = [];
+  var arrObsInspected = [];
+  var sum_infected = 0;
+  var sum_obsinsfected = 0;
+  var max_infected = 0;
+  var max_obsinsfected = 0;
+
   //초기화
   wave_cfg.datasets[0].data.splice(0, total_day);
   wave_cfg.datasets[1].data.splice(0, total_day);
@@ -240,8 +247,8 @@ function btn_cfg_click(){
     desfunction = Math.exp(temp);
     iresult = incfunction * desfunction * population;
     wave_cfg.datasets[0].data.push(iresult);
+    sum_infected = sum_infected + Math.floor(iresult*10)/10;
   }
-
   if(wave_flag==1){
     wave_cfg.datasets[1].data = wave.datasets[1].data.slice();
   }
@@ -252,6 +259,16 @@ function btn_cfg_click(){
     wave_cfg.datasets[1].data = wave3.datasets[1].data.slice();
   }
 
+  arrInspected = wave_cfg.datasets[0].data.slice();
+  arrInspected.sort();
+  arrObsInspected = wave_cfg.datasets[1].data.slice();
+  arrObsInspected.sort();
+  max_infected = arrInspected[arrInspected.length-1];
+  max_obsinsfected = arrObsInspected[arrObsInspected.length-1];
+  for(var i=0; i<arrObsInspected.length; i++){
+    sum_obsinsfected = sum_obsinsfected + arrObsInspected[i];
+  }
+
   document.getElementById("v_Duration").innerHTML = 91;
   document.getElementById("v_Population").innerHTML = population;
   document.getElementById("v_avgDuration").innerHTML = 12;
@@ -259,10 +276,10 @@ function btn_cfg_click(){
   document.getElementById("v_Death").innerHTML = ratio_mu;
   document.getElementById("v_Gamma").innerHTML = ratio_gamma;
   document.getElementById("v_Beta").innerHTML = ratio_beta;
-  document.getElementById("v_ObsMaxInspected").innerHTML = 12508;
+  document.getElementById("v_ObsMaxInspected").innerHTML = max_obsinsfected;
   document.getElementById("v_ObsSumMaxInspected").innerHTML = 584965;
-  document.getElementById("v_MaxInspected").innerHTML = 10307;
-  document.getElementById("v_SumMaxInspected").innerHTML = 248779;
+  document.getElementById("v_MaxInspected").innerHTML = max_infected;
+  document.getElementById("v_SumMaxInspected").innerHTML = sum_infected;
   document.getElementById("v_Rate").innerHTML = 0.5;
 
   myLineChart.data = wave_cfg;

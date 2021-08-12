@@ -4,7 +4,7 @@ function initViz() {
                 options = {
                     hideTabs: true,
                     hideToolbar: true,
-                    width: "650px",
+                    width: "800px",
                     height: "650px",
                 };
 

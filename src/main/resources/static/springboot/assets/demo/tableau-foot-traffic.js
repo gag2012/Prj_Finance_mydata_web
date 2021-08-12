@@ -8,5 +8,5 @@ function initViz() {
                     height: "650px",
                 };
 
-            viz = new tableau.Viz(containerDiv, url, options);
+            var viz = new tableau.Viz(containerDiv, url, options);
 }

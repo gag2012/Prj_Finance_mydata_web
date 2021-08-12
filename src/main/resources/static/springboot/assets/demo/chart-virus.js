@@ -225,11 +225,11 @@ function btn_cfg_click() {
   var iresult = 0;
 
   for(var i=0; i<total_day; i++){
-    desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));
-    incfunction = Math.pow((ratio_beta*(i/365)),ratio_gamma);
-    iresult = population * desfunction * incfunction;
     wave_cfg.datasets[0].data.push(i);
-    wave_cfg.datasets[1].data.push(i*10);
+    wave_cfg.datasets[1].data.push(i*100);
+    //desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));
+    //incfunction = Math.pow((ratio_beta*(i/365)),ratio_gamma);
+    //iresult = population * desfunction * incfunction;
   }
 
   myLineChart.data = wave_cfg;

@@ -230,23 +230,16 @@ function btn_cfg_click() {
   //wave_cfg.datasets[0].data.splice(0, total_day);
   //wave_cfg.datasets[1].data.splice(0, total_day);
 
-  var i = 1;
-  var temp = 0;
-  for(i; i<total_day+1; i++){
+  for(var i=1; i<total_day+1; i++){
     desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));
-    temp = ratio_beta * i / 365;
-    incfunction = Math.pow(temp, ratio_gamma);
+    incfunction = Math.pow((ratio_beta*(i/365)), ratio_gamma);
     iresult = population * desfunction * incfunction;
     wave_cfg.datasets[0].data.push(iresult);
     wave_cfg.datasets[1].data.push(incfunction);
-    wave_cfg.datasets[1].data.push(population*incfunction);
   }
   //wave_cfg.datasets[1].data.slice(wave.datasets[1].data);
-  //console.log(wave_cfg.datasets[0].data);
-  //console.log(wave_cfg.datasets[1].data);
-  console.log(Math.pow((ratio_beta*(1/365)), ratio_gamma));
-  console.log(Math.pow((ratio_beta*(2/365)), ratio_gamma));
-  console.log(Math.pow((ratio_beta*(3/365)), ratio_gamma));
+  console.log(wave_cfg.datasets[0].data);
+  console.log(wave_cfg.datasets[1].data);
 
   myLineChart.data = wave_cfg;
   myLineChart.update();

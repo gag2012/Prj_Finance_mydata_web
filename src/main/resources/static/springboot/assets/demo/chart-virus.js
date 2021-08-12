@@ -220,8 +220,15 @@ function btn_cfg_click() {
   var total_day = 91;
   var population = 51821669;
 
+  var desfunction = 0;
+  var incfunction = 0;
+  var = iresult = 0;
+
   for(var i=0; i<total_day; i++){
-    wave_cfg.datasets[0].data.push(i);
+    desfunction = Math.exp(-(ratio_alpha+ratio_mu)*(i/365));
+    incfunction = Math.pow((ratio_beta*(i/365)),ratio_gamma);
+    iresult = population*desfunction*incfunction;
+    wave_cfg.datasets[0].data.push(iresult);
   }
 
   myLineChart.data = wave_cfg;

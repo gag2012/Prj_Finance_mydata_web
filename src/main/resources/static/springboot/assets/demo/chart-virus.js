@@ -224,8 +224,8 @@ function btn_cfg_click() {
   var incfunction = 0;
   var iresult = 0;
 
-  var i = 0;
-  for(i; i<total_day; i++){
+  var i = 1;
+  for(i; i<total_day+1; i++){
     desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));
     incfunction = Math.pow((ratio_beta*(i/365)),ratio_gamma);
     iresult = population * desfunction * incfunction;

@@ -216,7 +216,7 @@ function btn_wave4_click() {
   document.getElementById("v_Rate").innerHTML = 0;
 }
 
-function btn_cfg_click() {
+function btn_cfg_click(){
   var ratio_alpha = document.getElementById("recov_rate").value;
   var ratio_mu = document.getElementById("death_rate").value;
   var ratio_beta = 6;
@@ -238,10 +238,9 @@ function btn_cfg_click() {
     iresult = incfunction * desfunction * population;
     wave_cfg.datasets[0].data.push(incfunction);
     wave_cfg.datasets[0].data1.push(desfunction);
-    wave_cfg.datasets[0].data2.push(incfunction * desfunction;
+    wave_cfg.datasets[0].data2.push(incfunction * desfunction);
     wave_cfg.datasets[1].data.push(iresult);
   }
-  //wave_cfg.datasets[1].data.slice(wave.datasets[1].data);
   console.log(wave_cfg.datasets[0].data);
   console.log(wave_cfg.datasets[0].data1);
   console.log(wave_cfg.datasets[0].data2);

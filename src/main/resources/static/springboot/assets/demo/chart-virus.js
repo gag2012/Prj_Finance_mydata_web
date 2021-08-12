@@ -233,7 +233,7 @@ function btn_cfg_click() {
   for(var i=1; i<total_day+1; i++){
     desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));
     incfunction = Math.pow((ratio_beta*(i/365)), ratio_gamma);
-    iresult = desfunction * incfunction * population;
+    iresult = incfunction * desfunction * population;
     wave_cfg.datasets[0].data.push(iresult);
     wave_cfg.datasets[1].data.push(desfunction*incfunction);
   }

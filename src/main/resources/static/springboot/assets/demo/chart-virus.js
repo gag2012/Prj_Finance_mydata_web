@@ -213,9 +213,14 @@ function btn_wave4_click() {
 }
 
 function btn_cfg_click() {
-  const recov_rate = document.getElementById("recov_rate").value;
-  const death_rate = document.getElementById("death_rate").value;
-  wave_cfg.datasets[0].data.push(1);
+  var ratio_alpha = document.getElementById("recov_rate").value;
+  var ratio_mu = document.getElementById("death_rate").value;
+  var ratio_beta = 6;
+  var ratio_gamma = 3.9;
+  var total_day = 91;
+  var population = 51821669;
+
+  wave_cfg.datasets[0].data.push(population);
   myLineChart.data = wave_cfg;
   myLineChart.update();
 }

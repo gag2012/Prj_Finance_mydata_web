@@ -244,6 +244,9 @@ function btn_cfg_click() {
   wave_cfg.datasets[1].data.slice(wave.datasets[1].data);
   console.log(wave_cfg.datasets[0].data);
   console.log(wave_cfg.datasets[1].data);
+  console.log(Math.pow((ratio_beta*(1/365)), ratio_gamma));
+  console.log(Math.pow((ratio_beta*(2/365)), ratio_gamma));
+  console.log(Math.pow((ratio_beta*(3/365)), ratio_gamma));
 
   myLineChart.data = wave_cfg;
   myLineChart.update();

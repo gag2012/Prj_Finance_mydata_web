@@ -5,11 +5,10 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 // Bar Chart Example
 var ctx = document.getElementById("ecoDamageChart");
 var myLineChart = new Chart(ctx, {
-  type: 'bar',
+  type: 'horizontalBar',
   data: {
     labels: ["1월", "2월", "3월", "4월", "5월", "6월", "7월"],
     datasets: [{
-      axis: 'y',
       label: "Revenue",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
@@ -18,7 +17,6 @@ var myLineChart = new Chart(ctx, {
   },
   options: {
     scales: {
-      indexAxis: 'y',
       xAxes: [{
         time: {
           unit: 'month'

@@ -266,7 +266,8 @@ function btn_cfg_click(){
   arrObsInspected.sort(function(a, b){return a-b;});
   max_infected = Math.floor(arrInspected[arrInspected.length-1]*1)/1;
   max_obsinsfected = arrObsInspected[arrObsInspected.length-1];
-  infected_rate = Math.floor(sum_infected/population*10)/10;
+  infected_rate = Math.floor(sum_infected/population*10000)/10000;
+  sum_infected = Math.floor(sum_infected*1)/1;
 
   document.getElementById("v_Duration").innerHTML = 91;
   document.getElementById("v_Population").innerHTML = population;

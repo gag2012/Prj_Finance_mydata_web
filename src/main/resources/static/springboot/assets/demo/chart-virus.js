@@ -260,9 +260,9 @@ function btn_cfg_click(){
   }
 
   arrInspected = wave_cfg.datasets[0].data.slice();
-  arrInspected.sort();
+  arrInspected.sort(function(a, b){return a-b;});
   arrObsInspected = wave_cfg.datasets[1].data.slice();
-  arrObsInspected.sort();
+  arrObsInspected.sort(function(a, b){return a-b;});
   max_infected = arrInspected[arrInspected.length-1];
   max_obsinsfected = arrObsInspected[arrObsInspected.length-1];
   for(var i=0; i<arrObsInspected.length; i++){

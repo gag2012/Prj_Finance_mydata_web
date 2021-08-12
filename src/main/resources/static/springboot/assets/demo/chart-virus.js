@@ -113,6 +113,7 @@ document.getElementById("v_ObsSumMaxInspected").innerHTML = 128524;
 document.getElementById("v_MaxInspected").innerHTML = 6375;
 document.getElementById("v_SumMaxInspected").innerHTML = 136152;
 document.getElementById("v_Rate").innerHTML = 0.3;
+document.getElementById("danger_grade").innerHTML = "고위험(경계)";
 
 
 var ctx = document.getElementById("virusChart");
@@ -270,7 +271,7 @@ function btn_cfg_click(){
   arrObsInspected.sort(function(a, b){return a-b;});
   max_infected = Math.floor(arrInspected[arrInspected.length-1]*1)/1;
   max_obsinsfected = arrObsInspected[arrObsInspected.length-1];
-  infected_rate = Math.floor(sum_infected/population*10000)/10000;
+  infected_rate = 100*Math.floor(sum_infected/population*10000)/10000;
   sum_infected = Math.floor(sum_infected*1)/1;
 
   document.getElementById("v_Duration").innerHTML = 91;

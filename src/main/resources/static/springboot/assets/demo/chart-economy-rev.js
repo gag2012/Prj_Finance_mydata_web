@@ -23,8 +23,8 @@ var myLineChart = new Chart(ctx, {
       },{
       type: 'bar',
       label: "2020년 영업이익",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
+      backgroundColor: "rgba(255,153,51,1)",
+      borderColor: "rgba(255,153,51,1)",
       data: [-819.854915, -381.7620811, -250.6410625, 90.5585, 25.31063415, -88.76152941, 181.8429686
       , 430.4196136, 1138.079408, 127.0773203, 368.556657, 529.1594081, 537.7362246, 385.6997169
       , 491.4710455, 262.4458952, 2879.769406, -421.3001598, 315.9636786
@@ -35,7 +35,7 @@ var myLineChart = new Chart(ctx, {
   options: {
     title: {
       display: true,
-      text: '해당 년도 영업이익(단위:천원)'
+      text: '해당 년도 영업이익 (단위:천원)'
     },
     tooltips: {
       mode: 'index',
@@ -79,8 +79,8 @@ var myLineChart2 = new Chart(ctx, {
       },{
       type: 'bar',
       label: "2020년 영업이익",
-      backgroundColor: "rgba(2,117,216,1)",
-      borderColor: "rgba(2,117,216,1)",
+      backgroundColor: "rgba(255,153,51,1)",
+      borderColor: "rgba(255,153,51,1)",
       data: [23.50788574, 149.397065, -27.5224697, 52.60425, 129.227151, 1018.234065, 178.9349735
       , 407.8756577, 1122.178625, 149.0168142, 308.2294737, 408.1480426, 366.2532683, 132.8424796
       , 625.0053913, 137.8978594, 1247.420387, -38.48484734, 466.7262759
@@ -91,7 +91,7 @@ var myLineChart2 = new Chart(ctx, {
   options: {
     title: {
       display: true,
-      text: '해당 년도 영업이익(단위:천원)'
+      text: '해당 년도 영업이익 (단위:천원)'
     },
     tooltips: {
       mode: 'index',

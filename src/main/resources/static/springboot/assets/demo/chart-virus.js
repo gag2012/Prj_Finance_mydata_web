@@ -231,9 +231,10 @@ function btn_cfg_click() {
     //incfunction = Math.pow((ratio_beta*(i/365)),ratio_gamma);
     //iresult = population * desfunction * incfunction;
   //}
-  wave_cfg.datasets[0].data[0] = 1000;
-  wave_cfg.datasets[0].data[1] = 2000;
-  wave_cfg.datasets[0].data[2] = 3000;
+  //wave_cfg.datasets[0].data[0] = 1000;
+  //wave_cfg.datasets[0].data[1] = 2000;
+  //wave_cfg.datasets[0].data[2] = 3000;
+
   myLineChart.data = wave_cfg;
   myLineChart.update();
 }

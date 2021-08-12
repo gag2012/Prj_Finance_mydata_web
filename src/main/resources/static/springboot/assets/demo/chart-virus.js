@@ -265,6 +265,9 @@ function btn_cfg_click(){
     wave_cfg.datasets[1].data = wave3.datasets[1].data.slice();
   }
 
+  myLineChart.data = wave_cfg;
+  myLineChart.update();
+
   arrInspected = wave_cfg.datasets[0].data.slice();
   arrInspected.sort(function(a, b){return a-b;});
   arrObsInspected = wave_cfg.datasets[1].data.slice();
@@ -274,6 +277,7 @@ function btn_cfg_click(){
   infected_rate = Math.floor(sum_infected/population*10000)/10000;
   infected_rate = infected_rate*100;
   sum_infected = Math.floor(sum_infected*1)/1;
+
 
   document.getElementById("v_Duration").innerHTML = 91;
   document.getElementById("v_Population").innerHTML = population;
@@ -311,9 +315,6 @@ function btn_cfg_click(){
   else if(infected_rate>=0 && infected_rate<=0.0001){
       document.getElementById("danger_grade").innerHTML = "초저위험";
   }
-
-  myLineChart.data = wave_cfg;
-  myLineChart.update();
 }
 
 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript"  src="https://online.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
+                options = {
+                    hideTabs: true,
+                    hideToolbar: true,
+                    width: "1700px",
+                    height: "960px",
+                };
+
+            viz = new tableau.Viz(containerDiv, url, options);
+        }
+    </script>
+</body>
+</html>
+

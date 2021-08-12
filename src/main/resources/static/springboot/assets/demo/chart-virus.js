@@ -222,7 +222,7 @@ function btn_cfg_click() {
 
   var desfunction = 0;
   var incfunction = 0;
-  var = iresult = 0;
+  var iresult = 0;
 
   for(var i=0; i<total_day; i++){
     desfunction = Math.exp(-(ratio_alpha+ratio_mu)*(i/365));

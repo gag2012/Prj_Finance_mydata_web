@@ -243,8 +243,8 @@ function btn_cfg_click(){
     wave_cfg.datasets[1].data.push(iresult);
   }
   console.log(wave_cfg.datasets[0].data);
-  console.log(wave_cfg.datasets[0].data1);
   console.log(wave_cfg.datasets[0].data2);
+  console.log(wave_cfg.datasets[0].data3);
   console.log(wave_cfg.datasets[1].data);
 
   myLineChart.data = wave_cfg;

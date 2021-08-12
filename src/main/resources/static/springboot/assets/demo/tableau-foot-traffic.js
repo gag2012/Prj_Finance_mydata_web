@@ -10,3 +10,4 @@ function initViz() {
 
             var viz = new tableau.Viz(containerDiv, url, options);
 }
+

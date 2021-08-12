@@ -229,8 +229,8 @@ function btn_cfg_click(){
   console.log("mu : " + ratio_mu);
 
   //초기화
-  //wave_cfg.datasets[0].data.splice(0, total_day);
-  //wave_cfg.datasets[1].data.splice(0, total_day);
+  wave_cfg.datasets[0].data.splice(0, total_day);
+  wave_cfg.datasets[1].data.splice(0, total_day);
 
   var temp = 0;
   for(var i=1; i<total_day+1; i++){

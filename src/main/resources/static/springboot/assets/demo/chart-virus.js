@@ -217,10 +217,10 @@ function btn_wave4_click() {
 function btn_cfg_click(){
   var ratio_alpha = document.getElementById("recov_rate").value;
   var ratio_mu = document.getElementById("death_rate").value;
-  var ratio_beta = 6;
-  var ratio_gamma = 3.9;
+  var ratio_beta = document.getElementById("beta_rate").value;
+  var ratio_gamma = document.getElementById("gamma_rate").value;
   var total_day = 91;
-  var population = 51821669;
+  var population = document.getElementById("population_rate").value;
 
   var desfunction = 0;
   var incfunction = 0;

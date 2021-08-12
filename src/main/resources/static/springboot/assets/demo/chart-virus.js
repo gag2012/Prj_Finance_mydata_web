@@ -232,9 +232,11 @@ function btn_cfg_click(){
   //wave_cfg.datasets[0].data.splice(0, total_day);
   //wave_cfg.datasets[1].data.splice(0, total_day);
 
+  var temp = 0;
   for(var i=1; i<total_day+1; i++){
     incfunction = Math.pow((ratio_beta*(i/365)), ratio_gamma);
-    desfunction = Math.exp(-1*(ratio_alpha+ratio_mu)*(i/365));
+    temp = -1 * (ratio_alpha+ratio_mu) * i / 365;
+    desfunction = Math.exp(temp);
 
     wave_cfg.datasets[0].data.push(incfunction);
     wave_cfg.datasets[0].data2.push(desfunction);

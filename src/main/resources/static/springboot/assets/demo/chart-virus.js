@@ -220,7 +220,10 @@ function btn_cfg_click() {
   var total_day = 91;
   var population = 51821669;
 
-  wave_cfg.datasets[0].data.push(population);
+  for(var i=0; i<total_day; i++){
+    wave_cfg.datasets[0].data.push(i);
+  }
+
   myLineChart.data = wave_cfg;
   myLineChart.update();
 }

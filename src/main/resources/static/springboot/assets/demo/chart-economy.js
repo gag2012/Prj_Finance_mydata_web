@@ -23,7 +23,7 @@ var myLineChart = new Chart(ctx, {
   options: {
     title: {
       display: true,
-      text: '영업이익 손해율(2018-2020)'
+      text: '영업이익 손해율(2018 ~ 2020)'
     },
     tooltips: {
       mode: 'index',

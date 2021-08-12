@@ -5,7 +5,7 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 // Bar Chart Example
 var ctx = document.getElementById("ecoRevenueChart");
 var myLineChart = new Chart(ctx, {
-  type: 'polarArea',
+  type: 'bar',
   data: {
     labels: ["숙박 및 음식점업", "예술, 스포츠 및 여가관련 서비스업", "보건업 및 사회복지 서비스업", "보건업 및 사회복지 서비스업", "교육 서비스업", "전기, 가스, 증기 및 공기조절 공급업", "운수 및 창고업"
     ,"수도, 하수 및 폐기물 처리, 원료 재생업", "부동산업", "사업시설 관리, 사업 지원 및 임대 서비스업", "도매 및 소매업", "건설업", "제조업", "정보통신업"

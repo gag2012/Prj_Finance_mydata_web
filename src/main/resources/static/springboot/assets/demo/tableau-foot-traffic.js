@@ -1,6 +1,6 @@
 function initViz() {
             var containerDiv = document.getElementById("vizContainer"),
-                url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
+                url = "https://public.tableau.com/app/profile/.71444588/viz/1_16287770486580/1",
                 options = {
                     hideTabs: true,
                     hideToolbar: true,

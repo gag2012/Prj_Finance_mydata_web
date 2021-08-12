@@ -289,35 +289,35 @@ function btn_cfg_click(){
 
   if(infected_rate>10 && infected_rate<=100){
       document.getElementById("danger_grade").innerHTML = "초고위험";
-      color_danger_grade.style = "color:#AF091F;";
+      document.getElementById("color_danger_grade").style = "color:#AF091F;";
   }
   else if(infected_rate>1 && infected_rate<=10){
       document.getElementById("danger_grade").innerHTML = "고위험";
-      color_danger_grade.style = "color:#db5b5b;";
+      document.getElementById("color_danger_grade").style = "color:#db5b5b;";
   }
   else if(infected_rate>0.1 && infected_rate<=1){
       document.getElementById("danger_grade").innerHTML = "고위험(경계)";
-      color_danger_grade.style = "color:#db5b5b;";
+      document.getElementById("color_danger_grade").style = "color:#db5b5b;";
   }
   else if(infected_rate>0.05 && infected_rate<=0.1){
       document.getElementById("danger_grade").innerHTML = "중위험";
-      color_danger_grade.style = "color:#E1E63A;";
+      document.getElementById("color_danger_grade").style = "color:#E1E63A;";
   }
   else if(infected_rate>0.01 && infected_rate<=0.05){
       document.getElementById("danger_grade").innerHTML = "중위험(경계)";
-      color_danger_grade.style = "color:#E1E63A;";
+      document.getElementById("color_danger_grade").style = "color:#E1E63A;";
   }
   else if(infected_rate>0.005 && infected_rate<=0.01){
       document.getElementById("danger_grade").innerHTML = "저위험";
-      color_danger_grade.style = "color:#32DA37;";
+      document.getElementById("color_danger_grade").style =  "color:#32DA37;";
   }
   else if(infected_rate>0.0001 && infected_rate<=0.005){
       document.getElementById("danger_grade").innerHTML = "저위험(경계)";
-      color_danger_grade.style = "color:#32DA37;";
+      document.getElementById("color_danger_grade").style =  "color:#32DA37;";
   }
   else if(infected_rate>=0 && infected_rate<=0.0001){
       document.getElementById("danger_grade").innerHTML = "초저위험";
-      color_danger_grade.style = "color:#32DA37;";
+      document.getElementById("color_danger_grade").style = "color:#32DA37;";
   }
 
   myLineChart.data = wave_cfg;

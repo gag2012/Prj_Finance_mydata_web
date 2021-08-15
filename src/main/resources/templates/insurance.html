@@ -114,6 +114,7 @@
          transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
      }
 
+
 </style>
 
 <body>
@@ -135,6 +136,7 @@
             <label></label>
             <label>피해 기간</label>
             <input type="date" name="dateStart" placeholder="기간" required="required">
+            <label></label>
             <input type="date" name="dateEnd" placeholder="기간" required="required">
             <label></label>
             <label>기간내 매출액</label>
@@ -144,6 +146,10 @@
             <input type="search" name="virus" placeholder="직종을 선택하세요." required="required">
             <input type="button" id="cancel" value="취소">
             <input type="submit" id="submit" value="보내기">
+
+            <input id="member_post" type="text" placeholder="Zip Code" readonly onclick="findAddr()">
+            <input id="member_addr" type="text" placeholder="Address" readonly> <br>
+            <input type="text" placeholder="Detailed Address">
         </form>
     </div>
 </div>
@@ -170,7 +176,28 @@
          closeButton.addEventListener("click", toggleModal);
          cancel.addEventListener("click", toggleModal);
          window.addEventListener("click", windowOnClick);
-     </script>
+
+</script>
 
 </body>
+<script>
+function findAddr(){
+	new daum.Postcode({
+        oncomplete: function(data) {
+            var roadAddr = data.roadAddress; // 도로명 주소 변수
+            var jibunAddr = data.jibunAddress; // 지번 주소 변수
+            document.getElementById('member_post').value = data.zonecode;
+            if(roadAddr !== ''){
+                document.getElementById("member_addr").value = roadAddr;
+            }
+            else if(jibunAddr !== ''){
+                document.getElementById("member_addr").value = jibunAddr;
+            }
+        }
+    }).open();
+}
+
+</script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </html>
+

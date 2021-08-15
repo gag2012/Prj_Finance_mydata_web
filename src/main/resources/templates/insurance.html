@@ -483,7 +483,7 @@
             </form>
             <label></label>
             <label>기업/매장 주소</label>
-            <input id="address" type="text" placeholder="주소를 입력하세요." readonly onclick="findAddr()">
+            <input id="address" type="text" placeholder="주소" readonly onclick="findAddr()">
             <label></label>
             <label>피해 기간</label>
             <input type="date" name="dateStart" placeholder="기간" required="required">
@@ -491,10 +491,85 @@
             <input type="date" name="dateEnd" placeholder="기간" required="required">
             <label></label>
             <label>기간내 매출액</label>
-            <input type="search" name="virus" placeholder="직종을 선택하세요." required="required">
+            <input type="text" name="virus" placeholder="매출액" required="required">
             <label></label>
             <label>바이러스</label>
-            <input type="search" name="virus" placeholder="직종을 선택하세요." required="required">
+            <form class="ui form">
+                <section class="field">
+                    <div class="ui fluid search selection dropdown">
+                        <input type="hidden" name="virus">
+                        <div class="default text">바이러스</div>
+                        <div class="menu">
+                            <div class="item">코로나-19</div>
+                            <div class="item">홍역</div>
+                            <div class="item">풍진</div>
+                            <div class="item">신종인플루엔자</div>
+                            <div class="item">콜레라</div>
+                            <div class="item">장티푸스</div>
+                            <div class="item">파라티푸스</div>
+                            <div class="item">세균성이질</div>
+                            <div class="item">장출혈성대장균감염증</div>
+                            <div class="item">A형간염</div>
+                            <div class="item">디프테리아</div>
+                            <div class="item">백일해</div>
+                            <div class="item">파상풍</div>
+                            <div class="item">홍역</div>
+                            <div class="item">유행성이하선염</div>
+                            <div class="item">풍진</div>
+                            <div class="item">폴리오</div>
+                            <div class="item">B형간염</div>
+                            <div class="item">일본뇌염</div>
+                            <div class="item">수두</div>
+                            <div class="item">b형헤모필루스인플루엔자</div>
+                            <div class="item">폐렴구균</div>
+                            <div class="item">말라리아</div>
+                            <div class="item">성홍열</div>
+                            <div class="item">수막구균성수막염</div>
+                            <div class="item">레지오넬라증</div>
+                            <div class="item">비브리오패혈증</div>
+                            <div class="item">발진티푸스</div>
+                            <div class="item">발진열</div>
+                            <div class="item">쯔쯔가무시증</div>
+                            <div class="item">렙토스피라증</div>
+                            <div class="item">브루셀라증</div>
+                            <div class="item">탄저</div>
+                            <div class="item">공수병</div>
+                            <div class="item">신증후군출혈열</div>
+                            <div class="item">크로이츠펠트</div>
+                            <div class="item">매독</div>
+                            <div class="item">결핵</div>
+                            <div class="item">한센병</div>
+                            <div class="item">후천성면역결핍증</div>
+                            <div class="item">C형간염</div>
+                            <div class="item">반코마이신내성황색포도알균(VRSA) 감염증</div>
+                            <div class="item">카바페넴내성장내세균속균종(CRE) 감염증</div>
+                            <div class="item">페스트</div>
+                            <div class="item">황열</div>
+                            <div class="item">뎅기열</div>
+                            <div class="item">바이러스성출혈열</div>
+                            <div class="item">두창</div>
+                            <div class="item">보툴리눔독소증</div>
+                            <div class="item">중증급성호흡기증후군</div>
+                            <div class="item">동물인플루엔자인체감염증</div>
+                            <div class="item">야토병</div>
+                            <div class="item">큐열</div>
+                            <div class="item">웨스트나일열</div>
+                            <div class="item">신종감염병증후군</div>
+                            <div class="item">라임병</div>
+                            <div class="item">진드기매개뇌염</div>
+                            <div class="item">유비저</div>
+                            <div class="item">치쿤구니야열</div>
+                            <div class="item">중증열성혈소판감소증후군</div>
+                            <div class="item">중동호흡기증후군</div>
+                            <div class="item">지카바이러스감염증</div>
+                            <div class="item">리슈마니아증</div>
+                            <div class="item">바베시아증</div>
+                            <div class="item">크립토스포리디움증</div>
+                            <div class="item">주혈흡충증</div>
+                        </div>
+                    </div>
+                </section>
+            </form>
             <label></label>
             <input type="button" id="cancel" value="취소">
             <input type="submit" id="submit" value="보내기">

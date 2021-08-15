@@ -1,88 +1,634 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Register - SB Admin</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="bg-primary">
-        <div id="layoutAuthentication">
-            <div id="layoutAuthentication_content">
-                <main>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-7">
-                                <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
-                                                        <label for="inputFirstName">First name</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-floating">
-                                                        <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
-                                                        <label for="inputLastName">Last name</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                                <label for="inputEmail">Email address</label>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
-                                                        <label for="inputPassword">Password</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPasswordConfirm" type="password" placeholder="Confirm password" />
-                                                        <label for="inputPasswordConfirm">Confirm Password</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-4 mb-0">
-                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="login.html">Create Account</a></div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="login.html">Have an account? Go to login</a></div>
-                                    </div>
-                                </div>
-                            </div>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Popup Demo</title>
+    <link rel="stylesheet" type="text/css" href="../semantic/semantic.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="../semantic/semantic.js"></script>
+</head>
+<style type="text/css">
+     body{
+         text-align: center;
+         display: block;
+         margin: 0 auto;
+         font-size: 16px;
+         color: #999;
+     }
+     h1{
+         font-family: 'Oswald', sans-serif;
+         font-size: 30px;
+         color: #216182;
+     }
+     label {
+         display: block;
+         margin-top: 20px;
+         letter-spacing: 2px;
+         text-align : left;
+     }
+     form {
+         margin: 0 auto;
+         width: 459px;
+     }
+     input, textarea {
+         width: 460px;
+         height: 42px;
+         border-radius: 2px;
+         border: 1px solid #dedede;
+         border-radius: 0.28571429rem 0.28571429rem 0.28571429rem 0.28571429rem;
+         padding: 10px;
+         margin-top: 3px;
+         font-size: 0.9em;
+         padding-left: 17px;
+     }
+
+     input:focus, textarea:focus{
+             border: 1px solid #97d6eb;
+     }
+
+     textarea{
+         height: 60px;
+         background-color: #efefef;
+     }
+     #submit{
+         width: 135px;
+         height: 42px;
+         text-align: center;
+         border: none;
+         margin-top: 20px;
+         cursor: pointer;
+     }
+     #submit:hover{
+         color: #fff;
+         background-color: #216282;
+         opacity: 0.9;
+     }
+     #cancel {
+         width: 135px; height: 42px;
+         text-align: center;
+         border: none;
+         margin-top: 20px;
+         cursor: pointer;
+     }
+     #cancel:hover{
+         color: #fff;
+         background-color: #216282;
+         opacity: 0.9;
+     }
+
+    .modal {
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5);
+         opacity: 0;
+         visibility: hidden;
+         transform: scale(1.1);
+         transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+     }
+     .modal-content {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: white;
+         padding: 1rem 1.5rem;
+         width: 500px;
+         height: 700px;
+         border-radius: 0.5rem;
+     }
+     .close-button {
+         float: right;
+         width: 1.5rem;
+         line-height: 1.5rem;
+         text-align: center;
+         cursor: pointer;
+         border-radius: 0.25rem;
+         background-color: lightgray;
+     }
+     .close-button:hover {
+         background-color: darkgray;
+     }
+     .show-modal {
+         opacity: 1;
+         visibility: visible;
+         transform: scale(1.0);
+         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+     }
+
+</style>
+
+<body>
+<h1>레어어 팝업창 띄우기</h1>
+<!-- 버튼 -->
+<button class="trigger">이메일 보내기</button>
+
+<!-- 팝업 될 레이어 -->
+<div class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h1 class="title">내 정보 입력하기</h1>
+        <form action="#post.php" method="POST">
+            <label>직종</label>
+            <form class="ui form">
+                <section class="field">
+                    <div class="ui fluid search selection dropdown">
+                        <input type="hidden" name="job">
+                        <div class="default text">업종 대분류</div>
+                        <div class="menu">
+                            <div class="item">자사가맹점</div>
+                            <div class="item">해외사용</div>
+                            <div class="item">동물농장</div>
+                            <div class="item">애완동물/용품</div>
+                            <div class="item">병원-동물병원</div>
+                            <div class="item">골프장</div>
+                            <div class="item">낚시터</div>
+                            <div class="item">노래방</div>
+                            <div class="item">놀이동산</div>
+                            <div class="item">당구장</div>
+                            <div class="item">레저-기타</div>
+                            <div class="item">무술 도장</div>
+                            <div class="item">복권</div>
+                            <div class="item">볼링장</div>
+                            <div class="item">비디오감상실</div>
+                            <div class="item">수상스포츠</div>
+                            <div class="item">수영장</div>
+                            <div class="item">스포츠강습</div>
+                            <div class="item">스포츠센터</div>
+                            <div class="item">실내골프장</div>
+                            <div class="item">실내야구연습장</div>
+                            <div class="item">요가</div>
+                            <div class="item">유아교육/키즈카페</div>
+                            <div class="item">축구/풋살/족구장</div>
+                            <div class="item">탁구장</div>
+                            <div class="item">테니스장</div>
+                            <div class="item">골프용품</div>
+                            <div class="item">낚시용품</div>
+                            <div class="item">보트</div>
+                            <div class="item">수중장비</div>
+                            <div class="item">스포츠용품</div>
+                            <div class="item">스포츠의류전문</div>
+                            <div class="item">자전거-성인용</div>
+                            <div class="item">1급호텔</div>
+                            <div class="item">2급호텔</div>
+                            <div class="item">고시원</div>
+                            <div class="item">모텔</div>
+                            <div class="item">여관/민박</div>
+                            <div class="item">캠프/별장/펜션</div>
+                            <div class="item">콘도미니엄</div>
+                            <div class="item">특급호텔</div>
+                            <div class="item">호텔-기타</div>
+                            <div class="item">여행사</div>
+                            <div class="item">이민/유학</div>
+                            <div class="item">골동품/예술품</div>
+                            <div class="item">공예품</div>
+                            <div class="item">그림/액자</div>
+                            <div class="item">선물/기념품</div>
+                            <div class="item">인터넷PC방</div>
+                            <div class="item">전자오락실</div>
+                            <div class="item">자전거-아동용</div>
+                            <div class="item">장난감/오락기기</div>
+                            <div class="item">운명/운세/작명</div>
+                            <div class="item">악기</div>
+                            <div class="item">음반/음원</div>
+                            <div class="item">단전호흡</div>
+                            <div class="item">박물관/전시관</div>
+                            <div class="item">수족관</div>
+                            <div class="item">연극/음악/공연</div>
+                            <div class="item">영화관</div>
+                            <div class="item">자연학습원</div>
+                            <div class="item">테마카페</div>
+                            <div class="item">종교용품</div>
+                            <div class="item">꽃집/꽃배달</div>
+                            <div class="item">분재</div>
+                            <div class="item">화훼/조경</div>
+                            <div class="item">건설장비 대여</div>
+                            <div class="item">생활장비 대여</div>
+                            <div class="item">정밀기기 대여</div>
+                            <div class="item">중장비 대여</div>
+                            <div class="item">농기구/자재</div>
+                            <div class="item">종묘사업</div>
+                            <div class="item">고속버스</div>
+                            <div class="item">버스/지하철</div>
+                            <div class="item">가발</div>
+                            <div class="item">네일케어</div>
+                            <div class="item">목욕탕</div>
+                            <div class="item">미용실</div>
+                            <div class="item">미용제품</div>
+                            <div class="item">스포츠마사지</div>
+                            <div class="item">체형/두피관리</div>
+                            <div class="item">피부관리/마사지</div>
+                            <div class="item">사진관</div>
+                            <div class="item">사진기/광학제품</div>
+                            <div class="item">복지시설</div>
+                            <div class="item">사회단체</div>
+                            <div class="item">조합/협회</div>
+                            <div class="item">종교단체</div>
+                            <div class="item">주민자치센터</div>
+                            <div class="item">세탁소</div>
+                            <div class="item">특수세탁</div>
+                            <div class="item">가전제품 수리</div>
+                            <div class="item">가정용품 수리</div>
+                            <div class="item">의류 수선</div>
+                            <div class="item">정보통신기기 수리</div>
+                            <div class="item">여객선</div>
+                            <div class="item">LPG가스</div>
+                            <div class="item">가정용연료</div>
+                            <div class="item">주유소</div>
+                            <div class="item">도장</div>
+                            <div class="item">열쇠</div>
+                            <div class="item">월납/세금</div>
+                            <div class="item">통신요금</div>
+                            <div class="item">렌터카</div>
+                            <div class="item">자동차 견인</div>
+                            <div class="item">주차장</div>
+                            <div class="item">세차/광택</div>
+                            <div class="item">오토바이 용품</div>
+                            <div class="item">자동차 검사소</div>
+                            <div class="item">자동차 경정비</div>
+                            <div class="item">자동차 시트/타이어</div>
+                            <div class="item">자동차 정비-수입</div>
+                            <div class="item">중장비 정비</div>
+                            <div class="item">중장비 판매</div>
+                            <div class="item">택시</div>
+                            <div class="item">유료도로</div>
+                            <div class="item">항공사</div>
+                            <div class="item">종합이삿짐대행</div>
+                            <div class="item">콜밴</div>
+                            <div class="item">퀵배달</div>
+                            <div class="item">택배업</div>
+                            <div class="item">화물운송</div>
+                            <div class="item">도너츠</div>
+                            <div class="item">떡/한과</div>
+                            <div class="item">베이커리</div>
+                            <div class="item">분식</div>
+                            <div class="item">샌드위치/토스트</div>
+                            <div class="item">아이스크림/빙수</div>
+                            <div class="item">건강식품</div>
+                            <div class="item">건강원</div>
+                            <div class="item">인삼제품</div>
+                            <div class="item">건어물</div>
+                            <div class="item">곡물/사료</div>
+                            <div class="item">농산물</div>
+                            <div class="item">농축산물가공</div>
+                            <div class="item">수산물</div>
+                            <div class="item">유제품</div>
+                            <div class="item">청과물</div>
+                            <div class="item">축산물</div>
+                            <div class="item">부페</div>
+                            <div class="item">농협-마트</div>
+                            <div class="item">담배</div>
+                            <div class="item">미곡상</div>
+                            <div class="item">반찬</div>
+                            <div class="item">생수</div>
+                            <div class="item">식료품</div>
+                            <div class="item">식자재</div>
+                            <div class="item">떡/한과 제조</div>
+                            <div class="item">식품 제조</div>
+                            <div class="item">동남아/인도음식</div>
+                            <div class="item">일식</div>
+                            <div class="item">중식</div>
+                            <div class="item">기타세계요리</div>
+                            <div class="item">스테이크</div>
+                            <div class="item">양식</div>
+                            <div class="item">패밀리 레스토랑</div>
+                            <div class="item">룸살롱/단란주점</div>
+                            <div class="item">일반 유흥주점</div>
+                            <div class="item">주스</div>
+                            <div class="item">차</div>
+                            <div class="item">커피</div>
+                            <div class="item">꼬치구이</div>
+                            <div class="item">맥주/요리주점</div>
+                            <div class="item">민속주점</div>
+                            <div class="item">주류</div>
+                            <div class="item">포장마차</div>
+                            <div class="item">치킨</div>
+                            <div class="item">피자</div>
+                            <div class="item">햄버거</div>
+                            <div class="item">가정식</div>
+                            <div class="item">구내식당/푸드코트</div>
+                            <div class="item">기사식당</div>
+                            <div class="item">단품요리 전문</div>
+                            <div class="item">도시락</div>
+                            <div class="item">야식</div>
+                            <div class="item">출장부페</div>
+                            <div class="item">가구</div>
+                            <div class="item">사무용기기</div>
+                            <div class="item">자동판매기</div>
+                            <div class="item">컴퓨터/주변기기</div>
+                            <div class="item">통신관련서비스</div>
+                            <div class="item">휴대폰</div>
+                            <div class="item">건축용자재/용품</div>
+                            <div class="item">인테리어</div>
+                            <div class="item">페인트</div>
+                            <div class="item">과학기기</div>
+                            <div class="item">측량/제도/정밀기기</div>
+                            <div class="item">기계류 제조</div>
+                            <div class="item">가구 제조</div>
+                            <div class="item">기타 제조</div>
+                            <div class="item">냉난방기기</div>
+                            <div class="item">보일러</div>
+                            <div class="item">문구용품</div>
+                            <div class="item">복사대행</div>
+                            <div class="item">학습교구</div>
+                            <div class="item">생활용품</div>
+                            <div class="item">유리/거울</div>
+                            <div class="item">인테리어 용품</div>
+                            <div class="item">커튼/카페트/수예</div>
+                            <div class="item">서점</div>
+                            <div class="item">섬유</div>
+                            <div class="item">한복/포목점</div>
+                            <div class="item">교복</div>
+                            <div class="item">내의</div>
+                            <div class="item">아동복/유아복</div>
+                            <div class="item">의류</div>
+                            <div class="item">의류-기타</div>
+                            <div class="item">의류 대여</div>
+                            <div class="item">한복</div>
+                            <div class="item">수입차</div>
+                            <div class="item">신차</div>
+                            <div class="item">오토바이</div>
+                            <div class="item">중고차</div>
+                            <div class="item">가전제품</div>
+                            <div class="item">영상/음향기기</div>
+                            <div class="item">전기자재/장비</div>
+                            <div class="item">조명기구</div>
+                            <div class="item">그릇/주방기기</div>
+                            <div class="item">정수기/연수기기</div>
+                            <div class="item">주방가구</div>
+                            <div class="item">자석요/온돌매트/옥매트</div>
+                            <div class="item">침구류</div>
+                            <div class="item">컴퓨터 소프트웨어</div>
+                            <div class="item">가방/핸드백</div>
+                            <div class="item">시계/귀금속</div>
+                            <div class="item">신발</div>
+                            <div class="item">액세서리</div>
+                            <div class="item">화장품</div>
+                            <div class="item">병원-가정의학과</div>
+                            <div class="item">병원-기타</div>
+                            <div class="item">병원-내과</div>
+                            <div class="item">병원-마취과</div>
+                            <div class="item">병원-비뇨기과</div>
+                            <div class="item">병원-산부인과</div>
+                            <div class="item">병원-성형외과</div>
+                            <div class="item">병원-소아과</div>
+                            <div class="item">병원-신경외과</div>
+                            <div class="item">병원-신경정신과</div>
+                            <div class="item">병원-안과</div>
+                            <div class="item">병원-영상의학과</div>
+                            <div class="item">병원-외과</div>
+                            <div class="item">병원-이비인후과</div>
+                            <div class="item">병원-일반</div>
+                            <div class="item">병원-재활의학과</div>
+                            <div class="item">병원-정형외과</div>
+                            <div class="item">병원-치과</div>
+                            <div class="item">병원-피부과의원</div>
+                            <div class="item">고등학교</div>
+                            <div class="item">대학교</div>
+                            <div class="item">독서실</div>
+                            <div class="item">어린이집</div>
+                            <div class="item">연구소</div>
+                            <div class="item">유치원</div>
+                            <div class="item">중학교</div>
+                            <div class="item">초등학교</div>
+                            <div class="item">금융-기타</div>
+                            <div class="item">새마을금고</div>
+                            <div class="item">생명보험</div>
+                            <div class="item">손해보험</div>
+                            <div class="item">우체국</div>
+                            <div class="item">병원-대학/종합병원</div>
+                            <div class="item">보건소</div>
+                            <div class="item">물품보관소</div>
+                            <div class="item">부동산-건물관리</div>
+                            <div class="item">부동산-주택/아파트 임대</div>
+                            <div class="item">부동산중개</div>
+                            <div class="item">결혼정보회사</div>
+                            <div class="item">심리상담</div>
+                            <div class="item">납골/묘지</div>
+                            <div class="item">상조서비스</div>
+                            <div class="item">장례식장</div>
+                            <div class="item">농협-상품권</div>
+                            <div class="item">상품권/기프티콘</div>
+                            <div class="item">약국</div>
+                            <div class="item">제약회사</div>
+                            <div class="item">예복/웨딩드레스</div>
+                            <div class="item">예식서비스</div>
+                            <div class="item">예식장</div>
+                            <div class="item">혼수전문점</div>
+                            <div class="item">대체의학</div>
+                            <div class="item">요양원</div>
+                            <div class="item">응급구조대</div>
+                            <div class="item">치료/발달센터</div>
+                            <div class="item">보청기</div>
+                            <div class="item">성인용품</div>
+                            <div class="item">안경점</div>
+                            <div class="item">의료기기</div>
+                            <div class="item">치과기공소</div>
+                            <div class="item">광고</div>
+                            <div class="item">기념패 제작</div>
+                            <div class="item">영상/방송</div>
+                            <div class="item">인쇄업</div>
+                            <div class="item">정기간행물 발행</div>
+                            <div class="item">출판사</div>
+                            <div class="item">산후조리서비스</div>
+                            <div class="item">산후조리원</div>
+                            <div class="item">가스관리사업소</div>
+                            <div class="item">건축설계사무소</div>
+                            <div class="item">고용알선/직업안내</div>
+                            <div class="item">공인노무사</div>
+                            <div class="item">농어업서비스</div>
+                            <div class="item">문서/물품 서비스</div>
+                            <div class="item">번역/통역서비스</div>
+                            <div class="item">법무사</div>
+                            <div class="item">변리사</div>
+                            <div class="item">변호사</div>
+                            <div class="item">세무사</div>
+                            <div class="item">용역서비스-기타</div>
+                            <div class="item">이벤트/행사 대행</div>
+                            <div class="item">청소/소독 대행</div>
+                            <div class="item">측량 기술서비스</div>
+                            <div class="item">환경측정/검사/평가서비스</div>
+                            <div class="item">회계서비스</div>
+                            <div class="item">교육단체</div>
+                            <div class="item">문화센터</div>
+                            <div class="item">학습지</div>
+                            <div class="item">학원-기타</div>
+                            <div class="item">학원-어학</div>
+                            <div class="item">학원-예체능</div>
+                            <div class="item">학원-입시/보습</div>
+                            <div class="item">학원-직업</div>
+                            <div class="item">병원-한의학과</div>
+                            <div class="item">한약방</div>
+                            <div class="item">한의약품</div>
+                            <div class="item">다단계</div>
+                            <div class="item">대형마트</div>
+                            <div class="item">슈퍼마켓 기업형</div>
+                            <div class="item">슈퍼마켓 일반형</div>
+                            <div class="item">면세점</div>
+                            <div class="item">백화점</div>
+                            <div class="item">수입품</div>
+                            <div class="item">아울렛</div>
+                            <div class="item">전자상거래</div>
+                            <div class="item">홈쇼핑</div>
+                            <div class="item">보훈매장</div>
+                            <div class="item">복지매점</div>
+                            <div class="item">사원전용매장</div>
+                            <div class="item">연금매장</div>
+                            <div class="item">편의점</div>
                         </div>
                     </div>
-                </main>
-            </div>
-            <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
+                </section>
+            </form>
+            <label>기업/매장 주소</label>
+            <input id="address" type="text" placeholder="주소" readonly onclick="findAddr()" required="required"><br>
+            <label>피해 기간</label>
+            <input type="date" name="dateStart" placeholder="기간" required="required">
+            <label></label>
+            <input type="date" name="dateEnd" placeholder="기간" required="required">
+            <label>피해 기간 매출액</label>
+            <input type="text" name="money" placeholder="0" onkeyup="commas(this)" required="required"><br>
+            <label>바이러스</label>
+            <form class="ui form">
+                <section class="field">
+                    <div class="ui fluid search selection dropdown">
+                        <input type="hidden" name="virus">
+                        <div class="default text">바이러스</div>
+                        <div class="menu">
+                            <div class="item">코로나-19</div>
+                            <div class="item">홍역</div>
+                            <div class="item">풍진</div>
+                            <div class="item">신종인플루엔자</div>
+                            <div class="item">콜레라</div>
+                            <div class="item">장티푸스</div>
+                            <div class="item">파라티푸스</div>
+                            <div class="item">세균성이질</div>
+                            <div class="item">장출혈성대장균감염증</div>
+                            <div class="item">A형간염</div>
+                            <div class="item">디프테리아</div>
+                            <div class="item">백일해</div>
+                            <div class="item">파상풍</div>
+                            <div class="item">홍역</div>
+                            <div class="item">유행성이하선염</div>
+                            <div class="item">풍진</div>
+                            <div class="item">폴리오</div>
+                            <div class="item">B형간염</div>
+                            <div class="item">일본뇌염</div>
+                            <div class="item">수두</div>
+                            <div class="item">b형헤모필루스인플루엔자</div>
+                            <div class="item">폐렴구균</div>
+                            <div class="item">말라리아</div>
+                            <div class="item">성홍열</div>
+                            <div class="item">수막구균성수막염</div>
+                            <div class="item">레지오넬라증</div>
+                            <div class="item">비브리오패혈증</div>
+                            <div class="item">발진티푸스</div>
+                            <div class="item">발진열</div>
+                            <div class="item">쯔쯔가무시증</div>
+                            <div class="item">렙토스피라증</div>
+                            <div class="item">브루셀라증</div>
+                            <div class="item">탄저</div>
+                            <div class="item">공수병</div>
+                            <div class="item">신증후군출혈열</div>
+                            <div class="item">크로이츠펠트</div>
+                            <div class="item">매독</div>
+                            <div class="item">결핵</div>
+                            <div class="item">한센병</div>
+                            <div class="item">후천성면역결핍증</div>
+                            <div class="item">C형간염</div>
+                            <div class="item">반코마이신내성황색포도알균(VRSA) 감염증</div>
+                            <div class="item">카바페넴내성장내세균속균종(CRE) 감염증</div>
+                            <div class="item">페스트</div>
+                            <div class="item">황열</div>
+                            <div class="item">뎅기열</div>
+                            <div class="item">바이러스성출혈열</div>
+                            <div class="item">두창</div>
+                            <div class="item">보툴리눔독소증</div>
+                            <div class="item">중증급성호흡기증후군</div>
+                            <div class="item">동물인플루엔자인체감염증</div>
+                            <div class="item">야토병</div>
+                            <div class="item">큐열</div>
+                            <div class="item">웨스트나일열</div>
+                            <div class="item">신종감염병증후군</div>
+                            <div class="item">라임병</div>
+                            <div class="item">진드기매개뇌염</div>
+                            <div class="item">유비저</div>
+                            <div class="item">치쿤구니야열</div>
+                            <div class="item">중증열성혈소판감소증후군</div>
+                            <div class="item">중동호흡기증후군</div>
+                            <div class="item">지카바이러스감염증</div>
+                            <div class="item">리슈마니아증</div>
+                            <div class="item">바베시아증</div>
+                            <div class="item">크립토스포리디움증</div>
+                            <div class="item">주혈흡충증</div>
                         </div>
                     </div>
-                </footer>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+                </section>
+            </form><br>
+            <input type="button" id="cancel" value="취소">
+            <input type="submit" id="submit" value="보험료 계산">
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+         var modal = document.querySelector(".modal");
+         var trigger = document.querySelector(".trigger");
+         var closeButton = document.querySelector(".close-button");
+         var cancelButton = document.querySelector("#cancel");
+
+        function toggleModal() {
+             modal.classList.toggle("show-modal");
+         }
+
+        function windowOnClick(event) {
+             if (event.target === modal) {
+                 toggleModal();
+             }
+         }
+
+        trigger.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        cancel.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick);
+
+
+</script>
+<script type="text/javascript">
+    $('.ui.dropdown')
+  .dropdown()
+;
+
+</script>
+</body>
+<script>
+function findAddr(){
+	new daum.Postcode({
+        oncomplete: function(data) {
+            var roadAddr = data.roadAddress; // 도로명 주소 변수
+            var jibunAddr = data.jibunAddress; // 지번 주소 변수
+            document.getElementById('address').value = roadAddr;
+        }
+    }).open();
+}
+
+function commas(t) {
+	var x = t.value;
+	x = x.replace(/,/gi, '');
+	var regexp = /^[0-9]*$/;
+	if(!regexp.test(x)){
+		$(t).val("");
+		alert("숫자만 입력해주세요.");
+	} else {
+		x = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		$(t).val(x);
+	}
+}
+</script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </html>
+

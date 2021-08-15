@@ -132,7 +132,7 @@
             <input type="search" name="job" placeholder="직종을 선택하세요." required="required">
             <label></label>
             <label>기업/매장 주소</label>
-            <input id="member_post" type="text" placeholder="주소를 입력하세요." readonly onclick="findAddr()">
+            <input id="address" type="text" placeholder="주소를 입력하세요." readonly onclick="findAddr()">
             <label></label>
             <label>피해 기간</label>
             <input type="date" name="dateStart" placeholder="기간" required="required">
@@ -144,8 +144,29 @@
             <label></label>
             <label>바이러스</label>
             <input type="search" name="virus" placeholder="직종을 선택하세요." required="required">
+            <label></label>
             <input type="button" id="cancel" value="취소">
             <input type="submit" id="submit" value="보내기">
+            <div class="ui fluid search selection dropdown">
+                <input type="hidden" name="country">
+                <i class="dropdown icon"></i>
+                <div class="default text">Select Country</div>
+                <div class="menu">
+                    <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                    <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                    <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+                    <div class="item" data-value="dz"><i class="dz flag"></i>Algeria</div>
+                    <div class="item" data-value="as"><i class="as flag"></i>American Samoa</div>
+                    <div class="item" data-value="ad"><i class="ad flag"></i>Andorra</div>
+                    <div class="item" data-value="ao"><i class="ao flag"></i>Angola</div>
+                    <div class="item" data-value="ai"><i class="ai flag"></i>Anguilla</div>
+                    <div class="item" data-value="ag"><i class="ag flag"></i>Antigua</div>
+                    <div class="item" data-value="ar"><i class="ar flag"></i>Argentina</div>
+                    <div class="item" data-value="am"><i class="am flag"></i>Armenia</div>
+                    <div class="item" data-value="aw"><i class="aw flag"></i>Aruba</div>
+                    <div class="item" data-value="au"><i class="au flag"></i>Australia</div>
+                </div>
+            </div>
         </form>
     </div>
 </div>
@@ -180,7 +201,7 @@ function findAddr(){
         oncomplete: function(data) {
             var roadAddr = data.roadAddress; // 도로명 주소 변수
             var jibunAddr = data.jibunAddress; // 지번 주소 변수
-            document.getElementById('member_post').value = roadAddr;
+            document.getElementById('address').value = roadAddr;
         }
     }).open();
 }

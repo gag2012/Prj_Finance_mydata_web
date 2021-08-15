@@ -35,7 +35,7 @@
      }
      input, textarea {
          width: 460px;
-         height: 45px;
+         height: 42px;
          border-radius: 2px;
          border: 1px solid #dedede;
          padding: 10px;
@@ -118,6 +118,7 @@
          transform: scale(1.0);
          transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
      }
+
 </style>
 
 <body>
@@ -483,15 +484,15 @@
             </form>
             <label></label>
             <label>기업/매장 주소</label>
-            <input id="address" type="text" placeholder="주소" readonly onclick="findAddr()">
+            <input id="address" type="text" placeholder="주소" readonly onclick="findAddr()" required="required">
             <label></label>
             <label>피해 기간</label>
             <input type="date" name="dateStart" placeholder="기간" required="required">
             <label></label>
             <input type="date" name="dateEnd" placeholder="기간" required="required">
             <label></label>
-            <label>기간내 매출액</label>
-            <input type="text" name="money" placeholder="매출액" required="required">
+            <label>피해 기간 매출액</label>
+            <input type="text" name="money" placeholder="0" onkeyup="commas(this)" required="required">
             <label></label>
             <label>바이러스</label>
             <form class="ui form">
@@ -600,11 +601,13 @@
          cancel.addEventListener("click", toggleModal);
          window.addEventListener("click", windowOnClick);
 
+
 </script>
 <script type="text/javascript">
     $('.ui.dropdown')
   .dropdown()
 ;
+
 </script>
 </body>
 <script>
@@ -618,6 +621,18 @@ function findAddr(){
     }).open();
 }
 
+function commas(t) {
+	var x = t.value;
+	x = x.replace(/,/gi, '');
+	var regexp = /^[0-9]*$/;
+	if(!regexp.test(x)){
+		$(t).val("");
+		alert("숫자만 입력해주세요.");
+	} else {
+		x = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		$(t).val(x);
+	}
+}
 </script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </html>

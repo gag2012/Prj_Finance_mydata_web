@@ -482,23 +482,15 @@
                         </div>
                     </div>
                 </section>
-            </form>
-            <label></label>
+            </form><br>
             <label>기업/매장 주소</label>
-            <input id="address" type="text" placeholder="주소" readonly onclick="findAddr()" required="required">
-            <label></label>
-            <label></label>
+            <input id="address" type="text" placeholder="주소" readonly onclick="findAddr()" required="required"><br>
             <label>피해 기간</label>
             <input type="date" name="dateStart" placeholder="기간" required="required">
-            <label></label>
             <input type="date" name="dateEnd" placeholder="기간" required="required">
-            <label></label>
-            <label></label>
-            <label>피해 기간 매출액</label>
+            <label>피해 기간 매출액</label><br>
             <input type="text" name="money" placeholder="0" onkeyup="commas(this)" required="required">
-            <label></label>
-            <label></label>
-            <label>바이러스</label>
+            <label>바이러스</label><br>
             <form class="ui form">
                 <section class="field">
                     <div class="ui fluid search selection dropdown">
@@ -574,9 +566,7 @@
                         </div>
                     </div>
                 </section>
-            </form>
-            <label></label>
-            <label></label>
+            </form><br>
             <input type="button" id="cancel" value="취소">
             <input type="submit" id="submit" value="보험료 계산">
         </form>
@@ -589,8 +579,6 @@
          var closeButton = document.querySelector(".close-button");
          var cancelButton = document.querySelector("#cancel");
 
-        //console.log(modal);
-
         function toggleModal() {
              modal.classList.toggle("show-modal");
          }
@@ -602,9 +590,9 @@
          }
 
         trigger.addEventListener("click", toggleModal);
-         closeButton.addEventListener("click", toggleModal);
-         cancel.addEventListener("click", toggleModal);
-         window.addEventListener("click", windowOnClick);
+        closeButton.addEventListener("click", toggleModal);
+        cancel.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick);
 
 
 </script>

@@ -9,7 +9,7 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: ["1월", "2월", "3월", "4월", "5월", "6월", "7월"],
     datasets: [{
-      label: "Revenue",
+      label: "월별 확진자",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
       data: [17471, 11467, 13415, 18919, 18339, 16623, 41380],

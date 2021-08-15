@@ -32179,7 +32179,7 @@ body.dimmable > .dimmer {
   background: #FFFFFF;
   font-size: 1em;
   text-shadow: none;
-  text-align: right;
+  text-align: left;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
   border: 1px solid rgba(34, 36, 38, 0.15);

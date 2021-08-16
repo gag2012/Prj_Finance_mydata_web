@@ -31,6 +31,11 @@ var myLineChart = new Chart(ctx, {
       }],
   },
   options: {
+    elements: {
+        line: {
+          borderWidth: 3
+        }
+    },
     title: {
       display: true,
       text: "나의 피해 위치는?"

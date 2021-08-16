@@ -7,7 +7,7 @@ var ctx = document.getElementById("insuranceChart");
 var myLineChart = new Chart(ctx, {
   type: 'radar',
   data: {
-    labels: ["영업이익", "피해 매출액", "임대료 등급", "상권변화 등급", "전염병 등급"],
+    labels: ["영업이익", "매출액", "임대료 등급", "상권변화 등급", "전염병 등급"],
     datasets: [{
         label: 'My First Dataset',
         data: [2000, 520000, 2, 4 ,5],

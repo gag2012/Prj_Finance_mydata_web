@@ -49,6 +49,6 @@ var myLineChart = new Chart(ctx, {
                 min: 0,
                 stepSize: 1
             }
-      },
-  },
+      }
+  }
 });

@@ -7,10 +7,10 @@ var ctx = document.getElementById("insuranceChart");
 var myLineChart = new Chart(ctx, {
   type: 'radar',
   data: {
-    labels: ["영업이익", "피해 매출액", "임대료"],
+    labels: ["영업이익", "피해 매출액", "임대료 등급", "상권변화 등급", "전염병 등급"],
     datasets: [{
         label: 'My First Dataset',
-        data: [65, 59, 90],
+        data: [2000, 520000, 90, 2, 4 ,5],
         fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgb(255, 99, 132)',
@@ -20,7 +20,7 @@ var myLineChart = new Chart(ctx, {
         pointHoverBorderColor: 'rgb(255, 99, 132)'
       }, {
         label: 'My Second Dataset',
-        data: [28, 48, 40],
+        data: [1280, 42500, 40, 5, 3, 1],
         fill: true,
         backgroundColor: 'rgba(54, 162, 235, 0.2)',
         borderColor: 'rgb(54, 162, 235)',

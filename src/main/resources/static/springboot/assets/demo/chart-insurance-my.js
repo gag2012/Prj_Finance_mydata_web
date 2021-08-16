@@ -32,6 +32,9 @@ var myLineChart = new Chart(ctx, {
   },
   options: {
     responsive: false,
+    legend: {
+            display: false
+    },
     elements: {
         line: {
           borderWidth: 2

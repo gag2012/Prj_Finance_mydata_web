@@ -6,65 +6,43 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 var ctx = document.getElementById("insuranceChart");
 var myLineChart = new Chart(ctx, {
   type: 'radar',
-  data: {
-    labels: ["영업이익", "매출액", "임대료 등급", "상권변화 등급", "전염병 등급"],
+  data = {
+    labels: [
+      'Eating',
+      'Drinking',
+      'Sleeping',
+      'Designing',
+      'Coding',
+      'Cycling',
+      'Running'
+    ],
     datasets: [{
-        label: "나의 데이터",
-        data: [2, 5, 1, 8 ,4],
-        fill: true,
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgb(255, 99, 132)',
-        pointBackgroundColor: 'rgb(255, 99, 132)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(255, 99, 132)'
-      }, {
-        label: "평균 데이터",
-        data: [3, 4, 5, 3, 4],
-        fill: true,
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgb(54, 162, 235)',
-        pointBackgroundColor: 'rgb(54, 162, 235)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(54, 162, 235)'
-      }],
+      label: 'My First Dataset',
+      data: [65, 59, 90, 81, 56, 55, 40],
+      fill: true,
+      backgroundColor: 'rgba(255, 99, 132, 0.2)',
+      borderColor: 'rgb(255, 99, 132)',
+      pointBackgroundColor: 'rgb(255, 99, 132)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgb(255, 99, 132)'
+    }, {
+      label: 'My Second Dataset',
+      data: [28, 48, 40, 19, 96, 27, 100],
+      fill: true,
+      backgroundColor: 'rgba(54, 162, 235, 0.2)',
+      borderColor: 'rgb(54, 162, 235)',
+      pointBackgroundColor: 'rgb(54, 162, 235)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgb(54, 162, 235)'
+    }]
   },
   options: {
-    responsive: true,
-    legend: {
-            display: false
-    },
-    elements: {
+      elements: {
         line: {
-          borderWidth: 1
+          borderWidth: 3
         }
-    },
-    title: {
-      display: true,
-      text: "나의 피해 위치는?"
-    },
-    scales: {
-      xAxes: [{
-        ticks: {
-            beginAtZero: true
-            min: 0,
-            max: 8
-        }
-        gridLines: {
-            display: false
-        },
-      }],
-      yAxes: [{
-        ticks: {
-            beginAtZero: true
-            min: 0,
-            max: 8
-        }
-        gridLines: {
-            display: false
-        }
-      }],
-    },
+      }
   }
 });

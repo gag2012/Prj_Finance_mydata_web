@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+    <link href="../static/springboot/css/styles2.css" rel="stylesheet" />
 </head>
 
 <body class="sb-nav-fixed">
@@ -879,14 +880,14 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
+                                            <label>피해 종료일<span class="text-danger">*</span></label>
                                             <div class="container">
-                                                <label>피해 종료일<span class="text-danger">*</span></label>
                                                 <input type="date" class="form-control" placeholder="Enter Date">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
+                                            <label>피해 매출액<span class="text-danger">*</span></label>
                                             <div class="container">
-                                                <label>피해 매출액<span class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" onkeyup="numberWithCommas(this.vale)" placeholder="0">
                                             </div>
                                         </div>
@@ -949,7 +950,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-chart-area me-1"></i>
-                                누적 감염자 수      <b id="color_danger_grade;" style="color:#db5b5b;">( 위험 등급 : <span id="danger_grade"></span> )</b>
+                                예측 보혐료
                             </div>
                             <div class="card-body"><canvas id="virusChart" width="100vw" height="30vh"></canvas>
                             </div>

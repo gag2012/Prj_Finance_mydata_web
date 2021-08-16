@@ -5,7 +5,7 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 // Bar Chart Example
 var ctx = document.getElementById("insuranceChart");
 var myLineChart = new Chart(ctx, {
-  type: 'radar',
+  type: 'bar',
   data = {
     labels: [
       'Eating',

@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
     <title>전염병 데이터(PandemicBoard)</title>
-    <link href="../static/springboot/css/styles.css" rel="stylesheet" />
+    <link href="../static/springboot/css/styles.css" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
             crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
@@ -26,7 +26,7 @@
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
         <div class="input-group">
             <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
-                   aria-describedby="btnNavbarSearch" />
+                   aria-describedby="btnNavbarSearch"/>
             <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
                     class="fas fa-search"></i></button>
         </div>
@@ -76,104 +76,53 @@
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">
-                <h2 class="mt-4">전염병(바이러스) 감염자 수 예측 모델</h2>
+                <h2 class="mt-4">경제 피해</h2>
                 <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item active">대한민국 코로나-19(Covid-19) 예상 추이</li>
+                    <li class="breadcrumb-item active">중소기업 업종별 영업이익 비교</li>
                 </ol>
                 <div class="row">
                     <div class="card mb-4">
                         <div class="card-body">
-                            선택하신 바이러스 '코로나-19(COVID-19)' 은 감염 기간이 12일 입니다. (감염자는 12일 동안 감염 상태) <br>
-                            즉, 아래 그래프의 누적 감염자 수는 이전 12일 확진자을 누적한 값을 의미합니다.<br>
-                            회색 그래프는 <b style="color:#848484;">'실제 그래프' </b>입니다. 파란 그래프는 <b
-                                style="color:#5858FA;">'예측 그래프'</b>입니다.
+                            코로나 전후로 중소기업 업종별로 구분한 영업이익 데이터입니다.<br>
+                            <b>전구간 영업이익 손해 변화율</b>은 2018년 부터 2020년까지의 <b>영업이익 변동 증감률</b>을 보여줍니다. 즉, 작을 수록 피해가 큽니다.<br>
+                            <b>업종별 영업이익</b>은 두 개의 연도를 기준으로 업종별 <b>영업이익 금액 차이</b>를 보여줍니다. (단위: 천원)
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="card mb-4">
+                    <div class="col-lg-16">
+                        <div class="card mb-6">
                             <div class="card-header">
                                 <i class="fas fa-chart-area me-1"></i>
-                                누적 감염자 수      <b id="color_danger_grade;" style="color:#db5b5b;">( 위험 등급 : <span id="danger_grade"></span> )</b>
-                            </div>
-                            <div class="card-body"><canvas id="eChart" width="100vw" height="30vh"></canvas>
-                            </div>
-                            <div class="card-footer small text-muted">
-                                <button class="button button2" id="btn_wave1" onclick="btn_wave1_click();">1차
-                                    유행</button>
-                                <button class="button button2" id="btn_wave2" onclick="btn_wave2_click();">2차
-                                    유행</button>
-                                <button class="button button2" id="btn_wave3" onclick="btn_wave3_click();">3차
-                                    유행</button>
-                                <button class="button button2" id="btn_wave4" onclick="btn_wave4_click();">4차
-                                    유행</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-clipboard me-1"></i>
-                                그래프 분석
+                                전구간 영업이익 손해 변화율
                             </div>
                             <div class="card-body">
-                                ✓ 기간 : <span id="v_Duration"></span>일 <br>
-                                ✓ 인구 수 : <span id="v_Population"></span>명 <br>
-                                ✓ 평균 감염 지속 기간 : <span id="v_avgDuration"></span>일 <i title="평균 감염에서 회복까지 걸리는 기간" class="far fa-question-circle fa-xs"></i> <br>
-                                <br>
-                                ✓ 회복율 : <span id="v_Recovery"></span>% <i title="감염자 대비 완치자" class="far fa-question-circle fa-xs"></i> <br>
-                                ✓ 치사율 : <span id="v_Death"></span>% <i title="감염자 대비 사망자" class="far fa-question-circle fa-xs"></i> <br>
-                                ✓ 기초감염재생산 : <span id="v_Gamma"></span> <i title="한 명이 전염병을 퍼트릴 수 있는 정도" class="far fa-question-circle fa-xs"></i> <br>
-                                ✓ 베타값 : <span id="v_Beta"></span> <i title="위험 예측을 위한 고유값" class="far fa-question-circle fa-xs"></i> <br>
-                                <hr>
-                                ✓ 실제 최대 감염자 수 : <span id="v_ObsMaxInspected"></span>명 <br>
-                                ✓ 실제 누적 최대 감염자 수 : <span id="v_ObsSumMaxInspected"></span>명 <i title="기간 내 실제 데이터로 측정했을 시, 최대 감염자 수의 누적 값이며 그래프의 넓이를 뜻함" class="far fa-question-circle fa-xs"></i> <br>
-                                <br>
-                                ✓ 예상 최대 감염자 수 : <span id="v_MaxInspected"></span>명<br>
-                                ✓ 예상 누적 최대 감염자 수 : <span id="v_SumMaxInspected"></span>명 <i title="기간 내 예측 데이터로 측정했을 시, 최대 감염자 수의 누적 값이며 그래프의 넓이를 뜻함" class="far fa-question-circle fa-xs"></i><br>
-                                <b style="color:#CC66CC;">✓ 인구수 대비 예상 누적 감염자 비율 : <span id="v_Rate"></span>% <i title="인구수 대비 예상 누적 감염자 수의 값, 아래의 위험 평가 등급의 기준이 됨" class="far fa-question-circle fa-xs"></i> </b>
+                                <canvas id="ecoDamageChart" width="100vw" height="36vh"></canvas>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="card mb-4">
+                    <div class="col-lg-16">
+                        <div class="card mb-6">
                             <div class="card-header">
-                                <i class="fas fa-edit me-1"></i>
-                                설정
+                                <i class="fas fa-chart-area me-1"></i>
+                                업종별 영업이익 (2020, 2019)
                             </div>
                             <div class="card-body">
-                                <div><b>예측 모델 변경</b> : 회복율, 치사율 등 조건을 변경시켜 예상되는 위험 등급을 알아보세요!</div>
-                                <br>
-                                <div class="slidecontainer">
-                                    <input type="range" min="0" max="100" value="81" class="slider"
-                                           id="recov_rate">
-                                    <p> 회복율: <span id="recov_demo"></span></p>
-                                </div>
-                                <div class="slidecontainer">
-                                    <input type="range" min="0" max="100" value="2" class="slider"
-                                           id="death_rate">
-                                    <p> 치사율: <span id="death_demo"></span></p>
-                                </div>
-                                <div class="slidecontainer">
-                                    <input type="range" min="0" max="30" value="3.9" class="slider"
-                                           id="gamma_rate">
-                                    <p> 기초감염재생산: <span id="gamma_demo"></span></p>
-                                </div>
-                                <div class="slidecontainer">
-                                    <input type="range" min="0" max="30" value="6" class="slider"
-                                           id="beta_rate">
-                                    <p> 베타값: <span id="beta_demo"></span></p>
-                                </div>
-                                <div class="slidecontainer">
-                                    <input type="range" min="40000000" max="70000000" value="51821669" class="slider"
-                                           id="population_rate">
-                                    <p> 인구수: <span id="population_demo"></span></p>
-                                </div>
-                                <button class="button button2" id="btn_cfg" onclick="btn_cfg_click();">설정 변경
-                                </button>
+                                <canvas id="eChart" width="100vw" height="36vh"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-16">
+                        <div class="card mb-6">
+                            <div class="card-header">
+                                <i class="fas fa-chart-area me-1"></i>
+                                업종별 영업이익 (2020, 2018)
+                            </div>
+                            <div class="card-body">
                             </div>
                         </div>
                     </div>
@@ -200,9 +149,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
 <script src="../static/springboot/assets/demo/chart-virus.js"></script>
 <script src="../static/springboot/assets/demo/chart-area-demo.js"></script>
-<script src="../static/springboot/assets/demo/chart-insurance-my.js"></script>
+<script src="../static/springboot/assets/demo/chart-bar-demo.js"></script>
 <script src="../static/springboot/assets/demo/chart-pie-demo.js"></script>
 <script src="../static/springboot/assets/demo/slider.js"></script>
+<script src="../static/springboot/assets/demo/chart-economy.js"></script>
+<script src="../static/springboot/assets/demo/chart-economy-rev.js"></script>
 <script src="../static/springboot/js/datatables-simple-demo.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
 </body>

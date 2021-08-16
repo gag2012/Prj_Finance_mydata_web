@@ -15,7 +15,6 @@ var myLineChart = new Chart(ctx, {
   },
   options: {
   scale: {
-          // Hides the scale
           display: false
       }
   }

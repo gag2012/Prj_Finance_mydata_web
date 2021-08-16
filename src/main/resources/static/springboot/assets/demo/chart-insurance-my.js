@@ -43,6 +43,6 @@ var myLineChart = new Chart(ctx, {
     title: {
       display: true,
       text: "나의 피해 위치는?"
-    },
+    }
   }
 });

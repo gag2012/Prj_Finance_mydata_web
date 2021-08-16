@@ -25,7 +25,7 @@ var options = {
         }
       }],
     },
-}
+};
 
 var ecoR1 = {
     labels: [
@@ -87,7 +87,7 @@ var ecoR2 = {
         ],
         fill: false,
     }],
-}
+};
 
 // Bar Chart Example
 var ctx = document.getElementById("ecoRevenueChart");

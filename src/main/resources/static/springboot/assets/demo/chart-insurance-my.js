@@ -42,5 +42,13 @@ var myLineChart = new Chart(ctx, {
           borderWidth: 3
         }
       }
+      scales: {
+            ticks: {
+                beginAtZero: true,
+                max: 8,
+                min: 0,
+                stepSize: 1
+            }
+      },
   },
 });

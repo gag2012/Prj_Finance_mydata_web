@@ -6,8 +6,8 @@
   float : left;
 }
 
-@media (min-width: 250px) {
+@media (min-width: 260px) {
   .container{
-    width: 2500px;
+    width: 260px;
   }
 }

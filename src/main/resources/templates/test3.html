@@ -888,7 +888,7 @@
                                         <div class="col-md-12">
                                             <label>피해 매출액<span class="text-danger">*</span></label>
                                             <div class="container">
-                                                <input type="text" class="form-control" style="max-width: 18%!important;" onkeyup="numberWithCommas(this.value)" placeholder="0">
+                                                <input type="text" class="form-control" style="max-width: 18%!important;" onkeyup="inputNumberFormat(this)" placeholder="0" />
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -953,6 +953,8 @@
                                 나의 보험료는?
                             </div>
                             <div class="card-body">
+                                <p> 예상 보험료는 <span id="testste"></span> 0원 입니다.</p>
+                                <p> 내 매출피해 위치<span id="recasdlaskd"></span></p>
                             </div>
                         </div>
                     </div>
@@ -1000,11 +1002,19 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
 <script>
-function numberWithCommas(x) {
-    x = x.replace(/[^0-9]/g,'');   // 입력값이 숫자가 아니면 공백
-    x = x.replace(/,/g,'');          // ,값 공백처리
-    $("#money").val(x.replace(/\B(?=(\d{3})+(?!\d))/g, ",")); // 정규식을 이용해서 3자리 마다 , 추가
-}
+ function inputNumberFormat(obj) {
+     obj.value = comma(uncomma(obj.value));
+ }
+
+ function comma(str) {
+     str = String(str);
+     return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+ }
+
+ function uncomma(str) {
+     str = String(str);
+     return str.replace(/[^\d]+/g, '');
+ }
 </script>
 </body>
 </html>

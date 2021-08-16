@@ -886,9 +886,9 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <label>피해 매출액<span class="text-danger">*</span></label>
+                                            <label>매출액(유행기간 내)<span class="text-danger">*</span></label>
                                             <div class="container">
-                                                <input type="text" class="form-control" style="max-width: 18%!important;" onkeyup="inputNumberFormat(this)" placeholder="0" />
+                                                <input type="text" class="form-control" style="max-width: 19%!important;" onkeyup="inputNumberFormat(this)" placeholder="0" />
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -955,6 +955,7 @@
                             <div class="card-body">
                                 <p> 예상 보험료는 <span id="testste"></span> 0원 입니다.</p>
                                 <p> 내 매출피해 위치<span id="recasdlaskd"></span></p>
+                                <div class="card-body"><canvas id="insuranceChart" width="80vw" height="30vh"></canvas>
                             </div>
                         </div>
                     </div>
@@ -991,7 +992,7 @@
         crossorigin="anonymous"></script>
 <script src="../static/springboot/js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-<script src="../static/springboot/assets/demo/chart-virus.js"></script>
+<script src="../static/springboot/assets/demo/chart-insurance-my.js"></script>
 <script src="../static/springboot/assets/demo/chart-area-demo.js"></script>
 <script src="../static/springboot/assets/demo/chart-bar-demo.js"></script>
 <script src="../static/springboot/assets/demo/chart-pie-demo.js"></script>

@@ -1,252 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!doctype html>
+<html class="no-js" lang="">
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-    <title>전염병 데이터(PandemicBoard)</title>
-    <link href="../static/springboot/css/styles.css" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
-            crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Select Plugin Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-
-<body class="sb-nav-fixed">
-<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-    <!-- Navbar Brand-->
-    <a class="navbar-brand ps-3" href="index.html"><i class="fab fa-pied-piper-square"></i> PandemicBoard</a>
-    <!-- Sidebar Toggle-->
-    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
-            class="fas fa-bars"></i></button>
-    <!-- Navbar Search-->
-    <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-        <div class="input-group">
-            <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
-                   aria-describedby="btnNavbarSearch"/>
-            <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
-                    class="fas fa-search"></i></button>
-        </div>
-    </form>
-    <!-- Navbar-->
-</nav>
-<div id="layoutSidenav">
-    <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-            <div class="sb-sidenav-menu">
-                <div class="nav">
-                    <div class="sb-sidenav-menu-heading">바로알기</div>
-                    <a class="nav-link" href="index.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                        실시간 상황판
-                    </a>
-                    <a class="nav-link" href="test.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                        보험료 산출
-                    </a>
-                    <div class="sb-sidenav-menu-heading">분석차트</div>
-                    <a class="nav-link" href="economy.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-file-invoice"></i></div>
-                        경제피해
-                    </a>
-                    <a class="nav-link" href="foot-traffic.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-running"></i></div>
-                        유동인구
-                    </a>
-                    <a class="nav-link" href="virInform.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-virus"></i></div>
-                        바이러스 정보
-                    </a>
-                    <div class="sb-sidenav-menu-heading">정보</div>
-                    <a class="nav-link" href="notice.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-bullhorn"></i></div>
-                        공지사항
-                    </a>
-                </div>
-            </div>
-            <div class="sb-sidenav-footer">
-                <div class="small">COPYRIGHT © 보험의 정석 ALL RIGHTS RESERVED.</div>
-                금융 데이터 경진대회
-            </div>
-        </nav>
+<body>
+<header>
+    <div class="container">
+        <h1>Bootstrap Select Plugin Demo</h1>
+        <p class="lead">A jQuery plugin for Bootstrap to create dropdown select.<br/>Multiple options like: optgoup support, clear selection and live filtering</p>
     </div>
-    <div id="layoutSidenav_content">
-        <main>
-            <div class="container-fluid px-4">
-                <h2 class="mt-4">경제 피해</h2>
-                <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item active">중소기업 업종별 영업이익 비교</li>
-                </ol>
-                <div class="row">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            코로나 전후로 중소기업 업종별로 구분한 영업이익 데이터입니다.<br>
-                            <b>전구간 영업이익 손해 변화율</b>은 2018년 부터 2020년까지의 <b>영업이익 변동 증감률</b>을 보여줍니다. 즉, 작을 수록 피해가 큽니다.<br>
-                            <b>업종별 영업이익</b>은 두 개의 연도를 기준으로 업종별 <b>영업이익 금액 차이</b>를 보여줍니다. (단위: 천원)
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="container mt-5">
-                        <div class="row">
-                            <!-- Click on Modal Button -->
-                            <button type="button" class="btn btn-primary mx-auto d-block mt-5" data-bs-toggle="modal" data-bs-target="#modalForm">
-                                보험료 계산
-                            </button>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">내 정보 입력하기</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form>
-                                                <div class="mb-3">
-                                                    <label class="form-label">직종</label>
-                                                    <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                                                        <a href="#" class="clear"><span class="fa fa-times"></span><span class="sr-only">Cancel the selection</span></a>
-                                                        <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
-                                                            <span class="placeholder">Choose an option</span>
-                                                            <span class="caret"></span>
-                                                        </button>
-                                                        <div class="dropdown-menu">
-                                                            <div class="live-filtering" data-clear="true" data-autocomplete="true" data-keys="true">
-                                                                <label class="sr-only" for="input-bts-ex-5">Search in the list</label>
-                                                                <div class="search-box">
-                                                                    <div class="input-group">
+
+</header>
+<div class="container">
+    <h3>Dropdown Select Exemple</h3>
+    <p>An advanced dropdown select with input to filter the list, clear button and list option groups</p>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                <a href="#" class="clear"><span class="fa fa-times"></span><span class="sr-only">Cancel the selection</span></a>
+                <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+                    <span class="placeholder">Choose an option</span>
+                    <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="live-filtering" data-clear="true" data-autocomplete="true" data-keys="true">
+                        <label class="sr-only" for="input-bts-ex-5">Search in the list</label>
+                        <div class="search-box">
+                            <div class="input-group">
                                                     <span class="input-group-addon" id="search-icon5">
                                                         <span class="fa fa-search"></span>
                                                         <a href="#" class="fa fa-times hide filter-clear"><span class="sr-only">Clear filter</span></a>
                                                     </span>
-                                                                        <input type="text" placeholder="Search in the list" id="input-bts-ex-5" class="form-control live-search" aria-describedby="search-icon5" tabindex="1" />
-                                                                    </div>
-                                                                </div>
-                                                                <div class="list-to-filter">
-                                                                    <ul class="list-unstyled">
-                                                                        <li class="optgroup">
-                                                                            <span class="optgroup-header">List Group <span class="subtext"></span></span>
-                                                                            <ul class="list-unstyled">
-                                                                                <li class="filter-item items" data-filter="Free jQuery Plugins" data-value="1">Free jQuery Plugins</li>
-                                                                                <li class="filter-item items" data-filter="Codehim.com" data-value="2">Codehim.com</li>
-                                                                                <li class="filter-item items" data-filter="Bootstrap Snippets" data-value="3">Bootstrap Snippets</li>
-                                                                                <li class="filter-item items" data-filter="Web Design Code" data-value="4">Web Design Code</li>
-                                                                                <li class="filter-item items" data-filter="HTML CSS jQuery" data-value="5">HTML CSS jQuery</li>
-                                                                            </ul>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <div class="no-search-results">
-                                                                        <div class="alert alert-warning" role="alert"><i class="fa fa-warning margin-right-sm"></i>No entry for <strong>'<span></span>'</strong> was found.</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <input type="hidden" name="bts-ex-5" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">기업/매장 주소</label>
-                                                    <input type="text" class="form-control" id="address" name="address" placeholder="주소" />
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">피해 기간</label>
-                                                    <input style="margin-bottom: 5px" type="date" class="form-control" placeholder="Start Date">
-                                                    <input type="date" class="form-control" placeholder="End Date">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">피해 기간 내 매출액</label>
-                                                    <input type="text" class="form-control" id="revenue" name="revenue" placeholder="0" />
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">바이러스</label>
-                                                    <input type="text" class="form-control" id="virus" name="virus" placeholder="0" />
-                                                </div>
-                                                <div class="col-12 mt-5">
-                                                    <button type="submit" class="btn btn-warning float-end">보혐료 계산</button>
-                                                    <button type="button" class="btn btn-outline-secondary float-end me-2">취소</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
+                                <input type="text" placeholder="Search in the list" id="input-bts-ex-5" class="form-control live-search" aria-describedby="search-icon5" tabindex="1" />
+                            </div>
+                        </div>
+                        <div class="list-to-filter">
+                            <ul class="list-unstyled">
+                                <li class="optgroup">
+                                    <span class="optgroup-header">List Group <span class="subtext"></span></span>
+                                    <ul class="list-unstyled">
+                                        <li class="filter-item items" data-filter="Free jQuery Plugins" data-value="1">Free jQuery Plugins</li>
+                                        <li class="filter-item items" data-filter="Codehim.com" data-value="2">Codehim.com</li>
+                                        <li class="filter-item items" data-filter="Bootstrap Snippets" data-value="3">Bootstrap Snippets</li>
+                                        <li class="filter-item items" data-filter="Web Design Code" data-value="4">Web Design Code</li>
+                                        <li class="filter-item items" data-filter="HTML CSS jQuery" data-value="5">HTML CSS jQuery</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="no-search-results">
+                                <div class="alert alert-warning" role="alert"><i class="fa fa-warning margin-right-sm"></i>No entry for <strong>'<span></span>'</strong> was found.</div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <input type="hidden" name="bts-ex-5" value="">
             </div>
-        </main>
-        <footer class="py-4 bg-light mt-auto">
-            <div class="container-fluid px-4">
-                <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">본 사이트에서 제공하는 내용의 인용과 사용에 대한 책임은 전적으로 인용자 및 사용자에게 있음을 알립니다.</div>
-                    <div>
-                        <a href="#">Privacy Policy</a>
-                        &middot;
-                        <a href="#">Terms &amp; Conditions</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-<script src="../static/springboot/js/scripts.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-<script src="../static/springboot/assets/demo/slider.js"></script>
-<script src="../static/springboot/js/datatables-simple-demo.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    $('.ui.dropdown')
-  .dropdown()
-;
 
+<footer></footer>
 
-</script>
-<script src="../jquery-bootstrap-select/js/vendor/modernizr-2.8.3.min.js"></script>
-<script src="../jquery-bootstrap-select/js/vendor/tabcomplete.min.js"></script>
-<script src="../jquery-bootstrap-select/js/vendor/livefilter.min.js"></script>
-<script src="../jquery-bootstrap-select/js/vendor/src/bootstrap-select.js"></script>
-<script src="../jquery-bootstrap-select/js/vendor/filterlist.min.js"></script>
-<script src="../jquery-bootstrap-select/js/plugins.js"></script>
-</body>
+<script src="js/vendor/jquery-2.1.4.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/tabcomplete.min.js"></script>
+<script src="js/vendor/livefilter.min.js"></script>
+<script src="js/vendor/src/bootstrap-select.js"></script>
+<script src="js/vendor/filterlist.min.js"></script>
+<script src="js/plugins.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80520768-2"></script>
 <script>
-function findAddr(){
-	new daum.Postcode({
-        oncomplete: function(data) {
-            var roadAddr = data.roadAddress; // 도로명 주소 변수
-            var jibunAddr = data.jibunAddress; // 지번 주소 변수
-            document.getElementById('address').value = roadAddr;
-        }
-    }).open();
-}
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-function commas(t) {
-	var x = t.value;
-	x = x.replace(/,/gi, '');
-	var regexp = /^[0-9]*$/;
-	if(!regexp.test(x)){
-		$(t).val("");
-		alert("숫자만 입력해주세요.");
-	} else {
-		x = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-		$(t).val(x);
-	}
-}
-
+  gtag('config', 'UA-80520768-2');
 </script>
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+</body>
 </html>

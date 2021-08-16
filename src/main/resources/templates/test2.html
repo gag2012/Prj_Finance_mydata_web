@@ -20,7 +20,7 @@
     <div class="row">
         <!-- Click on Modal Button -->
         <button type="button" class="btn btn-primary mx-auto d-block mt-5" data-bs-toggle="modal" data-bs-target="#modalForm">
-            Bootstrap Modal popup
+            보험료 산출하기
         </button>
 
         <!-- Modal -->
@@ -34,16 +34,20 @@
                     <div class="modal-body">
                         <form>
                             <div class="mb-3">
-                                <label class="form-label">Email Address</label>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+                                <label class="form-label">업종</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="업종 선택" />
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                                <label class="form-label">기업/매장 주소</label>
+                                <input type="text" class="form-control" id="address" name="address" placeholder="주소 입력" />
                             </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="rememberMe" />
-                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            <div class="mb-3">
+                                <label class="form-label">피해기간</label>
+                                <input type="text" class="form-control" id="duration" name="duration" placeholder="피해기간" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">피해기간 내 매출액</label>
+                                <input type="text" class="form-control" id="revenue" name="revenue" placeholder="매출액" />
                             </div>
                             <div class="modal-footer d-block">
                                 <button type="submit" class="btn btn-warning float-end">Submit</button>

@@ -46,13 +46,23 @@ var myLineChart = new Chart(ctx, {
     },
     scales: {
       xAxes: [{
+        ticks: {
+            beginAtZero: true
+            min: 0,
+            max: 8
+        }
         gridLines: {
-            color: "rgba(0, 0, 0, 0)",
+            display: false
         },
       }],
       yAxes: [{
+        ticks: {
+            beginAtZero: true
+            min: 0,
+            max: 8
+        }
         gridLines: {
-            color: "rgba(0, 0, 0, 0)",
+            display: false
         }
       }],
     },

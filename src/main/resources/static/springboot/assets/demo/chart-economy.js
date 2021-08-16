@@ -67,20 +67,20 @@ var eco2 = {
 
 
 var ctx = document.getElementById("ecoDamageChart");
-var myLineChart = new Chart(ctx, {
+var ecoDChart = new Chart(ctx, {
   type: 'horizontalBar',
   data: eco1,
   options: options
 });
 
 function btn_eco1_click(){
-    myLineChart.data = eco1;
-    myLineChart.update();
+    ecoDChart.data = eco1;
+    ecoDChart.update();
     document.getElementById("textEcoGraph").innerHTML = '연간 영업이익 추정 변화율';
 }
 
 function btn_eco2_click(){
-    myLineChart.data = eco2;
-    myLineChart.update();
+    ecoDChart.data = eco2;
+    ecoDChart.update();
     document.getElementById("textEcoGraph").innerHTML = '연간 매출액 추정 손실액';
 }

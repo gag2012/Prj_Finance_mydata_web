@@ -2,7 +2,7 @@
 Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
-var eco1 = data: {
+var eco1 =      {
                    labels: [
                        '숙박 및 음식점업', '예술, 스포츠 및 여가관련 서비스업', '보건업 및 사회복지 서비스업', '협회 및 단체, 수리 및 기타 개인 서비스업'
                        , '전기, 가스, 증기 및 공기조절 공급업', '교육 서비스업', '운수 및 창고업', '공공행정, 국방 및 사회보장 행정'
@@ -25,7 +25,7 @@ var eco1 = data: {
                    }],
                  };
 
-var eco2 = data: {
+var eco2 =      {
                    labels: [
                        '숙박 및 음식점업', '예술, 스포츠 및 여가관련 서비스업', '보건업 및 사회복지 서비스업', '협회 및 단체, 수리 및 기타 개인 서비스업'
                        , '전기, 가스, 증기 및 공기조절 공급업', '교육 서비스업', '운수 및 창고업', '공공행정, 국방 및 사회보장 행정'

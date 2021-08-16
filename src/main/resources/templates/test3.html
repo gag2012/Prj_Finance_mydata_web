@@ -83,7 +83,7 @@
                     <li class="breadcrumb-item active">내 정보를 입력하고 나에게 적합한 보험을 확인하세요.</li>
                 </ol>
                 <div class="row">
-                    <div class="col-md-6 border p-4 shadow bg-light">
+                    <div class="col-md-4 border p-4 shadow bg-light">
                         <div class="col-12">
                             <h2 class="fw-normal mb-4">내 정보 입력하기</h2>
                         </div>
@@ -140,6 +140,24 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+                    <div class="card mb-8">
+                        <div class="card-header">
+                            <i class="fas fa-chart-area me-1"></i>
+                            누적 감염자 수      <b id="color_danger_grade;" style="color:#db5b5b;">( 위험 등급 : <span id="danger_grade"></span> )</b>
+                        </div>
+                        <div class="card-body"><canvas id="virusChart" width="100vw" height="30vh"></canvas>
+                        </div>
+                        <div class="card-footer small text-muted">
+                            <button class="button button2" id="btn_wave1" onclick="btn_wave1_click();">1차
+                                유행</button>
+                            <button class="button button2" id="btn_wave2" onclick="btn_wave2_click();">2차
+                                유행</button>
+                            <button class="button button2" id="btn_wave3" onclick="btn_wave3_click();">3차
+                                유행</button>
+                            <button class="button button2" id="btn_wave4" onclick="btn_wave4_click();">4차
+                                유행</button>
+                        </div>
                     </div>
                 </div>
             </div>

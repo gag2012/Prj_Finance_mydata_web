@@ -36,7 +36,7 @@ var eco1 = {
         , '정보통신업', '금융 및 보험업', '농업, 입업 및 어업'
     ],
     datasets: [{
-        label: "연간 영업이익 추정 변화율(단위:%)",
+        label: "연간 영업이익 추정 변화율 (단위:%)",
         backgroundColor: "rgba(255,102,51,1)",
         borderColor: "rgba(255,102,51,1)",
         data: [
@@ -55,7 +55,7 @@ var eco2 = {
         '생활서비스', '일반유통', '종합유통', '전문서비스', '기타', '문화레저', '음식'
     ],
     datasets: [{
-        label: "연간 매출액 추정 손실액(단위:백만원)",
+        label: "연간 매출액 추정 손실액 (단위:백만원)",
         backgroundColor: "rgba(255,102,51,1)",
         borderColor: "rgba(255,102,51,1)",
         data: [
@@ -76,11 +76,11 @@ var ecoDChart = new Chart(ctx, {
 function btn_eco1_click(){
     ecoDChart.data = eco1;
     ecoDChart.update();
-    document.getElementById("textEcoGraph").innerHTML = '연간 영업이익 추정 변화율';
+    document.getElementById("textEcoGraph").innerHTML = '업종별 영업이익 (2020, 2019)';
 }
 
 function btn_eco2_click(){
     ecoDChart.data = eco2;
     ecoDChart.update();
-    document.getElementById("textEcoGraph").innerHTML = '연간 매출액 추정 손실액';
+    document.getElementById("textEcoGraph").innerHTML = '연간 매출액 추정 손실액 (대분류)';
 }

@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,112 +11,129 @@
     <link rel="stylesheet" href="../select/css/bootstrap/bootstrap.min.css">
     <script src="../select/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
-<div class="container">
-    <div class="row">
-        <!-- Click on Modal Button -->
-        <button type="button" class="btn btn-primary mx-auto d-block mt-5" data-bs-toggle="modal" data-bs-target="#modalForm">
-            보험료 산출하기
-        </button>
+    <div class="container">
+        <div class="row">
+            <!-- Click on Modal Button -->
+            <button type="button" class="btn btn-primary mx-auto d-block mt-5" data-bs-toggle="modal"
+                data-bs-target="#modalForm">
+                보험료 산출하기
+            </button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">내 정보 입력하기</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label class="form-label">업종</label>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="업종 선택" />
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">기업/매장 주소</label>
-                                <input type="text" class="form-control" id="address" name="address" placeholder="주소 입력" />
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">피해기간</label>
-                                <input type="text" class="form-control" id="duration" name="duration" placeholder="피해기간" />
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">피해기간 내 매출액</label>
-                                <input type="text" class="form-control" id="revenue" name="revenue" placeholder="매출액" />
-                            </div>
-                            <div class="modal-footer d-block">
-                                <button type="submit" class="btn btn-warning float-end">Submit</button>
-                            </div>
-                        </form>
+            <!-- Modal -->
+            <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">내 정보 입력하기</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">업종</label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                        placeholder="업종 선택" />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">기업/매장 주소</label>
+                                    <input type="text" class="form-control" id="address" name="address"
+                                        placeholder="주소 입력" />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">피해기간</label>
+                                    <input type="text" class="form-control" id="duration" name="duration"
+                                        placeholder="피해기간" />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">피해기간 내 매출액</label>
+                                    <input type="text" class="form-control" id="revenue" name="revenue"
+                                        placeholder="매출액" />
+                                </div>
+                                <div class="modal-footer d-block">
+                                    <button type="submit" class="btn btn-warning float-end">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-8">
-            <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-                <a href="#" class="clear"><span class="fa fa-times"></span><span class="sr-only">Cancel the selection</span></a>
-                <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
-                    <span class="placeholder">Choose an option</span>
-                    <span class="caret"></span>
-                </button>
-                <div class="dropdown-menu">
-                    <div class="live-filtering" data-clear="true" data-autocomplete="true" data-keys="true">
-                        <label class="sr-only" for="input-bts-ex-5">Search in the list</label>
-                        <div class="search-box">
-                            <div class="input-group">
-                                                    <span class="input-group-addon" id="search-icon5">
-                                                        <span class="fa fa-search"></span>
-                                                        <a href="#" class="fa fa-times hide filter-clear"><span class="sr-only">Clear filter</span></a>
-                                                    </span>
-                                <input type="text" placeholder="Search in the list" id="input-bts-ex-5" class="form-control live-search" aria-describedby="search-icon5" tabindex="1" />
+        <div class="row">
+            <div class="col-sm-8">
+                <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+                    <a href="#" class="clear"><span class="fa fa-times"></span><span class="sr-only">Cancel the
+                            selection</span></a>
+                    <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+                        <span class="placeholder">Choose an option</span>
+                        <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="live-filtering" data-clear="true" data-autocomplete="true" data-keys="true">
+                            <label class="sr-only" for="input-bts-ex-5">Search in the list</label>
+                            <div class="search-box">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="search-icon5">
+                                        <span class="fa fa-search"></span>
+                                        <a href="#" class="fa fa-times hide filter-clear"><span class="sr-only">Clear
+                                                filter</span></a>
+                                    </span>
+                                    <input type="text" placeholder="Search in the list" id="input-bts-ex-5"
+                                        class="form-control live-search" aria-describedby="search-icon5" tabindex="1" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="list-to-filter">
-                            <ul class="list-unstyled">
-                                <li class="optgroup">
-                                    <span class="optgroup-header">List Group <span class="subtext"></span></span>
-                                    <ul class="list-unstyled">
-                                        <li class="filter-item items" data-filter="Free jQuery Plugins" data-value="1">Free jQuery Plugins</li>
-                                        <li class="filter-item items" data-filter="Codehim.com" data-value="2">Codehim.com</li>
-                                        <li class="filter-item items" data-filter="Bootstrap Snippets" data-value="3">Bootstrap Snippets</li>
-                                        <li class="filter-item items" data-filter="Web Design Code" data-value="4">Web Design Code</li>
-                                        <li class="filter-item items" data-filter="HTML CSS jQuery" data-value="5">HTML CSS jQuery</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="no-search-results">
-                                <div class="alert alert-warning" role="alert"><i class="fa fa-warning margin-right-sm"></i>No entry for <strong>'<span></span>'</strong> was found.</div>
+                            <div class="list-to-filter">
+                                <ul class="list-unstyled">
+                                    <li class="optgroup">
+                                        <span class="optgroup-header">List Group <span class="subtext"></span></span>
+                                        <ul class="list-unstyled">
+                                            <li class="filter-item items" data-filter="Free jQuery Plugins"
+                                                data-value="1">Free jQuery Plugins</li>
+                                            <li class="filter-item items" data-filter="Codehim.com" data-value="2">
+                                                Codehim.com</li>
+                                            <li class="filter-item items" data-filter="Bootstrap Snippets"
+                                                data-value="3">Bootstrap Snippets</li>
+                                            <li class="filter-item items" data-filter="Web Design Code" data-value="4">
+                                                Web Design Code</li>
+                                            <li class="filter-item items" data-filter="HTML CSS jQuery" data-value="5">
+                                                HTML CSS jQuery</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="no-search-results">
+                                    <div class="alert alert-warning" role="alert"><i
+                                            class="fa fa-warning margin-right-sm"></i>No entry for
+                                        <strong>'<span></span>'</strong> was found.</div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <input type="hidden" name="bts-ex-5" value="">
                 </div>
-                <input type="hidden" name="bts-ex-5" value="">
             </div>
         </div>
     </div>
-</div>
 
-<footer></footer>
+    <footer></footer>
 
-<script src="../select/js/vendor/jquery-2.1.4.min.js"></script>
-<script src="../select/js/vendor/bootstrap.min.js"></script>
-<script src="../select/js/vendor/tabcomplete.js"></script>
-<script src="../select/js/vendor/livefilter.js"></script>
-<script src="../select/js/vendor/src/bootstrap-select.js"></script>
-<script src="../select/js/vendor/filter.js"></script>
-<script src="../select/js/plugins.js"></script>
-<script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80520768-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script src="../select/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="../select/js/vendor/bootstrap.min.js"></script>
+    <script src="../select/js/vendor/tabcomplete.js"></script>
+    <script src="../select/js/vendor/livefilter.js"></script>
+    <script src="../select/js/vendor/src/bootstrap-select.js"></script>
+    <script src="../select/js/vendor/filter.js"></script>
+    <script src="../select/js/plugins.js"></script>
+    <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80520768-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-80520768-2');
-</script>
+        gtag('config', 'UA-80520768-2');
+    </script>
 
 </body>
+
 </html>

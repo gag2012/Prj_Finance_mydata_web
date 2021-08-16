@@ -40,23 +40,5 @@ var myLineChart = new Chart(ctx, {
       display: true,
       text: "나의 피해 위치는?"
     },
-    tooltips: {
-      mode: 'index',
-      intersect: false,
-    },
-    scales: {
-      xAxes: [{
-        gridLines: {
-        },
-        ticks: {
-        }
-      }],
-      yAxes: [{
-        ticks: {
-        },
-        gridLines: {
-        }
-      }],
-    },
   }
 });

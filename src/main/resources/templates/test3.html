@@ -83,19 +83,6 @@
                     <li class="breadcrumb-item active">대한민국 코로나-19(Covid-19) 예상 추이</li>
                 </ol>
             </div>
-            <div class="container">
-                <div class="row-fluid">
-                    <select class="selectpicker" data-show-subtext="true" data-live-search="true">
-                        <option data-subtext="Rep California">Tom Foolery</option>
-                        <option data-subtext="Sen California">Bill Gordon</option>
-                        <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
-                        <option data-subtext="Rep Alabama">Mario Flores</option>
-                        <option data-subtext="Rep Alaska">Don Young</option>
-                        <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
-                    </select>
-                    <span class="help-inline">With <code>data-show-subtext="true" data-live-search="true"</code>. Try searching for california</span>
-                </div>
-            </div>
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-md-6 offset-md-3 border p-4 shadow bg-light">
@@ -108,7 +95,19 @@
                                     <input type="text" class="form-control" placeholder="First Name">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Last Name">
+                                    <div class="container">
+                                        <div class="row-fluid">
+                                            <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+                                                <option data-subtext="Rep California">Tom Foolery</option>
+                                                <option data-subtext="Sen California">Bill Gordon</option>
+                                                <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+                                                <option data-subtext="Rep Alabama">Mario Flores</option>
+                                                <option data-subtext="Rep Alaska">Don Young</option>
+                                                <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+                                            </select>
+                                            <span class="help-inline">With <code>data-show-subtext="true" data-live-search="true"</code>. Try searching for california</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="tel" class="form-control" placeholder="Phone Number">

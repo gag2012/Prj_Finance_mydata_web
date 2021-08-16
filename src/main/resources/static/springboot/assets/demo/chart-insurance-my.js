@@ -41,7 +41,7 @@ var myLineChart = new Chart(ctx, {
         line: {
           borderWidth: 3
         }
-      }
+      },
       scales: {
             ticks: {
                 beginAtZero: true,

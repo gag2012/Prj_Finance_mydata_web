@@ -460,7 +460,7 @@
                                             <label>매장/기업 주소<span class="text-danger">*</span></label>
                                             <div class="container">
                                                 <div class="row-fluid">
-                                                    <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+                                                    <select class="selectpicker" data-show-subtext="true" data-live-search="true" id="location_select">
                                                         <option data-subtext="11110530">사직동</option>
                                                         <option data-subtext="11110540">삼청동</option>
                                                         <option data-subtext="11110550">부암동</option>
@@ -893,7 +893,7 @@
                                             <label>유행 기간<span class="text-danger">*</span></label>
                                             <div class="container">
                                                 <div class="row-fluid">
-                                                    <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+                                                    <select class="selectpicker" data-show-subtext="true" data-live-search="true" id="duration_select">
                                                         <option data-subtext="2020.02~2020.05">1차 유행</option>
                                                         <option data-subtext="2020.07~2020.10">2차 유행</option>
                                                         <option data-subtext="2020.11~2021.02">3차 유행</option>
@@ -905,14 +905,14 @@
                                         <div class="col-md-12">
                                             <label>매출액(유행기간 내)<span class="text-danger">*</span></label>
                                             <div class="container">
-                                                <input type="text" class="form-control" style="max-width: 19%!important;" onkeyup="inputNumberFormat(this)" placeholder="0" />
+                                                <input type="text" class="form-control" style="max-width: 19%!important;" onkeyup="inputNumberFormat(this)" placeholder="0" id="income_select"/>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <label>바이러스<span class="text-danger">*</span></label>
                                             <div class="container">
                                                 <div class="row-fluid">
-                                                    <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+                                                    <select class="selectpicker" data-show-subtext="true" data-live-search="true" id="virus_select">
                                                         <option>코로나-19</option>
                                                         <option>홍역</option>
                                                         <option>풍진</option>
@@ -1045,6 +1045,9 @@
                             <div class="card-body">
                                 <span id="textTest"></span>
                                 <span id="textTest2"></span>
+                                <span id="textTest3"></span>
+                                <span id="textTest4"></span>
+                                <span id="textTest5"></span>
                             </div>
                         </div>
                     </div>

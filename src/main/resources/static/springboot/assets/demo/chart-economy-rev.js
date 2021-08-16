@@ -4,7 +4,7 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Bar Chart Example
 var ctx = document.getElementById("ecoRevenueChart");
-var myLineChart = new Chart(ctx, {
+var ecoRChart = new Chart(ctx, {
   type: 'bar',
   data: {
     labels: ["숙박 및 음식점업", "예술, 스포츠 및 여가관련 서비스업", "보건업 및 사회복지 서비스업", "보건업 및 사회복지 서비스업", "교육 서비스업", "전기, 가스, 증기 및 공기조절 공급업", "운수 및 창고업"
@@ -60,7 +60,7 @@ var myLineChart = new Chart(ctx, {
 
 
 var ctx = document.getElementById("ecoRevenueChart2");
-var myLineChart2 = new Chart(ctx, {
+var ecoRChart2 = new Chart(ctx, {
   type: 'bar',
   data: {
     labels: ["숙박 및 음식점업", "예술, 스포츠 및 여가관련 서비스업", "보건업 및 사회복지 서비스업", "보건업 및 사회복지 서비스업", "교육 서비스업", "전기, 가스, 증기 및 공기조절 공급업", "운수 및 창고업"

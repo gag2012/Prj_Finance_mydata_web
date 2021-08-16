@@ -21,18 +21,6 @@
     <script src="../semantic/semantic.js"></script>
 </head>
 <style type="text/css">
-     body{
-         text-align: center;
-         display: block;
-         margin: 0 auto;
-         font-size: 16px;
-         color: #999;
-     }
-     h1{
-         font-family: 'Oswald', sans-serif;
-         font-size: 30px;
-         color: #216182;
-     }
      label {
          display: block;
          margin-top: 20px;
@@ -131,6 +119,7 @@
          transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
      }
 
+
 </style>
 
 <body class="sb-nav-fixed">
@@ -207,6 +196,27 @@
                         </div>
                     </div>
                 </div>
+                <script type="text/javascript">
+                     var modal = document.querySelector(".modal");
+                     var trigger = document.querySelector(".trigger");
+                     var closeButton = document.querySelector(".close-button");
+                     var cancelButton = document.querySelector("#cancel");
+
+                    function toggleModal() {
+                         modal.classList.toggle("show-modal");
+                     }
+
+                    function windowOnClick(event) {
+                         if (event.target === modal) {
+                             toggleModal();
+                         }
+                     }
+
+                    trigger.addEventListener("click", toggleModal);
+                    closeButton.addEventListener("click", toggleModal);
+                    cancel.addEventListener("click", toggleModal);
+                    window.addEventListener("click", windowOnClick);
+                </script>
                 <div class="row">
                     <button class="trigger">이메일 보내기</button>
 
@@ -567,13 +577,15 @@
                                     </section>
                                 </form>
                                 <label>기업/매장 주소</label>
-                                <input id="address" type="text" placeholder="주소" readonly onclick="findAddr()" required="required"><br>
+                                <input id="address" type="text" placeholder="주소" readonly onclick="findAddr()"
+                                       required="required"><br>
                                 <label>피해 기간</label>
                                 <input type="date" name="dateStart" placeholder="기간" required="required">
                                 <label></label>
                                 <input type="date" name="dateEnd" placeholder="기간" required="required">
                                 <label>피해 기간 매출액</label>
-                                <input type="text" name="money" placeholder="0" onkeyup="commas(this)" required="required"><br>
+                                <input type="text" name="money" placeholder="0" onkeyup="commas(this)"
+                                       required="required"><br>
                                 <label>바이러스</label>
                                 <form class="ui form">
                                     <section class="field">
@@ -650,7 +662,8 @@
                                             </div>
                                         </div>
                                     </section>
-                                </form><br>
+                                </form>
+                                <br>
                                 <input type="button" id="cancel" value="취소">
                                 <input type="submit" id="submit" value="보험료 계산">
                             </form>
@@ -673,27 +686,6 @@
         </footer>
     </div>
 </div>
-<script type="text/javascript">
-         var modal = document.querySelector(".modal");
-         var trigger = document.querySelector(".trigger");
-         var closeButton = document.querySelector(".close-button");
-         var cancelButton = document.querySelector("#cancel");
-
-        function toggleModal() {
-             modal.classList.toggle("show-modal");
-         }
-
-        function windowOnClick(event) {
-             if (event.target === modal) {
-                 toggleModal();
-             }
-         }
-
-        trigger.addEventListener("click", toggleModal);
-        closeButton.addEventListener("click", toggleModal);
-        cancel.addEventListener("click", toggleModal);
-        window.addEventListener("click", windowOnClick);
-</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 <script src="../static/springboot/js/scripts.js"></script>
@@ -705,6 +697,7 @@
     $('.ui.dropdown')
   .dropdown()
 ;
+
 
 </script>
 </body>
@@ -731,6 +724,7 @@ function commas(t) {
 		$(t).val(x);
 	}
 }
+
 </script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </html>

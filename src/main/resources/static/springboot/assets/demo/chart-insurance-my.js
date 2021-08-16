@@ -43,14 +43,12 @@ var myLineChart = new Chart(ctx, {
     scales: {
       xAxes: [{
         gridLines: {
+            color: "rgba(0, 0, 0, 0)",
         },
-        ticks: {
-        }
       }],
       yAxes: [{
-        ticks: {
-        },
         gridLines: {
+            color: "rgba(0, 0, 0, 0)",
         }
       }],
     },

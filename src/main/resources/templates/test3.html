@@ -16,23 +16,28 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
     <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg .tg-62pu{background-color:#efefef;border-color:inherit;
-      font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;text-align:center;vertical-align:top}
-    .tg .tg-bc63{background-color:#fbda75;border-color:inherit;
-      font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;font-weight:bold;text-align:center;
-      vertical-align:top}
-    .tg .tg-kpkg{background-color:#efefef;border-color:inherit;
-      font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;text-align:left;vertical-align:top}
-    .tg .tg-wdy9{background-color:#ffffff;border-color:inherit;
-      font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;text-align:center;vertical-align:top}
-    .tg .tg-ypzn{background-color:#ffffff;border-color:inherit;
-      font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;text-align:left;vertical-align:top}
-    </style>
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-rcrf{background-color:#f9e4a4;border-color:#ffffff;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;font-weight:bold;text-align:center;
+  vertical-align:top}
+.tg .tg-2ihm{background-color:#efefef;border-color:#ffffff;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;text-align:center;vertical-align:top}
+.tg .tg-jrax{background-color:#FFF;border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-q2nz{background-color:#F9E4A4;border-color:#ffffff;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-zy6h{background-color:#ffffff;border-color:#ffffff;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;text-align:center;vertical-align:top}
+.tg .tg-y5a3{background-color:#ffffff;border-color:#ffffff;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;text-align:left;vertical-align:top}
+.tg .tg-k4uw{background-color:#efefef;border-color:#ffffff;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;text-align:left;vertical-align:top}
+.tg .tg-alcy{background-color:#EFEFEF;border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-wftc{background-color:#f9e4a4;border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-512a{background-color:#efefef;border-color:#ffffff;text-align:center;vertical-align:top}
+</style>
 </head>
 
 <body class="sb-nav-fixed">
@@ -968,48 +973,61 @@
                                 <p> ✓ 예상 보험료는 <span id="insurance_money"></span> 0원 입니다.</p>
                                 <p> ✓ 같은 업종의 사람들과 비교해보세요!</p>
                                 <hr>
-                                <div style="float:left; width:60%;"><canvas id="analysisChart" width="400" height="400"></canvas></div>
-                                <div style="float:left; width:40%;"><table class="tg" style="undefined;table-layout: fixed; width: 439px">
+                                <div style="float:left; width:60%;"><canvas id="analysisChart" width="420" height="420"></canvas></div>
+                                <div style="float:left; width:40%;"><table class="tg" style="undefined;table-layout: fixed; width: 443px">
                                     <colgroup>
-                                        <col style="width: 91px">
-                                        <col style="width: 264px">
-                                        <col style="width: 84px">
+                                        <col style="width: 112px">
+                                        <col style="width: 111px">
+                                        <col style="width: 112px">
+                                        <col style="width: 108px">
                                     </colgroup>
                                     <thead>
                                     <tr>
-                                        <th class="tg-bc63" colspan="3">보험료 평가 기준</th>
+                                        <th class="tg-rcrf" colspan="4">보험료 평가 기준</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td class="tg-bc63">평가 요소</td>
-                                        <td class="tg-bc63">내용</td>
-                                        <td class="tg-bc63">등급</td>
+                                        <td class="tg-rcrf">평가 요소</td>
+                                        <td class="tg-rcrf" colspan="2">내용</td>
+                                        <td class="tg-q2nz">등급</td>
                                     </tr>
                                     <tr>
-                                        <td class="tg-62pu">매출액</td>
-                                        <td class="tg-kpkg">선택한 전염병 유행기간 내 매출액</td>
-                                        <td class="tg-62pu">0</td>
+                                        <td class="tg-zy6h">매출액</td>
+                                        <td class="tg-y5a3" colspan="2">선택한 전염병 유행기간 내 매출액</td>
+                                        <td class="tg-jrax">0</td>
                                     </tr>
                                     <tr>
-                                        <td class="tg-wdy9">영업이익</td>
-                                        <td class="tg-ypzn">선택한 전염병 유행기간 내 영업이익</td>
-                                        <td class="tg-wdy9">0</td>
+                                        <td class="tg-2ihm">영업이익</td>
+                                        <td class="tg-k4uw" colspan="2">선택한 전염병 유행기간 내 영업이익</td>
+                                        <td class="tg-alcy">0</td>
                                     </tr>
                                     <tr>
-                                        <td class="tg-62pu">상권변화</td>
-                                        <td class="tg-kpkg">유동인구 표준편차 </td>
-                                        <td class="tg-62pu">0</td>
+                                        <td class="tg-zy6h">상권변화</td>
+                                        <td class="tg-y5a3" colspan="2">유동인구 표준편차 </td>
+                                        <td class="tg-jrax">0</td>
                                     </tr>
                                     <tr>
-                                        <td class="tg-wdy9">임대료</td>
-                                        <td class="tg-ypzn">임대료 표준편차</td>
-                                        <td class="tg-wdy9">0</td>
+                                        <td class="tg-2ihm">임대료</td>
+                                        <td class="tg-k4uw" colspan="2">임대료 표준편차</td>
+                                        <td class="tg-alcy">0</td>
                                     </tr>
                                     <tr>
-                                        <td class="tg-62pu">전염병</td>
-                                        <td class="tg-kpkg">전염병 위험 등급</td>
-                                        <td class="tg-62pu">0</td>
+                                        <td class="tg-zy6h">전염병</td>
+                                        <td class="tg-y5a3" colspan="2">전염병 위험 등급</td>
+                                        <td class="tg-jrax">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-wftc">선택업종</td>
+                                        <td class="tg-512a">-</td>
+                                        <td class="tg-wftc">유동인구</td>
+                                        <td class="tg-512a">-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-wftc">유행기간</td>
+                                        <td class="tg-512a">-</td>
+                                        <td class="tg-wftc">임대료</td>
+                                        <td class="tg-512a">-</td>
                                     </tr>
                                     </tbody>
                                 </table></div>

@@ -195,27 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <script type="text/javascript">
-                     var modal = document.querySelector(".modal");
-                     var trigger = document.querySelector(".trigger");
-                     var closeButton = document.querySelector(".close-button");
-                     var cancelButton = document.querySelector("#cancel");
 
-                    function toggleModal() {
-                         modal.classList.toggle("show-modal");
-                     }
-
-                    function windowOnClick(event) {
-                         if (event.target === modal) {
-                             toggleModal();
-                         }
-                     }
-
-                    trigger.addEventListener("click", toggleModal);
-                    closeButton.addEventListener("click", toggleModal);
-                    cancel.addEventListener("click", toggleModal);
-                    window.addEventListener("click", windowOnClick);
-                </script>
                 <div class="row">
                     <button class="trigger">이메일 보내기</button>
 
@@ -685,6 +665,27 @@
         </footer>
     </div>
 </div>
+<script type="text/javascript">
+                     var modal = document.querySelector(".modal");
+                     var trigger = document.querySelector(".trigger");
+                     var closeButton = document.querySelector(".close-button");
+                     var cancelButton = document.querySelector("#cancel");
+
+                    function toggleModal() {
+                         modal.classList.toggle("show-modal");
+                     }
+
+                    function windowOnClick(event) {
+                         if (event.target === modal) {
+                             toggleModal();
+                         }
+                     }
+
+                    trigger.addEventListener("click", toggleModal);
+                    closeButton.addEventListener("click", toggleModal);
+                    cancel.addEventListener("click", toggleModal);
+                    window.addEventListener("click", windowOnClick);
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 <script src="../static/springboot/js/scripts.js"></script>

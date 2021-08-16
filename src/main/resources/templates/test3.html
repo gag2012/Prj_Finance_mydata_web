@@ -108,19 +108,30 @@
                                         </div>
                                         <div class="col-md-12">
                                             <label>매장/기업 주소<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="First Name">
+                                            <div class="container">
+                                                <div class="row-fluid">
+                                                    <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+                                                        <option data-subtext="Rep California">Tom Foolery</option>
+                                                        <option data-subtext="Sen California">Bill Gordon</option>
+                                                        <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+                                                        <option data-subtext="Rep Alabama">Mario Flores</option>
+                                                        <option data-subtext="Rep Alaska">Don Young</option>
+                                                        <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-md-6">
                                             <label>피해 기간<span class="text-danger">*</span></label>
                                             <input type="date" class="form-control" placeholder="Enter Date">
                                         </div>
                                         <div class="col-md-6">
-                                            <label></label>
+                                            <label><span class="text-danger"></span></label>
                                             <input type="date" class="form-control" placeholder="Enter Date">
                                         </div>
                                         <div class="col-md-12">
                                             <label>피해 매출액<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" placeholder="First Name">
+                                            <input type="text" class="form-control" onkeyup="numberWithCommas(this.vale)" placeholder="0">
                                         </div>
                                         <div class="col-md-12">
                                             <label>바이러스<span class="text-danger">*</span></label>
@@ -187,5 +198,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
 </body>
-
+function numberWithCommas(x) {
+    x = x.replace(/[^0-9]/g,'');   // 입력값이 숫자가 아니면 공백
+    x = x.replace(/,/g,'');          // ,값 공백처리
+    $("#money").val(x.replace(/\B(?=(\d{3})+(?!\d))/g, ",")); // 정규식을 이용해서 3자리 마다 , 추가
+}
 </html>

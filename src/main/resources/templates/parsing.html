@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript">
-            function loadDoc() {
-                var req = new XMLHttpRequest();
-                req.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        myFunction(this);
-                        console.log("테스트1");
-                    }
-                };
-                req.open("GET", "//openapi.seoul.go.kr:8088/sample/xml/TbCorona19CountStatusJCG/1/5/", true);
-                req.send();
-            }
-
-            function myFunction(xml) {
-                var i;
-                var xmlDoc = xml.responseXML;
-                console.log("테스트2");
-                var test = xmlDoc.getElementsByTagName("JCG_DT")[0].firstChild.data;
-                document.getElementById("gname").innerHTML = test;
-            }
-        </script>
-    <title>AJAX Sample</title>
+    <title>XML XMLHttpRequest</title>
+    <script>
+		function loadDoc() {
+			var xmlHttp = new XMLHttpRequest();			// XMLHttpRequest 객체를 생성함.
+			xmlHttp.onreadystatechange = function() {	// onreadystatechange 이벤트 핸들러를 작성함.
+				// 서버상에 문서가 존재하고 요청한 데이터의 처리가 완료되어 응답할 준비가 완료되었을 때
+				if(this.status == 200 && this.readyState == this.DONE) {
+					// 요청한 데이터를 문자열로 반환함.
+					document.getElementById("text").innerHTML = xmlHttp.responseText;
+				}
+			};
+			xmlHttp.open("GET", "//openapi.seoul.go.kr:8088/sample/xml/TbCorona19CountStatusJCG/1/5/", false);
+			xmlHttp.send();
+		}
+	</script>
 </head>
 
-<body onload="loadDoc();">
-<h2 id="gname">테스트</h2>
+<body>
+
+<h1>XMLHttpRequest 객체의 전송</h1>
+<button onclick="loadDoc()">요청 전송하기!</button>
+<p id="text"></p>
+
 </body>
+
 </html>

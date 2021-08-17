@@ -162,3 +162,17 @@ function btn_eco2R_click(){
     document.getElementById("textEcoGraph2").innerHTML = '연간 매출액 추정 손실액 (소분류)';
     document.getElementById("textEcoGraph3").innerHTML = '';
 }
+
+var ascdesc_flag = 1;
+
+function btn_ascdesc_click(){
+    ascdesc_flag = ascdesc_flag * -1;
+    if (ascdesc_flag==-1){
+        ecoRChart_second.data = ecoR3_desc;
+        ecoRChart_second.update();
+    }
+    else {
+        ecoRChart_second.data = ecoR3_asc;
+        ecoRChart_second.update();
+    }
+}

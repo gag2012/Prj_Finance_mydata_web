@@ -8,6 +8,7 @@
                 req.onreadystatechange = function() {
                     if (this.readyState == 4 && this.status == 200) {
                         myFunction(this);
+                        console.log("테스트1");
                     }
                 };
                 req.open("GET", "http://openapi.seoul.go.kr:8088/sample/xml/TbCorona19CountStatusJCG/1/5/", true);
@@ -17,7 +18,7 @@
             function myFunction(xml) {
                 var i;
                 var xmlDoc = xml.responseXML;
-
+                console.log("테스트2");
                 var test = xmlDoc.getElementsByTagName("JCG_DT")[0].firstChild.data;
                 document.getElementById("gname").innerHTML = test;
             }
@@ -26,6 +27,6 @@
 </head>
 
 <body onload="loadDoc();">
-<h2 id="gname"></h2>
+<h2 id="gname">테스트</h2>
 </body>
 </html>

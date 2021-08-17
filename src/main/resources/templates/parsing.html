@@ -1,38 +1,31 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>xmlHttpRequest 사용법 정리</title>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+            function loadDoc() {
+                var req = new XMLHttpRequest();
+                req.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        myFunction(this);
+                    }
+                };
+                req.open("GET", "http://openapi.seoul.go.kr:8088/sample/xml/TbCorona19CountStatusJCG/1/5/", true);
+                req.send();
+            }
+
+            function myFunction(xml) {
+                var i;
+                var xmlDoc = xml.responseXML;
+
+                var test = xmlDoc.getElementsByTagName("JCG_DT")[0].firstChild.data;
+                document.getElementById("gname").innerHTML = test;
+            }
+        </script>
+    <title>AJAX Sample</title>
 </head>
 
-<body>
-    <button type="button" id="button">Button</button>
-    <script type="text/javascript">
-        const button = document.getElementById('button');
-        button.addEventListener('click', getData);
-
-        function getData() {
-            var xhr = new XMLHttpRequest();
-            var url = 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson'; /*URL*/
-            var queryParams = '?' + encodeURIComponent('ServiceKey') + '=' + 'S2NIjtDSM5uZLf8tguznRUdoEfCvq3FyzJWM9nJHBQEQr+0hD6nqX9bpwG4BP2VmzObrSmsHOBgUAwgEN6SKOQ=='; /*Service Key*/
-            queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
-            queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
-            queryParams += '&' + encodeURIComponent('startCreateDt') + '=' + encodeURIComponent('20200310'); /**/
-            queryParams += '&' + encodeURIComponent('endCreateDt') + '=' + encodeURIComponent('20200315'); /**/
-            console.log('1');
-            xhr.open('GET', url + queryParams);
-            console.log('2');
-            xhr.onreadystatechange = function () {
-                console.log('3');
-                if (this.readyState == 4) {
-                    alert('Status: ' + this.status + 'nHeaders: ' + JSON.stringify(this.getAllResponseHeaders()) + 'nBody: ' + this.responseText);
-                    console.log('4');
-                }
-            };
-            console.log('5');
-            xhr.send();
-            console.log('6');
-        }
-    </script>
+<body onload="loadDoc();">
+<h2 id="gname"></h2>
 </body>
+</html>

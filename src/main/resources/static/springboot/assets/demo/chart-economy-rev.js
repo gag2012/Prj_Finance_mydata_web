@@ -27,30 +27,6 @@ var options = {
     },
 };
 
-var options2 = {
-    title: {
-      display: true,
-      text: '해당 년도 영업이익 (단위:백만원)'
-    },
-    tooltips: {
-      mode: 'index',
-      intersect: false,
-    },
-    scales: {
-      xAxes: [{
-        gridLines: {
-        },
-        ticks: {
-        }
-      }],
-      yAxes: [{
-        ticks: {
-        },
-        gridLines: {
-        }
-      }],
-    },
-};
 
 var ecoR1 = {
     labels: [
@@ -197,10 +173,8 @@ var ecoRChart_third = new Chart(ctx, {
 
 function btn_eco1R_click(){
     ecoRChart_second.data = ecoR1;
-    ecoRChart_second.options = options;
     ecoRChart_second.update();
     ecoRChart_third.data = ecoR2;
-    ecoRChart_third.options = options;
     ecoRChart_third.update();
     document.getElementById("textEcoGraph2").innerHTML = '업종별 영업이익 (2020, 2019)';
     document.getElementById("textEcoGraph3").innerHTML = '업종별 영업이익 (2020, 2018)';
@@ -208,10 +182,8 @@ function btn_eco1R_click(){
 
 function btn_eco2R_click(){
     ecoRChart_second.data = ecoR3_asc;
-    ecoRChart_second.options = options2;
     ecoRChart_second.update();
     ecoRChart_third.data = ecoR4_asc;
-    ecoRChart_third.options = options2;
     ecoRChart_third.update();
     document.getElementById("textEcoGraph2").innerHTML = '연간 매출액 추정 손실액 (소분류)';
     document.getElementById("textEcoGraph3").innerHTML = '2019, 2020 매출액 추정 손실액 비교 (소분류)';

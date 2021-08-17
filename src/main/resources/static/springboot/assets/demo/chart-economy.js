@@ -76,7 +76,7 @@ var ecoDChart = new Chart(ctx, {
 function btn_eco1_click(){
     ecoDChart.data = eco1;
     ecoDChart.update();
-    document.getElementById("textEcoGraph").innerHTML = '업종별 영업이익 (2020, 2019)';
+    document.getElementById("textEcoGraph").innerHTML = '연간 영업이익 추정 변화율';
 }
 
 function btn_eco2_click(){

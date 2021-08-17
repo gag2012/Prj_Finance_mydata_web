@@ -134,7 +134,7 @@ var empty = {
 var ctx = document.getElementById("ecoRevenueChart");
 var ecoRChart_second = new Chart(ctx, {
   type: 'bar',
-  data: empty,
+  data: ecoR1,
   options: options
 });
 
@@ -142,6 +142,6 @@ var ecoRChart_second = new Chart(ctx, {
 var ctx = document.getElementById("ecoRevenueChart2");
 var ecoRChart_third = new Chart(ctx, {
   type: 'bar',
-  data: empty,
+  data: ecoR2,
   options: options
 });

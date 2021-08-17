@@ -5,7 +5,6 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 var options = {
     title: {
       display: true,
-      text: '해당 년도 영업이익 (단위:천원)'
     },
     tooltips: {
       mode: 'index',

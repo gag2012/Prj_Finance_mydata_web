@@ -37,6 +37,9 @@
 .tg .tg-alcy{background-color:#EFEFEF;border-color:#ffffff;text-align:center;vertical-align:top}
 .tg .tg-wftc{background-color:#f9e4a4;border-color:#ffffff;text-align:center;vertical-align:top}
 .tg .tg-512a{background-color:#efefef;border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-1{background-color:#b2e2ef;border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-2{background-color:#efefef;border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-3{background-color:#f9e4a4;border-color:#ffffff;text-align:center;vertical-align:top}
 </style>
     <link href="../static/springboot/css/styles2.css" rel="stylesheet" />
 </head>
@@ -971,15 +974,16 @@
                                 나의 보험료는?
                             </div>
                             <div class="card-body">
-                                <p> ✓ 예상 보험료는 <b><span id="premium"></span>원 </b>입니다.</p>
+                                <p> ✓ 예상 한 달 보험료는 <b><span id="month_fee_insurance"></span>0원 </b>입니다.</p>
                                 <p> ✓ 같은 업종의 사람들과 비교해보세요!</p>
                                 <hr>
-                                <div style="float:left; display: table; margin-left: auto; margin-right: auto; max-width:50%;"><canvas id="analysisChart" width="420" height="420"></canvas></div>
-                                <div style="float:right; display: table; margin-left: auto; margin-right: auto; max-width:50%;"><table class="tg" style="undefined;table-layout: fixed; width: 440px">
+                                <div style="float:left; display: table; margin-left: auto; margin-right: auto; max-width:50%;">
+                                    <canvas id="analysisChart" width="420" height="407"></canvas></div>
+                                <div style="float:right; display: table; margin-left: auto; margin-right: auto; max-width:10%;"><table class="tg" style="undefined;table-layout: fixed; width: 440px">
                                     <colgroup>
-                                        <col style="width: 122px">
+                                        <col style="width: 120px">
                                         <col style="width: 140px">
-                                        <col style="width: 122px">
+                                        <col style="width: 120px">
                                         <col style="width: 140px">
                                     </colgroup>
                                     <thead>
@@ -994,48 +998,46 @@
                                         <td class="tg-q2nz">등급</td>
                                     </tr>
                                     <tr>
-                                        <td class="tg-zy6h">매출액</td>
-                                        <td class="tg-y5a3" colspan="2">선택한 전염병 유행기간 내 매출액</td>
-                                        <td class="tg-jrax">0</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-2ihm">영업이익</td>
-                                        <td class="tg-k4uw" colspan="2">선택한 전염병 유행기간 내 영업이익</td>
-                                        <td class="tg-alcy">0</td>
-                                    </tr>
-                                    <tr>
                                         <td class="tg-zy6h">상권변화</td>
                                         <td class="tg-y5a3" colspan="2">유동인구 표준편차 </td>
-                                        <td class="tg-jrax">0</td>
+                                        <td class="tg-jrax" id="Utable_foot">0</td>
                                     </tr>
                                     <tr>
                                         <td class="tg-2ihm">임대료</td>
                                         <td class="tg-k4uw" colspan="2">임대료 표준편차</td>
-                                        <td class="tg-alcy">0</td>
+                                        <td class="tg-alcy" id="Utable_rent">0</td>
                                     </tr>
                                     <tr>
                                         <td class="tg-zy6h">전염병</td>
                                         <td class="tg-y5a3" colspan="2">전염병 위험 등급</td>
-                                        <td class="tg-jrax">0</td>
+                                        <td class="tg-jrax" id="Utable_virus">0</td>
                                     </tr>
                                     <tr>
-                                        <td class="tg-wftc">선택업종</td>
-                                        <td class="tg-512a">-</td>
-                                        <td class="tg-wftc">유동인구</td>
-                                        <td class="tg-512a">-</td>
+                                        <td class="tg-wftc">선택 업종</td>
+                                        <td class="tg-512a" id="table_job_select">-</td>
+                                        <td class="tg-wftc">선택 위치</td>
+                                        <td class="tg-512a" id="table_location">-</td>
                                     </tr>
                                     <tr>
-                                        <td class="tg-wftc">유행기간</td>
-                                        <td class="tg-512a">-</td>
-                                        <td class="tg-wftc">임대료</td>
-                                        <td class="tg-512a">-</td>
+                                        <td class="tg-wftc">유행 기간</td>
+                                        <td class="tg-512a" id="table_duration">-</td>
+                                        <td class="tg-wftc">선택 전염병</td>
+                                        <td class="tg-512a" id="table_virus">-</td>
                                     </tr>
                                     <tr>
-                                        <td class="tg-wftc">매출액</td>
-                                        <td class="tg-512a">-</td>
-                                        <td class="tg-wftc">바이러스</td>
-                                        <td class="tg-512a">-</td>
+                                        <td class="tg-wftc">부보율</td>
+                                        <td class="tg-512a" id="table_bo_rate">-</td>
+                                        <td class="tg-wftc">유동인구 증감율</td>
+                                        <td class="tg-512a" id="table_foot_rate">-</td>
                                     </tr>
+                                    <tr>
+                                        <th class="tg-1">매출액 평균</th>
+                                        <th class="tg-2" id="table_avg_salary">-</th>
+                                        <th class="tg-3">나의 매출액</th>
+                                        <th class="tg-2" id="table_my_salary">-</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
                                     </tbody>
                                 </table></div>
                             </div>
@@ -1062,23 +1064,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table"></i>
-                                전엄병(바이러스) 보험료 등급 기준
-                            </div>
-                            <div class="card-body">
-                                <span id="textTest"></span>
-                                <span id="textTest2"></span>
-                                <span id="textTest3"></span>
-                                <span id="textTest4"></span>
-                                <span id="textTest5"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </main>
         <footer class="py-4 bg-light mt-auto">
@@ -1099,16 +1084,9 @@
         crossorigin="anonymous"></script>
 <script src="../static/springboot/js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-<script src="../static/springboot/assets/demo/chart-insurance-my.js"></script>
-<script src="../static/springboot/assets/demo/chart-virus.js"></script>
-<script src="../static/springboot/assets/demo/chart-area-demo.js"></script>
-<script src="../static/springboot/assets/demo/chart-bar-demo.js"></script>
-<script src="../static/springboot/assets/demo/chart-pie-demo.js"></script>
-<script src="../static/springboot/assets/demo/slider.js"></script>
-<script src="../static/springboot/assets/demo/chart-economy.js"></script>
-<script src="../static/springboot/assets/demo/chart-economy-rev.js"></script>
+<script src="../static/springboot/assets/demo/chart-insurance-my2.js"></script>
 <script src="../static/springboot/js/datatables-simple-demo.js"></script>
-<script src="../static/springboot/assets/demo/insurance_analysis.js"></script>
+<script src="../static/springboot/assets/demo/insuracne_analysis3.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

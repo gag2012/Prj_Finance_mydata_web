@@ -1,0 +1,2699 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<info>
+		<job>자사가맹점</job>
+		<sold>3959784226</sold>
+	</info>
+	<info>
+		<job>해외사용</job>
+		<sold>20310485824</sold>
+	</info>
+	<info>
+		<job>동물농장</job>
+		<sold>10234091.7</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>10234091.7</insurance>
+		<insurance2>3411363.9</insurance2>
+	</info>
+	<info>
+		<job>애완동물/용품</job>
+		<sold>8623333.95</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6898667.16</insurance>
+		<insurance2>2299555.72</insurance2>
+	</info>
+	<info>
+		<job>병원-동물병원</job>
+		<sold>36200548.41</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>28960438.728</insurance>
+		<insurance2>9653479.576</insurance2>
+	</info>
+	<info>
+		<job>골프장</job>
+		<sold>20940357.09</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>20940357.09</insurance>
+		<insurance2>6980119.03</insurance2>
+	</info>
+	<info>
+		<job>낚시터</job>
+		<sold>2836272.24</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>2836272.24</insurance>
+		<insurance2>945424.08</insurance2>
+	</info>
+	<info>
+		<job>노래방</job>
+		<sold>7043381.46</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>7043381.46</insurance>
+		<insurance2>2347793.82</insurance2>
+	</info>
+	<info>
+		<job>놀이동산</job>
+		<sold>102219805.7</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>102219805.7</insurance>
+		<insurance2>34073268.5666667</insurance2>
+	</info>
+	<info>
+		<job>당구장</job>
+		<sold>2915153.61</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>2915153.61</insurance>
+		<insurance2>971717.87</insurance2>
+	</info>
+	<info>
+		<job>레저-기타</job>
+		<sold>1731450</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>1731450</insurance>
+		<insurance2>577150</insurance2>
+	</info>
+	<info>
+		<job>무술 도장</job>
+		<sold>6419841.21</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>6419841.21</insurance>
+		<insurance2>2139947.07</insurance2>
+	</info>
+	<info>
+		<job>복권</job>
+		<sold>4742875.14</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>4742875.14</insurance>
+		<insurance2>1580958.38</insurance2>
+	</info>
+	<info>
+		<job>볼링장</job>
+		<sold>53782695.66</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>53782695.66</insurance>
+		<insurance2>17927565.22</insurance2>
+	</info>
+	<info>
+		<job>비디오감상실</job>
+		<sold>5928135.6</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>5928135.6</insurance>
+		<insurance2>1976045.2</insurance2>
+	</info>
+	<info>
+		<job>수상스포츠</job>
+		<sold>36584595.66</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>36584595.66</insurance>
+		<insurance2>12194865.22</insurance2>
+	</info>
+	<info>
+		<job>수영장</job>
+		<sold>43788233.73</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>43788233.73</insurance>
+		<insurance2>14596077.91</insurance2>
+	</info>
+	<info>
+		<job>스포츠강습</job>
+		<sold>12331343.25</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>12331343.25</insurance>
+		<insurance2>4110447.75</insurance2>
+	</info>
+	<info>
+		<job>스포츠센터</job>
+		<sold>20840547</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>20840547</insurance>
+		<insurance2>6946849</insurance2>
+	</info>
+	<info>
+		<job>실내골프장</job>
+		<sold>20023759.47</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>20023759.47</insurance>
+		<insurance2>6674586.49</insurance2>
+	</info>
+	<info>
+		<job>실내야구연습장</job>
+		<sold>18314050.08</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>18314050.08</insurance>
+		<insurance2>6104683.36</insurance2>
+	</info>
+	<info>
+		<job>요가</job>
+		<sold>15235686.21</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>15235686.21</insurance>
+		<insurance2>5078562.07</insurance2>
+	</info>
+	<info>
+		<job>유아교육/키즈카페</job>
+		<sold>35826441.72</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>35826441.72</insurance>
+		<insurance2>11942147.24</insurance2>
+	</info>
+	<info>
+		<job>축구/풋살/족구장</job>
+		<sold>9819329.4</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>9819329.4</insurance>
+		<insurance2>3273109.8</insurance2>
+	</info>
+	<info>
+		<job>탁구장</job>
+		<sold>1824901.74</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>1824901.74</insurance>
+		<insurance2>608300.58</insurance2>
+	</info>
+	<info>
+		<job>테니스장</job>
+		<sold>14827334.64</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>14827334.64</insurance>
+		<insurance2>4942444.88</insurance2>
+	</info>
+	<info>
+		<job>골프용품</job>
+		<sold>94976949.57</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>75981559.656</insurance>
+		<insurance2>25327186.552</insurance2>
+	</info>
+	<info>
+		<job>낚시용품</job>
+		<sold>16630556.88</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>13304445.504</insurance>
+		<insurance2>4434815.168</insurance2>
+	</info>
+	<info>
+		<job>보트</job>
+		<sold>7703934</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6163147.2</insurance>
+		<insurance2>2054382.4</insurance2>
+	</info>
+	<info>
+		<job>수중장비</job>
+		<sold>7091495.4</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5673196.32</insurance>
+		<insurance2>1891065.44</insurance2>
+	</info>
+	<info>
+		<job>스포츠용품</job>
+		<sold>37042004.01</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>29633603.208</insurance>
+		<insurance2>9877867.736</insurance2>
+	</info>
+	<info>
+		<job>스포츠의류전문</job>
+		<sold>53924796.78</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>43139837.424</insurance>
+		<insurance2>14379945.808</insurance2>
+	</info>
+	<info>
+		<job>자전거-성인용</job>
+		<sold>11075585.13</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8860468.104</insurance>
+		<insurance2>2953489.368</insurance2>
+	</info>
+	<info>
+		<job>1급호텔</job>
+		<sold>266147878.3</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>266147878.3</insurance>
+		<insurance2>88715959.4333333</insurance2>
+	</info>
+	<info>
+		<job>2급호텔</job>
+		<sold>139587878.1</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>139587878.1</insurance>
+		<insurance2>46529292.7</insurance2>
+	</info>
+	<info>
+		<job>고시원</job>
+		<sold>3792722.31</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>3792722.31</insurance>
+		<insurance2>1264240.77</insurance2>
+	</info>
+	<info>
+		<job>모텔</job>
+		<sold>20024769.24</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>20024769.24</insurance>
+		<insurance2>6674923.08</insurance2>
+	</info>
+	<info>
+		<job>여관/민박</job>
+		<sold>6554344.32</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>6554344.32</insurance>
+		<insurance2>2184781.44</insurance2>
+	</info>
+	<info>
+		<job>캠프/별장/펜션</job>
+		<sold>8467646.04</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>8467646.04</insurance>
+		<insurance2>2822548.68</insurance2>
+	</info>
+	<info>
+		<job>콘도미니엄</job>
+		<sold>232690042.7</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>232690042.7</insurance>
+		<insurance2>77563347.5666667</insurance2>
+	</info>
+	<info>
+		<job>특급호텔</job>
+		<sold>1044090453</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>1044090453</insurance>
+		<insurance2>348030151</insurance2>
+	</info>
+	<info>
+		<job>호텔-기타</job>
+		<sold>39776222.55</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>39776222.55</insurance>
+		<insurance2>13258740.85</insurance2>
+	</info>
+	<info>
+		<job>여행사</job>
+		<sold>249577276.2</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>249577276.2</insurance>
+		<insurance2>83192425.4</insurance2>
+	</info>
+	<info>
+		<job>이민/유학</job>
+		<sold>13339518.57</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>13339518.57</insurance>
+		<insurance2>4446506.19</insurance2>
+	</info>
+	<info>
+		<job>골동품/예술품</job>
+		<sold>4083361.47</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3266689.176</insurance>
+		<insurance2>1088896.392</insurance2>
+	</info>
+	<info>
+		<job>공예품</job>
+		<sold>4310993.31</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3448794.648</insurance>
+		<insurance2>1149598.216</insurance2>
+	</info>
+	<info>
+		<job>그림/액자</job>
+		<sold>7453813.68</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5963050.944</insurance>
+		<insurance2>1987683.648</insurance2>
+	</info>
+	<info>
+		<job>선물/기념품</job>
+		<sold>9809758.41</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7847806.728</insurance>
+		<insurance2>2615935.576</insurance2>
+	</info>
+	<info>
+		<job>인터넷PC방</job>
+		<sold>20756314.14</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>20756314.14</insurance>
+		<insurance2>6918771.38</insurance2>
+	</info>
+	<info>
+		<job>전자오락실</job>
+		<sold>6786963.9</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>6786963.9</insurance>
+		<insurance2>2262321.3</insurance2>
+	</info>
+	<info>
+		<job>자전거-아동용</job>
+		<sold>7976484.6</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6381187.68</insurance>
+		<insurance2>2127062.56</insurance2>
+	</info>
+	<info>
+		<job>장난감/오락기기</job>
+		<sold>15281643.84</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>12225315.072</insurance>
+		<insurance2>4075105.024</insurance2>
+	</info>
+	<info>
+		<job>운명/운세/작명</job>
+		<sold>5675864.79</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4540691.832</insurance>
+		<insurance2>1513563.944</insurance2>
+	</info>
+	<info>
+		<job>악기</job>
+		<sold>12547835.61</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>10038268.488</insurance>
+		<insurance2>3346089.496</insurance2>
+	</info>
+	<info>
+		<job>음반/음원</job>
+		<sold>10906054.35</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8724843.48</insurance>
+		<insurance2>2908281.16</insurance2>
+	</info>
+	<info>
+		<job>단전호흡</job>
+		<sold>35289345.93</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>35289345.93</insurance>
+		<insurance2>11763115.31</insurance2>
+	</info>
+	<info>
+		<job>박물관/전시관</job>
+		<sold>20503766.88</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>20503766.88</insurance>
+		<insurance2>6834588.96</insurance2>
+	</info>
+	<info>
+		<job>수족관</job>
+		<sold>15755790.51</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>15755790.51</insurance>
+		<insurance2>5251930.17</insurance2>
+	</info>
+	<info>
+		<job>연극/음악/공연</job>
+		<sold>22606337.91</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>22606337.91</insurance>
+		<insurance2>7535445.97</insurance2>
+	</info>
+	<info>
+		<job>영화관</job>
+		<sold>47837568.57</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>47837568.57</insurance>
+		<insurance2>15945856.19</insurance2>
+	</info>
+	<info>
+		<job>자연학습원</job>
+		<sold>25526720.79</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>25526720.79</insurance>
+		<insurance2>8508906.93</insurance2>
+	</info>
+	<info>
+		<job>테마카페</job>
+		<sold>13144146.99</sold>
+		<jobinfo>예술, 스포츠 및 여가관련 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>13144146.99</insurance>
+		<insurance2>4381382.33</insurance2>
+	</info>
+	<info>
+		<job>종교용품</job>
+		<sold>7024571.22</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5619656.976</insurance>
+		<insurance2>1873218.992</insurance2>
+	</info>
+	<info>
+		<job>꽃집/꽃배달</job>
+		<sold>4511553.42</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3609242.736</insurance>
+		<insurance2>1203080.912</insurance2>
+	</info>
+	<info>
+		<job>분재</job>
+		<sold>2082396</sold>
+		<jobinfo>농업, 임업 및 어업</jobinfo>
+		<rate>1</rate>
+		<insurance>2082396</insurance>
+		<insurance2>694132</insurance2>
+	</info>
+	<info>
+		<job>화훼/조경</job>
+		<sold>9414216.66</sold>
+		<jobinfo>농업, 임업 및 어업</jobinfo>
+		<rate>1</rate>
+		<insurance>9414216.66</insurance>
+		<insurance2>3138072.22</insurance2>
+	</info>
+	<info>
+		<job>건설장비 대여</job>
+		<sold>5316776.61</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>4785098.949</insurance>
+		<insurance2>1595032.983</insurance2>
+	</info>
+	<info>
+		<job>생활장비 대여</job>
+		<sold>90945193.07</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>81850673.763</insurance>
+		<insurance2>27283557.921</insurance2>
+	</info>
+	<info>
+		<job>정밀기기 대여</job>
+		<sold>8894825.31</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>8005342.779</insurance>
+		<insurance2>2668447.593</insurance2>
+	</info>
+	<info>
+		<job>중장비 대여</job>
+		<sold>1338458.38</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>1204612.542</insurance>
+		<insurance2>401537.514</insurance2>
+	</info>
+	<info>
+		<job>농기구/자재</job>
+		<sold>16930519.68</sold>
+		<jobinfo>농업, 임업 및 어업</jobinfo>
+		<rate>1</rate>
+		<insurance>16930519.68</insurance>
+		<insurance2>5643506.56</insurance2>
+	</info>
+	<info>
+		<job>종묘사업</job>
+		<sold>3918509.97</sold>
+		<jobinfo>농업, 임업 및 어업</jobinfo>
+		<rate>1</rate>
+		<insurance>3918509.97</insurance>
+		<insurance2>1306169.99</insurance2>
+	</info>
+	<info>
+		<job>고속버스</job>
+		<sold>548360545.5</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>493524490.95</insurance>
+		<insurance2>164508163.65</insurance2>
+	</info>
+	<info>
+		<job>버스/지하철</job>
+		<sold>11535262358</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>10381736122.2</insurance>
+		<insurance2>3460578707.4</insurance2>
+	</info>
+	<info>
+		<job>가발</job>
+		<sold>32888296.2</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>26310636.96</insurance>
+		<insurance2>8770212.32</insurance2>
+	</info>
+	<info>
+		<job>네일케어</job>
+		<sold>3765173.34</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3012138.672</insurance>
+		<insurance2>1004046.224</insurance2>
+	</info>
+	<info>
+		<job>목욕탕</job>
+		<sold>25013583.03</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>20010866.424</insurance>
+		<insurance2>6670288.808</insurance2>
+	</info>
+	<info>
+		<job>미용실</job>
+		<sold>6992651.43</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5594121.144</insurance>
+		<insurance2>1864707.048</insurance2>
+	</info>
+	<info>
+		<job>미용제품</job>
+		<sold>8613512.7</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6890810.16</insurance>
+		<insurance2>2296936.72</insurance2>
+	</info>
+	<info>
+		<job>스포츠마사지</job>
+		<sold>9078975.93</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7263180.744</insurance>
+		<insurance2>2421060.248</insurance2>
+	</info>
+	<info>
+		<job>체형/두피관리</job>
+		<sold>7818663.66</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6254930.928</insurance>
+		<insurance2>2084976.976</insurance2>
+	</info>
+	<info>
+		<job>피부관리/마사지</job>
+		<sold>12786112.23</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>10228889.784</insurance>
+		<insurance2>3409629.928</insurance2>
+	</info>
+	<info>
+		<job>사진관</job>
+		<sold>8002069.32</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6401655.456</insurance>
+		<insurance2>2133885.152</insurance2>
+	</info>
+	<info>
+		<job>사진기/광학제품</job>
+		<sold>20888346.66</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>16710677.328</insurance>
+		<insurance2>5570225.776</insurance2>
+	</info>
+	<info>
+		<job>복지시설</job>
+		<sold>2804812.23</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>2243849.784</insurance>
+		<insurance2>747949.928</insurance2>
+	</info>
+	<info>
+		<job>사회단체</job>
+		<sold>22366396.77</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>17893117.416</insurance>
+		<insurance2>5964372.472</insurance2>
+	</info>
+	<info>
+		<job>조합/협회</job>
+		<sold>54103124.49</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>43282499.592</insurance>
+		<insurance2>14427499.864</insurance2>
+	</info>
+	<info>
+		<job>종교단체</job>
+		<sold>14284578.9</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>11427663.12</insurance>
+		<insurance2>3809221.04</insurance2>
+	</info>
+	<info>
+		<job>주민자치센터</job>
+		<sold>6735273.57</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5388218.856</insurance>
+		<insurance2>1796072.952</insurance2>
+	</info>
+	<info>
+		<job>세탁소</job>
+		<sold>4251419.79</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3401135.832</insurance>
+		<insurance2>1133711.944</insurance2>
+	</info>
+	<info>
+		<job>특수세탁</job>
+		<sold>5828613.6</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4662890.88</insurance>
+		<insurance2>1554296.96</insurance2>
+	</info>
+	<info>
+		<job>가전제품 수리</job>
+		<sold>155782432.6</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>124625946.08</insurance>
+		<insurance2>41541982.0266667</insurance2>
+	</info>
+	<info>
+		<job>가정용품 수리</job>
+		<sold>6150075.48</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4920060.384</insurance>
+		<insurance2>1640020.128</insurance2>
+	</info>
+	<info>
+		<job>의류 수선</job>
+		<sold>4522166.19</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3617732.952</insurance>
+		<insurance2>1205910.984</insurance2>
+	</info>
+	<info>
+		<job>정보통신기기 수리</job>
+		<sold>3242807.97</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>2594246.376</insurance>
+		<insurance2>864748.792</insurance2>
+	</info>
+	<info>
+		<job>여객선</job>
+		<sold>22383527.94</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>20145175.146</insurance>
+		<insurance2>6715058.382</insurance2>
+	</info>
+	<info>
+		<job>LPG가스</job>
+		<sold>1536747289</sold>
+		<jobinfo>전기, 가스, 증기 및 공기조절 공급업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>1229397831.2</insurance>
+		<insurance2>409799277.066667</insurance2>
+	</info>
+	<info>
+		<job>가정용연료</job>
+		<sold>26378454.51</sold>
+		<jobinfo>전기, 가스, 증기 및 공기조절 공급업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>21102763.608</insurance>
+		<insurance2>7034254.536</insurance2>
+	</info>
+	<info>
+		<job>주유소</job>
+		<sold>541095125.2</sold>
+		<jobinfo>전기, 가스, 증기 및 공기조절 공급업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>432876100.16</insurance>
+		<insurance2>144292033.386667</insurance2>
+	</info>
+	<info>
+		<job>도장</job>
+		<sold>1620317.1</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>1296253.68</insurance>
+		<insurance2>432084.56</insurance2>
+	</info>
+	<info>
+		<job>열쇠</job>
+		<sold>2285010.57</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>1828008.456</insurance>
+		<insurance2>609336.152</insurance2>
+	</info>
+	<info>
+		<job>월납/세금</job>
+		<sold>53074566724</sold>
+		<jobinfo>전기, 가스, 증기 및 공기조절 공급업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>42459653379.2</insurance>
+		<insurance2>14153217793.0667</insurance2>
+	</info>
+	<info>
+		<job>통신요금</job>
+		<sold>31689758199</sold>
+		<jobinfo>정보통신업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>25351806559.2</insurance>
+		<insurance2>8450602186.4</insurance2>
+	</info>
+	<info>
+		<job>렌터카</job>
+		<sold>22131876.96</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>19918689.264</insurance>
+		<insurance2>6639563.088</insurance2>
+	</info>
+	<info>
+		<job>자동차 견인</job>
+		<sold>2967033.09</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>2670329.781</insurance>
+		<insurance2>890109.927</insurance2>
+	</info>
+	<info>
+		<job>주차장</job>
+		<sold>18728480.64</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>16855632.576</insurance>
+		<insurance2>5618544.192</insurance2>
+	</info>
+	<info>
+		<job>세차/광택</job>
+		<sold>9670258.83</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7736207.064</insurance>
+		<insurance2>2578735.688</insurance2>
+	</info>
+	<info>
+		<job>오토바이 용품</job>
+		<sold>5212004.97</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4169603.976</insurance>
+		<insurance2>1389867.992</insurance2>
+	</info>
+	<info>
+		<job>자동차 검사소</job>
+		<sold>37396104.45</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>29916883.56</insurance>
+		<insurance2>9972294.52</insurance2>
+	</info>
+	<info>
+		<job>자동차 경정비</job>
+		<sold>47574475.47</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>38059580.376</insurance>
+		<insurance2>12686526.792</insurance2>
+	</info>
+	<info>
+		<job>자동차 시트/타이어</job>
+		<sold>23711037.93</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>18968830.344</insurance>
+		<insurance2>6322943.448</insurance2>
+	</info>
+	<info>
+		<job>자동차 정비-수입</job>
+		<sold>29504906.13</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>23603924.904</insurance>
+		<insurance2>7867974.968</insurance2>
+	</info>
+	<info>
+		<job>중장비 정비</job>
+		<sold>8962800</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7170240</insurance>
+		<insurance2>2390080</insurance2>
+	</info>
+	<info>
+		<job>중장비 판매</job>
+		<sold>23532209.7</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>18825767.76</insurance>
+		<insurance2>6275255.92</insurance2>
+	</info>
+	<info>
+		<job>택시</job>
+		<sold>4886418558</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>4397776702.2</insurance>
+		<insurance2>1465925567.4</insurance2>
+	</info>
+	<info>
+		<job>유료도로</job>
+		<sold>1077535260</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>969781734</insurance>
+		<insurance2>323260578</insurance2>
+	</info>
+	<info>
+		<job>항공사</job>
+		<sold>4166167132</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>3749550418.8</insurance>
+		<insurance2>1249850139.6</insurance2>
+	</info>
+	<info>
+		<job>종합이삿짐대행</job>
+		<sold>6254468.82</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>5629021.938</insurance>
+		<insurance2>1876340.646</insurance2>
+	</info>
+	<info>
+		<job>콜밴</job>
+		<sold>1224618.21</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>1102156.389</insurance>
+		<insurance2>367385.463</insurance2>
+	</info>
+	<info>
+		<job>퀵배달</job>
+		<sold>23572001.04</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>21214800.936</insurance>
+		<insurance2>7071600.312</insurance2>
+	</info>
+	<info>
+		<job>택배업</job>
+		<sold>7095726.54</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>6386153.886</insurance>
+		<insurance2>2128717.962</insurance2>
+	</info>
+	<info>
+		<job>화물운송</job>
+		<sold>33348082.02</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>30013273.818</insurance>
+		<insurance2>10004424.606</insurance2>
+	</info>
+	<info>
+		<job>도너츠</job>
+		<sold>31271069.52</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>31271069.52</insurance>
+		<insurance2>10423689.84</insurance2>
+	</info>
+	<info>
+		<job>떡/한과</job>
+		<sold>9215702.28</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>9215702.28</insurance>
+		<insurance2>3071900.76</insurance2>
+	</info>
+	<info>
+		<job>베이커리</job>
+		<sold>27746788.89</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>27746788.89</insurance>
+		<insurance2>9248929.63</insurance2>
+	</info>
+	<info>
+		<job>분식</job>
+		<sold>15417823.11</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>15417823.11</insurance>
+		<insurance2>5139274.37</insurance2>
+	</info>
+	<info>
+		<job>샌드위치/토스트</job>
+		<sold>23885431.32</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>23885431.32</insurance>
+		<insurance2>7961810.44</insurance2>
+	</info>
+	<info>
+		<job>아이스크림/빙수</job>
+		<sold>23422814.07</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>23422814.07</insurance>
+		<insurance2>7807604.69</insurance2>
+	</info>
+	<info>
+		<job>건강식품</job>
+		<sold>16935862.44</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>13548689.952</insurance>
+		<insurance2>4516229.984</insurance2>
+	</info>
+	<info>
+		<job>건강원</job>
+		<sold>3296421.81</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>2637137.448</insurance>
+		<insurance2>879045.816</insurance2>
+	</info>
+	<info>
+		<job>인삼제품</job>
+		<sold>99492929.1</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>79594343.28</insurance>
+		<insurance2>26531447.76</insurance2>
+	</info>
+	<info>
+		<job>건어물</job>
+		<sold>12462240.87</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>9969792.696</insurance>
+		<insurance2>3323264.232</insurance2>
+	</info>
+	<info>
+		<job>곡물/사료</job>
+		<sold>13825410</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>11060328</insurance>
+		<insurance2>3686776</insurance2>
+	</info>
+	<info>
+		<job>농산물</job>
+		<sold>12626565.66</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>10101252.528</insurance>
+		<insurance2>3367084.176</insurance2>
+	</info>
+	<info>
+		<job>농축산물가공</job>
+		<sold>24793685.97</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>19834948.776</insurance>
+		<insurance2>6611649.592</insurance2>
+	</info>
+	<info>
+		<job>수산물</job>
+		<sold>21830141.97</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>17464113.576</insurance>
+		<insurance2>5821371.192</insurance2>
+	</info>
+	<info>
+		<job>유제품</job>
+		<sold>155212992.2</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>124170393.76</insurance>
+		<insurance2>41390131.2533333</insurance2>
+	</info>
+	<info>
+		<job>청과물</job>
+		<sold>14328732.33</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>11462985.864</insurance>
+		<insurance2>3820995.288</insurance2>
+	</info>
+	<info>
+		<job>축산물</job>
+		<sold>24598768.35</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>19679014.68</insurance>
+		<insurance2>6559671.56</insurance2>
+	</info>
+	<info>
+		<job>부페</job>
+		<sold>66040619.61</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>66040619.61</insurance>
+		<insurance2>22013539.87</insurance2>
+	</info>
+	<info>
+		<job>농협-마트</job>
+		<sold>362943711.8</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>290354969.44</insurance>
+		<insurance2>96784989.8133333</insurance2>
+	</info>
+	<info>
+		<job>담배</job>
+		<sold>10224968.85</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8179975.08</insurance>
+		<insurance2>2726658.36</insurance2>
+	</info>
+	<info>
+		<job>미곡상</job>
+		<sold>7447557.18</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5958045.744</insurance>
+		<insurance2>1986015.248</insurance2>
+	</info>
+	<info>
+		<job>반찬</job>
+		<sold>17437107.03</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>13949685.624</insurance>
+		<insurance2>4649895.208</insurance2>
+	</info>
+	<info>
+		<job>생수</job>
+		<sold>8236717.17</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6589373.736</insurance>
+		<insurance2>2196457.912</insurance2>
+	</info>
+	<info>
+		<job>식료품</job>
+		<sold>14532589.47</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>11626071.576</insurance>
+		<insurance2>3875357.192</insurance2>
+	</info>
+	<info>
+		<job>식자재</job>
+		<sold>349837298.7</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>279869838.96</insurance>
+		<insurance2>93289946.32</insurance2>
+	</info>
+	<info>
+		<job>떡/한과 제조</job>
+		<sold>7105239.33</sold>
+		<jobinfo>제조업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5684191.464</insurance>
+		<insurance2>1894730.488</insurance2>
+	</info>
+	<info>
+		<job>식품 제조</job>
+		<sold>7905332.19</sold>
+		<jobinfo>제조업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6324265.752</insurance>
+		<insurance2>2108088.584</insurance2>
+	</info>
+	<info>
+		<job>동남아/인도음식</job>
+		<sold>26849248.86</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>26849248.86</insurance>
+		<insurance2>8949749.62</insurance2>
+	</info>
+	<info>
+		<job>일식</job>
+		<sold>28261518.42</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>28261518.42</insurance>
+		<insurance2>9420506.14</insurance2>
+	</info>
+	<info>
+		<job>중식</job>
+		<sold>30920772.45</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>30920772.45</insurance>
+		<insurance2>10306924.15</insurance2>
+	</info>
+	<info>
+		<job>기타세계요리</job>
+		<sold>26717382.21</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>26717382.21</insurance>
+		<insurance2>8905794.07</insurance2>
+	</info>
+	<info>
+		<job>스테이크</job>
+		<sold>26480385.99</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>26480385.99</insurance>
+		<insurance2>8826795.33</insurance2>
+	</info>
+	<info>
+		<job>양식</job>
+		<sold>30849439.62</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>30849439.62</insurance>
+		<insurance2>10283146.54</insurance2>
+	</info>
+	<info>
+		<job>패밀리 레스토랑</job>
+		<sold>141370616.9</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>141370616.9</insurance>
+		<insurance2>47123538.9666667</insurance2>
+	</info>
+	<info>
+		<job>룸살롱/단란주점</job>
+		<sold>12528882.78</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>12528882.78</insurance>
+		<insurance2>4176294.26</insurance2>
+	</info>
+	<info>
+		<job>일반 유흥주점</job>
+		<sold>32455669.41</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>32455669.41</insurance>
+		<insurance2>10818556.47</insurance2>
+	</info>
+	<info>
+		<job>주스</job>
+		<sold>12569550.03</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>12569550.03</insurance>
+		<insurance2>4189850.01</insurance2>
+	</info>
+	<info>
+		<job>차</job>
+		<sold>24194185.23</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>24194185.23</insurance>
+		<insurance2>8064728.41</insurance2>
+	</info>
+	<info>
+		<job>커피</job>
+		<sold>26309243.07</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>26309243.07</insurance>
+		<insurance2>8769747.69</insurance2>
+	</info>
+	<info>
+		<job>꼬치구이</job>
+		<sold>19978733.04</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>19978733.04</insurance>
+		<insurance2>6659577.68</insurance2>
+	</info>
+	<info>
+		<job>맥주/요리주점</job>
+		<sold>17153064.84</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>17153064.84</insurance>
+		<insurance2>5717688.28</insurance2>
+	</info>
+	<info>
+		<job>민속주점</job>
+		<sold>31541874.12</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>31541874.12</insurance>
+		<insurance2>10513958.04</insurance2>
+	</info>
+	<info>
+		<job>주류</job>
+		<sold>23603548.35</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>23603548.35</insurance>
+		<insurance2>7867849.45</insurance2>
+	</info>
+	<info>
+		<job>포장마차</job>
+		<sold>15154948.26</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>15154948.26</insurance>
+		<insurance2>5051649.42</insurance2>
+	</info>
+	<info>
+		<job>치킨</job>
+		<sold>15755234.7</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>15755234.7</insurance>
+		<insurance2>5251744.9</insurance2>
+	</info>
+	<info>
+		<job>피자</job>
+		<sold>20062928.07</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>20062928.07</insurance>
+		<insurance2>6687642.69</insurance2>
+	</info>
+	<info>
+		<job>햄버거</job>
+		<sold>59855790</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>59855790</insurance>
+		<insurance2>19951930</insurance2>
+	</info>
+	<info>
+		<job>가정식</job>
+		<sold>22141741.86</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>22141741.86</insurance>
+		<insurance2>7380580.62</insurance2>
+	</info>
+	<info>
+		<job>구내식당/푸드코트</job>
+		<sold>94089062.01</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>94089062.01</insurance>
+		<insurance2>31363020.67</insurance2>
+	</info>
+	<info>
+		<job>기사식당</job>
+		<sold>18242749.26</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>18242749.26</insurance>
+		<insurance2>6080916.42</insurance2>
+	</info>
+	<info>
+		<job>단품요리 전문</job>
+		<sold>17907578.37</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>17907578.37</insurance>
+		<insurance2>5969192.79</insurance2>
+	</info>
+	<info>
+		<job>도시락</job>
+		<sold>18320874.03</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>18320874.03</insurance>
+		<insurance2>6106958.01</insurance2>
+	</info>
+	<info>
+		<job>야식</job>
+		<sold>19335253.47</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>19335253.47</insurance>
+		<insurance2>6445084.49</insurance2>
+	</info>
+	<info>
+		<job>출장부페</job>
+		<sold>30382620.33</sold>
+		<jobinfo>숙박 및 음식점업</jobinfo>
+		<rate>1</rate>
+		<insurance>30382620.33</insurance>
+		<insurance2>10127540.11</insurance2>
+	</info>
+	<info>
+		<job>가구</job>
+		<sold>25142615.34</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>20114092.272</insurance>
+		<insurance2>6704697.424</insurance2>
+	</info>
+	<info>
+		<job>사무용기기</job>
+		<sold>12601501.83</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>10081201.464</insurance>
+		<insurance2>3360400.488</insurance2>
+	</info>
+	<info>
+		<job>자동판매기</job>
+		<sold>16898300.16</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>13518640.128</insurance>
+		<insurance2>4506213.376</insurance2>
+	</info>
+	<info>
+		<job>컴퓨터/주변기기</job>
+		<sold>30529537.5</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>24423630</insurance>
+		<insurance2>8141210</insurance2>
+	</info>
+	<info>
+		<job>통신관련서비스</job>
+		<sold>293577107.6</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>234861686.08</insurance>
+		<insurance2>78287228.6933333</insurance2>
+	</info>
+	<info>
+		<job>휴대폰</job>
+		<sold>4302777737</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3442222189.6</insurance>
+		<insurance2>1147407396.53333</insurance2>
+	</info>
+	<info>
+		<job>건축용자재/용품</job>
+		<sold>23480167.26</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>18784133.808</insurance>
+		<insurance2>6261377.936</insurance2>
+	</info>
+	<info>
+		<job>인테리어</job>
+		<sold>31285895.97</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>25028716.776</insurance>
+		<insurance2>8342905.592</insurance2>
+	</info>
+	<info>
+		<job>페인트</job>
+		<sold>6816104.64</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5452883.712</insurance>
+		<insurance2>1817627.904</insurance2>
+	</info>
+	<info>
+		<job>과학기기</job>
+		<sold>97357862.1</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>77886289.68</insurance>
+		<insurance2>25962096.56</insurance2>
+	</info>
+	<info>
+		<job>측량/제도/정밀기기</job>
+		<sold>36399246.12</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>29119396.896</insurance>
+		<insurance2>9706465.632</insurance2>
+	</info>
+	<info>
+		<job>기계류 제조</job>
+		<sold>10411034.25</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8328827.4</insurance>
+		<insurance2>2776275.8</insurance2>
+	</info>
+	<info>
+		<job>가구 제조</job>
+		<sold>5387152.05</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4309721.64</insurance>
+		<insurance2>1436573.88</insurance2>
+	</info>
+	<info>
+		<job>기타 제조</job>
+		<sold>10415178.09</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8332142.472</insurance>
+		<insurance2>2777380.824</insurance2>
+	</info>
+	<info>
+		<job>냉난방기기</job>
+		<sold>11333585.73</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>9066868.584</insurance>
+		<insurance2>3022289.528</insurance2>
+	</info>
+	<info>
+		<job>보일러</job>
+		<sold>5297605.53</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4238084.424</insurance>
+		<insurance2>1412694.808</insurance2>
+	</info>
+	<info>
+		<job>문구용품</job>
+		<sold>22059927.21</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>17647941.768</insurance>
+		<insurance2>5882647.256</insurance2>
+	</info>
+	<info>
+		<job>복사대행</job>
+		<sold>5328329.31</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4262663.448</insurance>
+		<insurance2>1420887.816</insurance2>
+	</info>
+	<info>
+		<job>학습교구</job>
+		<sold>70508310.6</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>56406648.48</insurance>
+		<insurance2>18802216.16</insurance2>
+	</info>
+	<info>
+		<job>생활용품</job>
+		<sold>37037676.84</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>29630141.472</insurance>
+		<insurance2>9876713.824</insurance2>
+	</info>
+	<info>
+		<job>유리/거울</job>
+		<sold>5461453.08</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4369162.464</insurance>
+		<insurance2>1456387.488</insurance2>
+	</info>
+	<info>
+		<job>인테리어 용품</job>
+		<sold>4889361.63</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3911489.304</insurance>
+		<insurance2>1303829.768</insurance2>
+	</info>
+	<info>
+		<job>커튼/카페트/수예</job>
+		<sold>4657807.11</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3726245.688</insurance>
+		<insurance2>1242081.896</insurance2>
+	</info>
+	<info>
+		<job>서점</job>
+		<sold>68629634.97</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>54903707.976</insurance>
+		<insurance2>18301235.992</insurance2>
+	</info>
+	<info>
+		<job>섬유</job>
+		<sold>5630186.52</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4504149.216</insurance>
+		<insurance2>1501383.072</insurance2>
+	</info>
+	<info>
+		<job>한복/포목점</job>
+		<sold>7722560.91</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6178048.728</insurance>
+		<insurance2>2059349.576</insurance2>
+	</info>
+	<info>
+		<job>교복</job>
+		<sold>17496375</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>13997100</insurance>
+		<insurance2>4665700</insurance2>
+	</info>
+	<info>
+		<job>내의</job>
+		<sold>9771203.82</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7816963.056</insurance>
+		<insurance2>2605654.352</insurance2>
+	</info>
+	<info>
+		<job>아동복/유아복</job>
+		<sold>9033498.45</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7226798.76</insurance>
+		<insurance2>2408932.92</insurance2>
+	</info>
+	<info>
+		<job>의류</job>
+		<sold>22675950.93</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>18140760.744</insurance>
+		<insurance2>6046920.248</insurance2>
+	</info>
+	<info>
+		<job>의류-기타</job>
+		<sold>9627499.29</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7701999.432</insurance>
+		<insurance2>2567333.144</insurance2>
+	</info>
+	<info>
+		<job>의류 대여</job>
+		<sold>4595213.01</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3676170.408</insurance>
+		<insurance2>1225390.136</insurance2>
+	</info>
+	<info>
+		<job>한복</job>
+		<sold>9381863.28</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7505490.624</insurance>
+		<insurance2>2501830.208</insurance2>
+	</info>
+	<info>
+		<job>수입차</job>
+		<sold>382597037</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>306077629.6</insurance>
+		<insurance2>102025876.533333</insurance2>
+	</info>
+	<info>
+		<job>신차</job>
+		<sold>89622247949</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>71697798359.2</insurance>
+		<insurance2>23899266119.7333</insurance2>
+	</info>
+	<info>
+		<job>오토바이</job>
+		<sold>9093796.56</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7275037.248</insurance>
+		<insurance2>2425012.416</insurance2>
+	</info>
+	<info>
+		<job>중고차</job>
+		<sold>81867542.16</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>65494033.728</insurance>
+		<insurance2>21831344.576</insurance2>
+	</info>
+	<info>
+		<job>가전제품</job>
+		<sold>123076596.3</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>98461277.04</insurance>
+		<insurance2>32820425.68</insurance2>
+	</info>
+	<info>
+		<job>영상/음향기기</job>
+		<sold>16747780.41</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>13398224.328</insurance>
+		<insurance2>4466074.776</insurance2>
+	</info>
+	<info>
+		<job>전기자재/장비</job>
+		<sold>64989000.9</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>51991200.72</insurance>
+		<insurance2>17330400.24</insurance2>
+	</info>
+	<info>
+		<job>조명기구</job>
+		<sold>6607137.54</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5285710.032</insurance>
+		<insurance2>1761903.344</insurance2>
+	</info>
+	<info>
+		<job>그릇/주방기기</job>
+		<sold>15689503.62</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>12551602.896</insurance>
+		<insurance2>4183867.632</insurance2>
+	</info>
+	<info>
+		<job>정수기/연수기기</job>
+		<sold>564056334.7</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>451245067.76</insurance>
+		<insurance2>150415022.586667</insurance2>
+	</info>
+	<info>
+		<job>주방가구</job>
+		<sold>15095703.57</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>12076562.856</insurance>
+		<insurance2>4025520.952</insurance2>
+	</info>
+	<info>
+		<job>자석요/온돌매트/옥매트</job>
+		<sold>3710308.2</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>2968246.56</insurance>
+		<insurance2>989415.52</insurance2>
+	</info>
+	<info>
+		<job>침구류</job>
+		<sold>9720031.47</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7776025.176</insurance>
+		<insurance2>2592008.392</insurance2>
+	</info>
+	<info>
+		<job>컴퓨터 소프트웨어</job>
+		<sold>889263556.4</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>711410845.12</insurance>
+		<insurance2>237136948.373333</insurance2>
+	</info>
+	<info>
+		<job>가방/핸드백</job>
+		<sold>9180110.07</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7344088.056</insurance>
+		<insurance2>2448029.352</insurance2>
+	</info>
+	<info>
+		<job>시계/귀금속</job>
+		<sold>12197215.53</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>9757772.424</insurance>
+		<insurance2>3252590.808</insurance2>
+	</info>
+	<info>
+		<job>신발</job>
+		<sold>13928100.99</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>11142480.792</insurance>
+		<insurance2>3714160.264</insurance2>
+	</info>
+	<info>
+		<job>액세서리</job>
+		<sold>6955633.32</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5564506.656</insurance>
+		<insurance2>1854835.552</insurance2>
+	</info>
+	<info>
+		<job>화장품</job>
+		<sold>10239248.22</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8191398.576</insurance>
+		<insurance2>2730466.192</insurance2>
+	</info>
+	<info>
+		<job>병원-가정의학과</job>
+		<sold>15132224.07</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>12105779.256</insurance>
+		<insurance2>4035259.752</insurance2>
+	</info>
+	<info>
+		<job>병원-기타</job>
+		<sold>387337296</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>309869836.8</insurance>
+		<insurance2>103289945.6</insurance2>
+	</info>
+	<info>
+		<job>병원-내과</job>
+		<sold>21341110.65</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>17072888.52</insurance>
+		<insurance2>5690962.84</insurance2>
+	</info>
+	<info>
+		<job>병원-마취과</job>
+		<sold>51562514.07</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>41250011.256</insurance>
+		<insurance2>13750003.752</insurance2>
+	</info>
+	<info>
+		<job>병원-비뇨기과</job>
+		<sold>31080429.6</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>24864343.68</insurance>
+		<insurance2>8288114.56</insurance2>
+	</info>
+	<info>
+		<job>병원-산부인과</job>
+		<sold>43867720.38</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>35094176.304</insurance>
+		<insurance2>11698058.768</insurance2>
+	</info>
+	<info>
+		<job>병원-성형외과</job>
+		<sold>103265645.2</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>82612516.16</insurance>
+		<insurance2>27537505.3866667</insurance2>
+	</info>
+	<info>
+		<job>병원-소아과</job>
+		<sold>10586175.51</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8468940.408</insurance>
+		<insurance2>2822980.136</insurance2>
+	</info>
+	<info>
+		<job>병원-신경외과</job>
+		<sold>79582639.26</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>63666111.408</insurance>
+		<insurance2>21222037.136</insurance2>
+	</info>
+	<info>
+		<job>병원-신경정신과</job>
+		<sold>13070072.94</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>10456058.352</insurance>
+		<insurance2>3485352.784</insurance2>
+	</info>
+	<info>
+		<job>병원-안과</job>
+		<sold>104138799.4</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>83311039.52</insurance>
+		<insurance2>27770346.5066667</insurance2>
+	</info>
+	<info>
+		<job>병원-영상의학과</job>
+		<sold>105625468.9</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>84500375.12</insurance>
+		<insurance2>28166791.7066667</insurance2>
+	</info>
+	<info>
+		<job>병원-외과</job>
+		<sold>49092605.01</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>39274084.008</insurance>
+		<insurance2>13091361.336</insurance2>
+	</info>
+	<info>
+		<job>병원-이비인후과</job>
+		<sold>18210701.43</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>14568561.144</insurance>
+		<insurance2>4856187.048</insurance2>
+	</info>
+	<info>
+		<job>병원-일반</job>
+		<sold>90586839.18</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>72469471.344</insurance>
+		<insurance2>24156490.448</insurance2>
+	</info>
+	<info>
+		<job>병원-재활의학과</job>
+		<sold>72284903.43</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>57827922.744</insurance>
+		<insurance2>19275974.248</insurance2>
+	</info>
+	<info>
+		<job>병원-정형외과</job>
+		<sold>69672407.28</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>55737925.824</insurance>
+		<insurance2>18579308.608</insurance2>
+	</info>
+	<info>
+		<job>병원-치과</job>
+		<sold>36379580.34</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>29103664.272</insurance>
+		<insurance2>9701221.424</insurance2>
+	</info>
+	<info>
+		<job>병원-피부과의원</job>
+		<sold>73299864.87</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>58639891.896</insurance>
+		<insurance2>19546630.632</insurance2>
+	</info>
+	<info>
+		<job>고등학교</job>
+		<sold>9496301.94</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>9496301.94</insurance>
+		<insurance2>3165433.98</insurance2>
+	</info>
+	<info>
+		<job>대학교</job>
+		<sold>107865287.2</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>107865287.2</insurance>
+		<insurance2>35955095.7333333</insurance2>
+	</info>
+	<info>
+		<job>독서실</job>
+		<sold>13643942.4</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>13643942.4</insurance>
+		<insurance2>4547980.8</insurance2>
+	</info>
+	<info>
+		<job>어린이집</job>
+		<sold>14046246.99</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>14046246.99</insurance>
+		<insurance2>4682082.33</insurance2>
+	</info>
+	<info>
+		<job>연구소</job>
+		<sold>115083772.1</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>115083772.1</insurance>
+		<insurance2>38361257.3666667</insurance2>
+	</info>
+	<info>
+		<job>유치원</job>
+		<sold>20520752.55</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>20520752.55</insurance>
+		<insurance2>6840250.85</insurance2>
+	</info>
+	<info>
+		<job>중학교</job>
+		<sold>21559317</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>21559317</insurance>
+		<insurance2>7186439</insurance2>
+	</info>
+	<info>
+		<job>초등학교</job>
+		<sold>49284077.19</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>49284077.19</insurance>
+		<insurance2>16428025.73</insurance2>
+	</info>
+	<info>
+		<job>금융-기타</job>
+		<sold>83720409</sold>
+		<jobinfo>금융 및 보험업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>66976327.2</insurance>
+		<insurance2>22325442.4</insurance2>
+	</info>
+	<info>
+		<job>새마을금고</job>
+		<sold>34568303.22</sold>
+		<jobinfo>금융 및 보험업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>27654642.576</insurance>
+		<insurance2>9218214.192</insurance2>
+	</info>
+	<info>
+		<job>생명보험</job>
+		<sold>5871370937</sold>
+		<jobinfo>금융 및 보험업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4697096749.6</insurance>
+		<insurance2>1565698916.53333</insurance2>
+	</info>
+	<info>
+		<job>손해보험</job>
+		<sold>21786812335</sold>
+		<jobinfo>금융 및 보험업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>17429449868</insurance>
+		<insurance2>5809816622.66667</insurance2>
+	</info>
+	<info>
+		<job>우체국</job>
+		<sold>15733232.19</sold>
+		<jobinfo>금융 및 보험업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>12586585.752</insurance>
+		<insurance2>4195528.584</insurance2>
+	</info>
+	<info>
+		<job>병원-대학/종합병원</job>
+		<sold>1942702029</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>1554161623.2</insurance>
+		<insurance2>518053874.4</insurance2>
+	</info>
+	<info>
+		<job>보건소</job>
+		<sold>7272442.11</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5817953.688</insurance>
+		<insurance2>1939317.896</insurance2>
+	</info>
+	<info>
+		<job>물품보관소</job>
+		<sold>6838296.3</sold>
+		<jobinfo>운수 및 창고업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>6154466.67</insurance>
+		<insurance2>2051488.89</insurance2>
+	</info>
+	<info>
+		<job>부동산-건물관리</job>
+		<sold>59741307.69</sold>
+		<jobinfo>부동산업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>47793046.152</insurance>
+		<insurance2>15931015.384</insurance2>
+	</info>
+	<info>
+		<job>부동산-주택/아파트 임대</job>
+		<sold>15260959.56</sold>
+		<jobinfo>부동산업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>12208767.648</insurance>
+		<insurance2>4069589.216</insurance2>
+	</info>
+	<info>
+		<job>부동산중개</job>
+		<sold>13071414.45</sold>
+		<jobinfo>부동산업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>10457131.56</insurance>
+		<insurance2>3485710.52</insurance2>
+	</info>
+	<info>
+		<job>결혼정보회사</job>
+		<sold>154042660</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>123234128</insurance>
+		<insurance2>41078042.6666667</insurance2>
+	</info>
+	<info>
+		<job>심리상담</job>
+		<sold>11134649.4</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8907719.52</insurance>
+		<insurance2>2969239.84</insurance2>
+	</info>
+	<info>
+		<job>납골/묘지</job>
+		<sold>47870469.03</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>38296375.224</insurance>
+		<insurance2>12765458.408</insurance2>
+	</info>
+	<info>
+		<job>상조서비스</job>
+		<sold>2030924709</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>1624739767.2</insurance>
+		<insurance2>541579922.4</insurance2>
+	</info>
+	<info>
+		<job>장례식장</job>
+		<sold>100393949.5</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>80315159.6</insurance>
+		<insurance2>26771719.8666667</insurance2>
+	</info>
+	<info>
+		<job>농협-상품권</job>
+		<sold>12171008.07</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>9736806.456</insurance>
+		<insurance2>3245602.152</insurance2>
+	</info>
+	<info>
+		<job>상품권/기프티콘</job>
+		<sold>349279739.8</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>279423791.84</insurance>
+		<insurance2>93141263.9466667</insurance2>
+	</info>
+	<info>
+		<job>약국</job>
+		<sold>34328452.29</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>27462761.832</insurance>
+		<insurance2>9154253.944</insurance2>
+	</info>
+	<info>
+		<job>제약회사</job>
+		<sold>5163689117</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4130951293.6</insurance>
+		<insurance2>1376983764.53333</insurance2>
+	</info>
+	<info>
+		<job>예복/웨딩드레스</job>
+		<sold>9335870.73</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>7468696.584</insurance>
+		<insurance2>2489565.528</insurance2>
+	</info>
+	<info>
+		<job>예식서비스</job>
+		<sold>55687718.43</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>44550174.744</insurance>
+		<insurance2>14850058.248</insurance2>
+	</info>
+	<info>
+		<job>예식장</job>
+		<sold>119677972.4</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>95742377.92</insurance>
+		<insurance2>31914125.9733333</insurance2>
+	</info>
+	<info>
+		<job>혼수전문점</job>
+		<sold>18686402.04</sold>
+		<jobinfo>협회 및 단체, 수리 및 기타 개인 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>14949121.632</insurance>
+		<insurance2>4983040.544</insurance2>
+	</info>
+	<info>
+		<job>대체의학</job>
+		<sold>7475493.18</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5980394.544</insurance>
+		<insurance2>1993464.848</insurance2>
+	</info>
+	<info>
+		<job>요양원</job>
+		<sold>498953215.3</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>399162572.24</insurance>
+		<insurance2>133054190.746667</insurance2>
+	</info>
+	<info>
+		<job>응급구조대</job>
+		<sold>2328000</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>1862400</insurance>
+		<insurance2>620800</insurance2>
+	</info>
+	<info>
+		<job>치료/발달센터</job>
+		<sold>65853835.44</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>52683068.352</insurance>
+		<insurance2>17561022.784</insurance2>
+	</info>
+	<info>
+		<job>보청기</job>
+		<sold>11159684.13</sold>
+		<jobinfo>제조업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8927747.304</insurance>
+		<insurance2>2975915.768</insurance2>
+	</info>
+	<info>
+		<job>성인용품</job>
+		<sold>6483334.5</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5186667.6</insurance>
+		<insurance2>1728889.2</insurance2>
+	</info>
+	<info>
+		<job>안경점</job>
+		<sold>28895581.23</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>23116464.984</insurance>
+		<insurance2>7705488.328</insurance2>
+	</info>
+	<info>
+		<job>의료기기</job>
+		<sold>109302926.1</sold>
+		<jobinfo>제조업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>87442340.88</insurance>
+		<insurance2>29147446.96</insurance2>
+	</info>
+	<info>
+		<job>치과기공소</job>
+		<sold>17519966.37</sold>
+		<jobinfo>제조업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>14015973.096</insurance>
+		<insurance2>4671991.032</insurance2>
+	</info>
+	<info>
+		<job>광고</job>
+		<sold>12477800.64</sold>
+		<jobinfo>제조업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>9982240.512</insurance>
+		<insurance2>3327413.504</insurance2>
+	</info>
+	<info>
+		<job>기념패 제작</job>
+		<sold>6217893.03</sold>
+		<jobinfo>제조업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4974314.424</insurance>
+		<insurance2>1658104.808</insurance2>
+	</info>
+	<info>
+		<job>영상/방송</job>
+		<sold>10685188.26</sold>
+		<jobinfo>제조업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8548150.608</insurance>
+		<insurance2>2849383.536</insurance2>
+	</info>
+	<info>
+		<job>인쇄업</job>
+		<sold>28785868.41</sold>
+		<jobinfo>제조업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>23028694.728</insurance>
+		<insurance2>7676231.576</insurance2>
+	</info>
+	<info>
+		<job>정기간행물 발행</job>
+		<sold>14732945.88</sold>
+		<jobinfo>정보통신업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>11786356.704</insurance>
+		<insurance2>3928785.568</insurance2>
+	</info>
+	<info>
+		<job>출판사</job>
+		<sold>16521309.66</sold>
+		<jobinfo>정보통신업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>13217047.728</insurance>
+		<insurance2>4405682.576</insurance2>
+	</info>
+	<info>
+		<job>산후조리서비스</job>
+		<sold>23969253.87</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>19175403.096</insurance>
+		<insurance2>6391801.032</insurance2>
+	</info>
+	<info>
+		<job>산후조리원</job>
+		<sold>60420149.58</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>48336119.664</insurance>
+		<insurance2>16112039.888</insurance2>
+	</info>
+	<info>
+		<job>가스관리사업소</job>
+		<sold>40468802.55</sold>
+		<jobinfo>전기, 가스, 증기 및 공기조절 공급업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>32375042.04</insurance>
+		<insurance2>10791680.68</insurance2>
+	</info>
+	<info>
+		<job>건축설계사무소</job>
+		<sold>49605259.71</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>39684207.768</insurance>
+		<insurance2>13228069.256</insurance2>
+	</info>
+	<info>
+		<job>고용알선/직업안내</job>
+		<sold>13785882.5</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>12407294.25</insurance>
+		<insurance2>4135764.75</insurance2>
+	</info>
+	<info>
+		<job>공인노무사</job>
+		<sold>5343787.23</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4275029.784</insurance>
+		<insurance2>1425009.928</insurance2>
+	</info>
+	<info>
+		<job>농어업서비스</job>
+		<sold>20552346.42</sold>
+		<jobinfo>농업, 임업 및 어업</jobinfo>
+		<rate>1</rate>
+		<insurance>20552346.42</insurance>
+		<insurance2>6850782.14</insurance2>
+	</info>
+	<info>
+		<job>문서/물품 서비스</job>
+		<sold>11776010.49</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>10598409.441</insurance>
+		<insurance2>3532803.147</insurance2>
+	</info>
+	<info>
+		<job>번역/통역서비스</job>
+		<sold>17288519.52</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>13830815.616</insurance>
+		<insurance2>4610271.872</insurance2>
+	</info>
+	<info>
+		<job>법무사</job>
+		<sold>19748403.63</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>15798722.904</insurance>
+		<insurance2>5266240.968</insurance2>
+	</info>
+	<info>
+		<job>변리사</job>
+		<sold>10786392.24</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>8629113.792</insurance>
+		<insurance2>2876371.264</insurance2>
+	</info>
+	<info>
+		<job>변호사</job>
+		<sold>19318797.42</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>15455037.936</insurance>
+		<insurance2>5151679.312</insurance2>
+	</info>
+	<info>
+		<job>세무사</job>
+		<sold>3555254.67</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>2844203.736</insurance>
+		<insurance2>948067.912</insurance2>
+	</info>
+	<info>
+		<job>용역서비스-기타</job>
+		<sold>13682654.13</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>12314388.717</insurance>
+		<insurance2>4104796.239</insurance2>
+	</info>
+	<info>
+		<job>이벤트/행사 대행</job>
+		<sold>12998981.64</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>11699083.476</insurance>
+		<insurance2>3899694.492</insurance2>
+	</info>
+	<info>
+		<job>청소/소독 대행</job>
+		<sold>40698983.55</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>36629085.195</insurance>
+		<insurance2>12209695.065</insurance2>
+	</info>
+	<info>
+		<job>환경측정/검사/평가서비스</job>
+		<sold>11697946.83</sold>
+		<jobinfo>사업시설 관리, 사업 지원 및 임대 서비스업</jobinfo>
+		<rate>0.9</rate>
+		<insurance>10528152.147</insurance>
+		<insurance2>3509384.049</insurance2>
+	</info>
+	<info>
+		<job>회계서비스</job>
+		<sold>22123563.09</sold>
+		<jobinfo>전문, 과학 및 기술 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>17698850.472</insurance>
+		<insurance2>5899616.824</insurance2>
+	</info>
+	<info>
+		<job>교육단체</job>
+		<sold>4116939427</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>4116939427</insurance>
+		<insurance2>1372313142.33333</insurance2>
+	</info>
+	<info>
+		<job>문화센터</job>
+		<sold>15645571.35</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>15645571.35</insurance>
+		<insurance2>5215190.45</insurance2>
+	</info>
+	<info>
+		<job>학습지</job>
+		<sold>518929757.1</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>518929757.1</insurance>
+		<insurance2>172976585.7</insurance2>
+	</info>
+	<info>
+		<job>학원-기타</job>
+		<sold>47530391.88</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>47530391.88</insurance>
+		<insurance2>15843463.96</insurance2>
+	</info>
+	<info>
+		<job>학원-어학</job>
+		<sold>27570215.91</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>27570215.91</insurance>
+		<insurance2>9190071.97</insurance2>
+	</info>
+	<info>
+		<job>학원-예체능</job>
+		<sold>16989336.6</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>16989336.6</insurance>
+		<insurance2>5663112.2</insurance2>
+	</info>
+	<info>
+		<job>학원-입시/보습</job>
+		<sold>23563757.01</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>23563757.01</insurance>
+		<insurance2>7854585.67</insurance2>
+	</info>
+	<info>
+		<job>학원-직업</job>
+		<sold>58282443.21</sold>
+		<jobinfo>교육 서비스업</jobinfo>
+		<rate>1</rate>
+		<insurance>58282443.21</insurance>
+		<insurance2>19427481.07</insurance2>
+	</info>
+	<info>
+		<job>병원-한의학과</job>
+		<sold>18714204.18</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>14971363.344</insurance>
+		<insurance2>4990454.448</insurance2>
+	</info>
+	<info>
+		<job>한약방</job>
+		<sold>6003568.62</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4802854.896</insurance>
+		<insurance2>1600951.632</insurance2>
+	</info>
+	<info>
+		<job>한의약품</job>
+		<sold>70608670.68</sold>
+		<jobinfo>보건업 및 사회복지 서비스업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>56486936.544</insurance>
+		<insurance2>18828978.848</insurance2>
+	</info>
+	<info>
+		<job>다단계</job>
+		<sold>6128639378</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>4902911502.4</insurance>
+		<insurance2>1634303834.13333</insurance2>
+	</info>
+	<info>
+		<job>대형마트</job>
+		<sold>2224643525</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>1779714820</insurance>
+		<insurance2>593238273.333333</insurance2>
+	</info>
+	<info>
+		<job>슈퍼마켓 기업형</job>
+		<sold>309000672.2</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>247200537.76</insurance>
+		<insurance2>82400179.2533333</insurance2>
+	</info>
+	<info>
+		<job>슈퍼마켓 일반형</job>
+		<sold>115409613.5</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>92327690.8</insurance>
+		<insurance2>30775896.9333333</insurance2>
+	</info>
+	<info>
+		<job>면세점</job>
+		<sold>1089022642</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>871218113.6</insurance>
+		<insurance2>290406037.866667</insurance2>
+	</info>
+	<info>
+		<job>백화점</job>
+		<sold>6426089949</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>5140871959.2</insurance>
+		<insurance2>1713623986.4</insurance2>
+	</info>
+	<info>
+		<job>수입품</job>
+		<sold>37632326.61</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>30105861.288</insurance>
+		<insurance2>10035287.096</insurance2>
+	</info>
+	<info>
+		<job>아울렛</job>
+		<sold>4569011516</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>3655209212.8</insurance>
+		<insurance2>1218403070.93333</insurance2>
+	</info>
+	<info>
+		<job>전자상거래</job>
+		<sold>3353725201</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>2682980160.8</insurance>
+		<insurance2>894326720.266667</insurance2>
+	</info>
+	<info>
+		<job>홈쇼핑</job>
+		<sold>7584328647</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>6067462917.6</insurance>
+		<insurance2>2022487639.2</insurance2>
+	</info>
+	<info>
+		<job>보훈매장</job>
+		<sold>16064038857</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>12851231085.6</insurance>
+		<insurance2>4283743695.2</insurance2>
+	</info>
+	<info>
+		<job>복지매점</job>
+		<sold>21008640.24</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>16806912.192</insurance>
+		<insurance2>5602304.064</insurance2>
+	</info>
+	<info>
+		<job>사원전용매장</job>
+		<sold>151913439.2</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>121530751.36</insurance>
+		<insurance2>40510250.4533333</insurance2>
+	</info>
+	<info>
+		<job>연금매장</job>
+		<sold>153037880.7</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>122430304.56</insurance>
+		<insurance2>40810101.52</insurance2>
+	</info>
+	<info>
+		<job>편의점</job>
+		<sold>43518692.07</sold>
+		<jobinfo>도매 및 소매업</jobinfo>
+		<rate>0.8</rate>
+		<insurance>34814953.656</insurance>
+		<insurance2>11604984.552</insurance2>
+	</info>
+</root>

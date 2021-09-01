@@ -8,7 +8,7 @@ var options = {
     scale: {
         ticks: {
             beginAtZero: true,
-            max: 8
+            max: 10
         }
     }
 };
@@ -22,7 +22,7 @@ var mydata = {
      pointHoverBackgroundColor: '#fff',
      pointHoverBorderColor: 'rgb(255, 99, 132)',
     data: [
-        2, 3, 4, 1, 8
+        2, 3, 4
     ]
 };
 
@@ -35,13 +35,13 @@ var avgdata = {
     pointHoverBackgroundColor: '#fff',
     pointHoverBorderColor: 'rgb(54, 162, 235)',
     data: [
-        3, 5, 4, 7, 3
+        3, 5, 4
     ]
 };
 
 var dataLiteracy = {
     labels: [
-        "영업이익", "매출액", "상권변화 등급", "임대료 등급", "전염병 등급"
+        "상권변화 등급", "임대료 등급", "전염병 등급"
     ],
     datasets: [
         mydata, avgdata
@@ -56,9 +56,3 @@ var myRadarChart = new Chart(ctx, {
 });
 
 console.log(myRadarChart);
-
-function btn_isr_graph_click(){
-    console.log("test");
-    mydata.data = [1, 2, 3, 4, 5];
-    myRadarChart.update();
-}

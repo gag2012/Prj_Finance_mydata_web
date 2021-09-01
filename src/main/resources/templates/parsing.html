@@ -4,21 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <title>XML XMLHttpRequest</title>
+	<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>전염병 데이터(PandemicBoard)</title>
+    <link href="../static/springboot/css/styles.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
+    <script type="text/javascript"
+            src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+    <link href="../static/springboot/css/styles2.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- 차트 링크 --> 
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script>
-		function loadDoc() {
-			var xmlHttp = new XMLHttpRequest();			// XMLHttpRequest 객체를 생성함.
-			xmlHttp.onreadystatechange = function() {	// onreadystatechange 이벤트 핸들러를 작성함.
-				// 서버상에 문서가 존재하고 요청한 데이터의 처리가 완료되어 응답할 준비가 완료되었을 때
-				if(this.status == 200 && this.readyState == this.DONE) {
-					// 요청한 데이터를 문자열로 반환함.
-					document.getElementById("text").innerHTML = xmlHttp.responseText;
+		var xmlHttp = new XMLHttpRequest();			// XMLHttpRequest 객체를 생성함.
+		xmlHttp.onreadystatechange = function() {	// onreadystatechange 이벤트 핸들러를 작성함.
+			// 서버상에 문서가 존재하고 요청한 데이터의 처리가 완료되어 응답할 준비가 완료되었을 때
+			if(this.status == 200 && this.readyState == this.DONE) {
+				nodeValFunc(this);
+			}
+		};
+		xmlHttp.open("GET", "//openapi.seoul.go.kr:8088/sample/xml/TbCorona19CountStatusJCG/1/5/", false);
+		xmlHttp.send();
+
+		function nodeValFunc(xml) {   // xml데이터 넘김
+			xmlDoc = xml.responseXML;   
+
+			var JONGNO, JONGNOADD;
+			var JUNGGU, JUNGGUADD;
+			var YONGSAN, YONGSANADD;
+			var SEONGDONG, SEONGDONGADD;
+			var GWANGJIN, GWANGJINADD;
+			var DDM, DDMADD;
+			var JUNGNANG, JUNGNANGADD;
+			var SEONGBUK, SEONGBUKADD;
+			var GANGBUK, GANGBUKADD;
+			var DOBONG, DOBONGADD;
+			var NOWON, NOWONADD;
+			var EP, EPADD;
+			var SDM, SDMADD;
+			var MAPO, MAPOADD;
+			var YANGCHEON, YANGCHEONADD;
+			var GANGSEO, GANGSEOADD;
+			var GURO, GUROADD;
+			var GEUMCHEON, GEUMCHEONADD;
+			var YDP, YDPADD;
+			var DONGJAK, DONGJAKADD;
+			var GWANAK, GWANAKADD;
+			var SEOCHO, SEOCHOADD;
+			var GANGNAM, GANGNAMADD;
+			var SONGPA, SONGPAADD;
+			var GANGDONG, GANGDONGADD;
+			var ETC, ETCADD;
+
+			JONGNO = xmlDoc.getElementsByTagName("JONGNO")[0].childNodes[0].nodeValue;
+			JONGNOADD = xmlDoc.getElementsByTagName("JONGNOADD")[0].childNodes[0].nodeValue;
+			JUNGGU = xmlDoc.getElementsByTagName("JUNGGU")[0].childNodes[0].nodeValue;
+			JUNGGUADD = xmlDoc.getElementsByTagName("JUNGGUADD")[0].childNodes[0].nodeValue;
+			YONGSAN = xmlDoc.getElementsByTagName("YONGSAN")[0].childNodes[0].nodeValue;
+			YONGSANADD = xmlDoc.getElementsByTagName("YONGSANADD")[0].childNodes[0].nodeValue;
+
+			SEONGDONG = xmlDoc.getElementsByTagName("SEONGDONG")[0].childNodes[0].nodeValue;
+			SEONGDONGADD = xmlDoc.getElementsByTagName("SEONGDONGADD")[0].childNodes[0].nodeValue;
+			GWANGJIN = xmlDoc.getElementsByTagName("GWANGJIN")[0].childNodes[0].nodeValue;
+			GWANGJINADD = xmlDoc.getElementsByTagName("GWANGJINADD")[0].childNodes[0].nodeValue;
+			DDM = xmlDoc.getElementsByTagName("DDM")[0].childNodes[0].nodeValue;
+			DDMADD = xmlDoc.getElementsByTagName("DDMADD")[0].childNodes[0].nodeValue;
+			JUNGNANG = xmlDoc.getElementsByTagName("JUNGNANG")[0].childNodes[0].nodeValue;
+			JUNGNANGADD = xmlDoc.getElementsByTagName("JUNGNANGADD")[0].childNodes[0].nodeValue;
+			SEONGBUK = xmlDoc.getElementsByTagName("SEONGBUK")[0].childNodes[0].nodeValue;
+			SEONGBUKADD = xmlDoc.getElementsByTagName("SEONGBUKADD")[0].childNodes[0].nodeValue;
+
+			GANGBUK = xmlDoc.getElementsByTagName("GANGBUK")[0].childNodes[0].nodeValue;
+			GANGBUKADD = xmlDoc.getElementsByTagName("GANGBUKADD")[0].childNodes[0].nodeValue;
+			DOBONG = xmlDoc.getElementsByTagName("DOBONG")[0].childNodes[0].nodeValue;
+			DOBONGADD = xmlDoc.getElementsByTagName("DOBONGADD")[0].childNodes[0].nodeValue;
+			NOWON = xmlDoc.getElementsByTagName("NOWON")[0].childNodes[0].nodeValue;
+			NOWONADD = xmlDoc.getElementsByTagName("NOWONADD")[0].childNodes[0].nodeValue;
+			EP = xmlDoc.getElementsByTagName("EP")[0].childNodes[0].nodeValue;
+			EPADD = xmlDoc.getElementsByTagName("EPADD")[0].childNodes[0].nodeValue;
+
+			SDM = xmlDoc.getElementsByTagName("SDM")[0].childNodes[0].nodeValue;
+			SDMADD = xmlDoc.getElementsByTagName("SDMADD")[0].childNodes[0].nodeValue;
+			MAPO = xmlDoc.getElementsByTagName("MAPO")[0].childNodes[0].nodeValue;
+			MAPOADD = xmlDoc.getElementsByTagName("MAPOADD")[0].childNodes[0].nodeValue;
+			YANGCHEON = xmlDoc.getElementsByTagName("YANGCHEON")[0].childNodes[0].nodeValue;
+			YANGCHEONADD = xmlDoc.getElementsByTagName("YANGCHEONADD")[0].childNodes[0].nodeValue;
+			GANGSEO = xmlDoc.getElementsByTagName("GANGSEO")[0].childNodes[0].nodeValue;
+			GANGSEOADD = xmlDoc.getElementsByTagName("GANGSEOADD")[0].childNodes[0].nodeValue;
+
+			GURO = xmlDoc.getElementsByTagName("GURO")[0].childNodes[0].nodeValue;
+			GUROADD = xmlDoc.getElementsByTagName("GUROADD")[0].childNodes[0].nodeValue;
+			GEUMCHEON = xmlDoc.getElementsByTagName("GEUMCHEON")[0].childNodes[0].nodeValue;
+			GEUMCHEONADD = xmlDoc.getElementsByTagName("GEUMCHEONADD")[0].childNodes[0].nodeValue;
+			YDP = xmlDoc.getElementsByTagName("YDP")[0].childNodes[0].nodeValue;
+			YDPADD = xmlDoc.getElementsByTagName("YDPADD")[0].childNodes[0].nodeValue;
+			DONGJAK = xmlDoc.getElementsByTagName("DONGJAK")[0].childNodes[0].nodeValue;
+			DONGJAKADD = xmlDoc.getElementsByTagName("DONGJAKADD")[0].childNodes[0].nodeValue;
+
+			GWANAK = xmlDoc.getElementsByTagName("GWANAK")[0].childNodes[0].nodeValue;
+			GWANAKADD = xmlDoc.getElementsByTagName("GWANAKADD")[0].childNodes[0].nodeValue;
+			SEOCHO = xmlDoc.getElementsByTagName("SEOCHO")[0].childNodes[0].nodeValue;
+			SEOCHOADD = xmlDoc.getElementsByTagName("SEOCHOADD")[0].childNodes[0].nodeValue;
+			GANGNAM = xmlDoc.getElementsByTagName("GANGNAM")[0].childNodes[0].nodeValue;
+			GANGNAMADD = xmlDoc.getElementsByTagName("GANGNAMADD")[0].childNodes[0].nodeValue;
+			SONGPA = xmlDoc.getElementsByTagName("SONGPA")[0].childNodes[0].nodeValue;
+			SONGPAADD = xmlDoc.getElementsByTagName("SONGPAADD")[0].childNodes[0].nodeValue;
+
+			GANGDONG = xmlDoc.getElementsByTagName("GANGDONG")[0].childNodes[0].nodeValue;
+			GANGDONGADD = xmlDoc.getElementsByTagName("GANGDONGADD")[0].childNodes[0].nodeValue;
+			ETC = xmlDoc.getElementsByTagName("ETC")[0].childNodes[0].nodeValue;
+			ETCADD = xmlDoc.getElementsByTagName("ETCADD")[0].childNodes[0].nodeValue;	
+
+			var ctx = document.getElementById("testChart");
+			var myLineChart = new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: [
+						"종로구", "중구", "용산구", "성동구"
+						, "광진구", "중랑구", "성북구", "강북구"
+						, "도봉구", "노원구", "은평구", "동대문구", "서대문구"
+						, "마포구", "양천구", "강서구", "관악구"
+						, "구로구", "금천구", "영등포구", "동작구"
+						, "서초구", "강남구", "송파구", "강동구", "기타"
+					],
+					datasets: [{
+					label: "월별 확진자",
+					backgroundColor: "rgba(222,84,57,0.9)",
+					borderColor: "rgba(222,84,57,0.9)",
+					data: [
+						JONGNOADD, JUNGGUADD, YONGSANADD, SEONGDONGADD
+						, GWANGJINADD, JUNGNANGADD, SEONGBUKADD, GANGBUKADD
+						, DOBONGADD, NOWONADD, EPADD, DDMADD, SDMADD
+						, MAPOADD, YANGCHEONADD, GANGSEOADD, GWANAKADD
+						, GUROADD, GEUMCHEONADD, YDPADD, DONGJAKADD
+						, SEOCHOADD, GANGNAMADD, SONGPAADD, GANGDONGADD, ETCADD
+					],
+					}],
+				},
+				options: {
+					scales: {
+						yAxes: [{
+							ticks: {
+							min: 0
+							},
+							gridLines: {
+							display: true
+							}
+						}],
+					},
+					events: false,
+					tooltips: {
+						enabled: false
+					},
+					hover: {
+						animationDuration: 0
+					},
+					animation: {
+						duration: 1,
+						onComplete: function () {
+							var chartInstance = this.chart,
+							ctx = chartInstance.ctx;
+							ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+							ctx.textAlign = 'center';
+							ctx.textBaseline = 'bottom';
+
+							this.data.datasets.forEach(function (dataset, i) {
+								var meta = chartInstance.controller.getDatasetMeta(i);
+								meta.data.forEach(function (bar, index) {
+									var data = dataset.data[index];                            
+									ctx.fillText(data, bar._model.x, bar._model.y - 5);
+								});
+							});
+						}
+					}
 				}
-			};
-			xmlHttp.open("GET", "//openapi.seoul.go.kr:8088/sample/xml/TbCorona19CountStatusJCG/1/5/", false);
-			xmlHttp.send();
-		}
-
-
+			});
+		};
 	</script>
 </head>
 
@@ -27,7 +196,15 @@
 <h1>XMLHttpRequest 객체의 전송</h1>
 <button onclick="loadDoc()">요청 전송하기!</button>
 <p id="text"></p>
+	<div><canvas id="testChart" width="200" height="200"></canvas></div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	crossorigin="anonymous"></script>
+<script src="../static/springboot/js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="../static/springboot/js/datatables-simple-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<script src="../static/springboot/assets/demo/tableau-foot-traffic2.js"></script>
 </body>
 
 </html>

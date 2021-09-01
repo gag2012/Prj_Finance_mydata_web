@@ -5,7 +5,6 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title>전염병 데이터(PandemicBoard)</title>
@@ -79,7 +78,7 @@
             <div class="container-fluid px-4">
                 <h2 class="mt-4">유동 인구</h2>
                 <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item active">서울특별시 행정동별 유동 인구 표준 편차</li>
+                    <li class="breadcrumb-item active">서울특별시 행정동별 유동 인구 변화율</li>
                 </ol>
                 <div class="row">
                     <div class="card mb-4">
@@ -89,159 +88,31 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-map-marked-alt"></i>
-                                유동인구 표준편차
+                                생활 유동인구 변화율
                             </div>
                             <div class="card-body">
-                                <div id="vizContainer"></div>
+                                <div id="mapContainer"></div>
                                 <script src="../static/springboot/assets/demo/tableau-foot-traffic.js"></script>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-street-view"></i>
-                                유동인구
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                    <tr>
-                                        <th class="tg-f0bi" colspan="3">총 생활 인구수</th>
-                                    </tr>
-                                    </thead>
-                                    <thead>
-                                    <tr>
-                                        <th>행정코드</th>
-                                        <th>행정구</th>
-                                        <th>행정동</th>
-                                        <th>총 생활 인구수</th>
-                                    </tr>
-                                    </thead>
-                                    <tfoot>
-                                    <tr>
-                                        <th>행정코드</th>
-                                        <th>행정구</th>
-                                        <th>행정동</th>
-                                        <th>총 생활 인구수</th>
-                                    </tr>
-                                    </tfoot>
-                                    <tbody>
-                                    <tr>
-                                        <td class="tg-3oby">11620625</td>
-                                        <td class="tg-3oby">관악구</td>
-                                        <td class="tg-k6n4">인헌동</td>
-                                        <td class="tg-k6n4">24188</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-wdy9">11140605</td>
-                                        <td class="tg-wdy9">중구</td>
-                                        <td class="tg-ypzn">을지로동</td>
-                                        <td class="tg-ypzn">6716</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-3oby">11470640</td>
-                                        <td class="tg-3oby">양천구</td>
-                                        <td class="tg-k6n4">신정3동</td>
-                                        <td class="tg-k6n4">46603</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-wdy9">11290780</td>
-                                        <td class="tg-wdy9">성북구</td>
-                                        <td class="tg-ypzn">장위3동</td>
-                                        <td class="tg-ypzn">9589</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-3oby">11320512</td>
-                                        <td class="tg-3oby">도봉구</td>
-                                        <td class="tg-k6n4">창2동</td>
-                                        <td class="tg-k6n4">29984</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-wdy9">11650580</td>
-                                        <td class="tg-wdy9">서초구</td>
-                                        <td class="tg-ypzn">반포3동</td>
-                                        <td class="tg-ypzn">16925</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-3oby">11710650</td>
-                                        <td class="tg-3oby">송파구</td>
-                                        <td class="tg-k6n4">인헌동</td>
-                                        <td class="tg-k6n4">24188</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-wdy9">11110515</td>
-                                        <td class="tg-wdy9">중구</td>
-                                        <td class="tg-ypzn">잠실본동</td>
-                                        <td class="tg-ypzn">42538</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-3oby">11230650</td>
-                                        <td class="tg-3oby">종로구</td>
-                                        <td class="tg-k6n4">청운효자동</td>
-                                        <td class="tg-k6n4">14474</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-wdy9">11350612</td>
-                                        <td class="tg-wdy9">중구</td>
-                                        <td class="tg-ypzn">을지로동</td>
-                                        <td class="tg-ypzn">6716</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-3oby">11590605</td>
-                                        <td class="tg-3oby">동대문구</td>
-                                        <td class="tg-k6n4">장안1동</td>
-                                        <td class="tg-k6n4">40611</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-wdy9">11350612</td>
-                                        <td class="tg-wdy9">노원구</td>
-                                        <td class="tg-ypzn">하계2동</td>
-                                        <td class="tg-ypzn">16370</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-3oby">11590605</td>
-                                        <td class="tg-3oby">동작구</td>
-                                        <td class="tg-k6n4">흑석동</td>
-                                        <td class="tg-k6n4">33231</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-wdy9">11230610</td>
-                                        <td class="tg-wdy9">동대문구</td>
-                                        <td class="tg-ypzn">답십리2동</td>
-                                        <td class="tg-ypzn">27961</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-3oby">11305630</td>
-                                        <td class="tg-3oby">강북구</td>
-                                        <td class="tg-k6n4">수유3동</td>
-                                        <td class="tg-k6n4">35198</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="tg-wdy9">11260550</td>
-                                        <td class="tg-wdy9">중랑구</td>
-                                        <td class="tg-ypzn">면목5동</td>
-                                        <td class="tg-ypzn">10289</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div>          
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="far fa-chart-bar"></i>
-                                행정동별 표준편차
+                                행정동별 유동인구 변화율
+                                <button class="button button2" id="btn_foot1" onclick="btn_foot1_click();">1차 유행</button>
+                                <button class="button button2" id="btn_foot2" onclick="btn_foot2_click();">2차 유행</button>
+                                <button class="button button2" id="btn_foot3" onclick="btn_foot3_click();">3차 유행</button>
                             </div>
                             <div class="card-body">
-                                <canvas id="footChart" width="100vw" height="36vh"></canvas>
+                                <canvas id="footChart_w" width="1000vw" height="5500vh"></canvas>
                             </div>
                         </div>
                     </div>
@@ -271,10 +142,10 @@
 <script src="../static/springboot/assets/demo/chart-bar-demo.js"></script>
 <script src="../static/springboot/assets/demo/chart-pie-demo.js"></script>
 <script src="../static/springboot/assets/demo/slider.js"></script>
-<script src="../static/springboot/assets/demo/chart-foot.js"></script>
+<script src="../static/springboot/assets/demo/chart-foot-new3.js"></script>
 <script src="../static/springboot/js/datatables-simple-demo.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-<script src="../static/springboot/assets/demo/tableau-foot-traffic.js"></script>
+<script src="../static/springboot/assets/demo/tableau-foot-traffic4.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,10 @@
 function initViz() {
-            var containerDiv = document.getElementById("vizContainer"),
-                url = "https://public.tableau.com/app/profile/.71444588/viz/1_16287770486580/1",
+            var containerDiv = document.getElementById("mapContainer"),
+                url = "https://public.tableau.com/app/profile/.71444588/viz/20192020_16292798652610/sheet3?publish=yes&:toolbar=no&:embed=yes",
                 options = {
                     hideTabs: true,
                     hideToolbar: true,
-                    width: "670px",
+                    width: "1600px",
                     height: "650px",
                 };
 

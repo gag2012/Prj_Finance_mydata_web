@@ -28,23 +28,12 @@
 - 모델 범위 설정  
 본 '전염병(바이러스) 보험료 산출 모델'은 경제 피해 정도에 따라 업종별로 보험료를 차등 지원한다. 또한 전염병 이후 평균 연간 매출액이 48.5% 감소한 경우를 고려하며 [6], 지역은 서울특별시 행정동으로 구분한다.
 
+- 
 ![image](https://user-images.githubusercontent.com/40004210/133217056-2d1d54b4-d99e-441f-a4d5-a78bf0380456.png)    
 상권변화, 바이러스, 임대료 데이터의 설명은 위 그림과 같다.
 
 ![image](https://user-images.githubusercontent.com/40004210/133217159-701ea184-027b-4b3e-8ff5-158702a9ede1.png)   
 한 예로 서울특별시 화곡 1동에서 일식집에 종사하고 있는 상인의 보험료 산출 방식은 위와 같다.   
-
-- 데이터 분석  
-(1) 유동인구   
-![image](https://user-images.githubusercontent.com/40004210/133223298-76d0264d-b906-43c1-a826-f7e87e71efb7.png)    
-(2) 임대료   
-![image](https://user-images.githubusercontent.com/40004210/133223314-c7e8dd0d-4c23-4885-b3f3-a9633e0bd511.png)    
-(3) 매출액   
-![image](https://user-images.githubusercontent.com/40004210/133223325-e7e637bc-0ded-4409-806e-c6b816c99593.png)     
-(4) 영업이익   
-![image](https://user-images.githubusercontent.com/40004210/133223330-259c7aa1-250d-4cb4-a792-7e0cca7a4f4b.png)     
-
-
 
 ## :mag: Content
 - 메인 홈페이지

@@ -3,11 +3,12 @@
   
 ## :computer: Used
 - R
+- 태블로
 - Spring
 - HTML
 - CSS
 - Javascript
-- HFS
+- HFS (서버)
 
 ## :+1: Achievement
 1) 공모전 제출
@@ -21,10 +22,26 @@
 상권변화, 바이러스, 임대료 데이터의 설명은 위 그림과 같다.
 
 ![image](https://user-images.githubusercontent.com/40004210/133217159-701ea184-027b-4b3e-8ff5-158702a9ede1.png)   
-한 예로 서울특별시 화곡 1동에서 일식집에 종사하고 있는 상인의 보험료 산출 방식은 위와 같다.
+한 예로 서울특별시 화곡 1동에서 일식집에 종사하고 있는 상인의 보험료 산출 방식은 위와 같다.  
 
 ## :mag: Content
 - 메인 홈페이지
-![image](https://user-images.githubusercontent.com/40004210/133217324-e27f0eee-343c-480d-a8f1-7fd881078eb7.png)
+![image](https://user-images.githubusercontent.com/40004210/133217324-e27f0eee-343c-480d-a8f1-7fd881078eb7.png)  
+공공데이터 오픈 API를 이용하여 코로나 확진자 데이터(일별, 월별, 자치구별)를 사용자에게 보여준다.  
 
+- 경제피해 
+![image](https://user-images.githubusercontent.com/40004210/133217604-1e3b1ae0-ae5f-467c-a74c-ba8383ca6f1b.png)  
+코로나 전후로 중소기업 업종별로 구분한 영업이익/매출액 데이터를 표로 보여준다.  
+
+- 유동인구
+![image](https://user-images.githubusercontent.com/40004210/133217773-6e45a86c-f61d-44a0-825e-aa98ae92089e.png)  
+코로나 전염병의 3번의 유행 시기에 따라 서울 기준 2019년부터 2021년 유동인구 데이터를 보여준다.  
+
+- 바이러스 정보
+![image](https://user-images.githubusercontent.com/40004210/133217938-c4c8774d-8a3b-4d7b-9644-b3e4eb54ef19.png)  
+해당 전염병에 대한 정보를 그래프로 분석하고 값을 조절하여 위험도를 예측할 수 있다.
+
+- 보험료 산출
+![image](https://user-images.githubusercontent.com/40004210/133218319-b342ca41-f315-48c5-b785-414df3ddc2d8.png)  
+최종적으로 상인마다 직종, 매장 위치, 임대료 등의 개인 데이터를 이용하여 적합한 보험료를 산출하고 타인과 비교할 수 있다.
 
